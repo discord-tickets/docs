@@ -2,7 +2,7 @@
 <!-- <img align='left' width='0' height='192px' hspace='10'/> -->
 
 <!-- omit in toc -->
-# [DiscordTickets](https://discordtickets.app)
+# [Discord Tickets](https://discordtickets.app)
 
 [![GitHub stars](https://img.shields.io/github/stars/eartharoid/DiscordTickets?style=flat-square)](https://github.com/eartharoid/DiscordTickets/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/eartharoid/DiscordTickets?style=flat-square)](https://github.com/eartharoid/DiscordTickets/stargazers)
@@ -16,7 +16,7 @@ An open-source ticket management bot for Discord - a free alternative to the pre
 
 ## What is this?
 
-DiscordTickets is a Discord bot for creating and managing "support ticket" channels. It is a free and open-source alternative to the popular paid "premium" and "white-label" ticketing bots, such as [Ticket Tool](https://tickettool.xyz/), [TicketsBot](https://ticketsbot.net/), [Tickety](https://tickety.net/), [Helper.gg](https://helper.gg/), [Helper](https://helper.wtf), and others.
+Discord Tickets is a Discord bot for creating and managing "support ticket" channels. It is a free and open-source alternative to the popular paid "premium" and "white-label" ticketing bots, such as [Ticket Tool](https://tickettool.xyz/), [TicketsBot](https://ticketsbot.net/), [Tickety](https://tickety.net/), [Helper.gg](https://helper.gg/), [Helper](https://helper.wtf), and others.
 
 DiscordTickets is feature-rich and much more customisable than many of the bots mentioned above. As it is intended for self-hosting, the bot can have your community or company's logo, for free.
 
