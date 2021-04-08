@@ -5,8 +5,8 @@ site_author: eartharoid
 site_url: https://discordtickets.app
 
 # Repository
-repo_name: eartharoid/DiscordTickets
-repo_url: https://github.com/eartharoid/DiscordTickets
+repo_name: discord-tickets/bot
+repo_url: discord-tickets/bot
 edit_uri: blob/master/docs/
 
 # Copyright
