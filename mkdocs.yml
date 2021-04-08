@@ -6,8 +6,8 @@ site_url: https://discordtickets.app
 
 # Repository
 repo_name: discord-tickets/bot
-repo_url: discord-tickets/bot
-edit_uri: blob/master/docs/
+repo_url: https://github.com/discord-tickets/bot
+edit_uri: https://github.com/discord-tickets/docs/blob/master/docs/
 
 # Copyright
 copyright: '&copy; 2021 Isaac Saunders'
