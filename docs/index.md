@@ -18,9 +18,11 @@ An open-source ticket management bot for Discord - a free alternative to the pre
 
 Discord Tickets is a Discord bot for creating and managing "support ticket" channels. It is a free and open-source alternative to the popular paid "premium" and "white-label" ticketing bots, such as [Ticket Tool](https://tickettool.xyz/), [TicketsBot](https://ticketsbot.net/), [Tickety](https://tickety.net/), [Helper.gg](https://helper.gg/), [Helper](https://helper.wtf), and others.
 
-DiscordTickets is feature-rich and much more customisable than many of the bots mentioned above. As it is intended for self-hosting, the bot can have your community or company's logo, for free.
+Feature-rich, privacy friendly, multi-lingual, and way more extensible than any other similar bot. Self-hosted deployments provide customizable Community or Company's Logos, Bot response messages, and custom ticket headers! ( [Screenshots](###-Screenshots) )
 
-Although intended for use in a single Discord server, the bot can also function in multiple servers at once if you run more than one community.
+Discord Tickets can be used for Ticket Management on your Personal/Community Discord Server, or to Manage Tickets on Multiple Discord Servers with one deployment! 
+
+If there's something we missed, feel free to suggest any changes or additions on our [Github](https://github.com/discord-tickets)!
 
 ### Features
 
