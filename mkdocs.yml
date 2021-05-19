@@ -1,6 +1,6 @@
 # Project information
 site_name: Discord Tickets
-site_description: An open-source & self-hosted Discord bot for ticket management.
+site_description: An open-source ticket management bot for Discord - a free alternative to the premium and white-label plans of other popular ticketing bots.
 site_author: eartharoid
 site_url: https://discordtickets.app
 
@@ -15,51 +15,63 @@ copyright: '&copy; 2021 Isaac Saunders'
 # Configuration
 extra_css:
     - stylesheets/extra.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+
 
 theme:
   name: material
   language: en
-
   custom_dir: overrides/
-  
+  # palette:
+  #   - media: "(prefers-color-scheme: light)"
+  #     scheme: default
+  #     toggle:
+  #       icon: material/weather-sunny
+  #       name: Switch to dark mode
+  #   - media: "(prefers-color-scheme: dark)"
+  #     scheme: slate
+  #     toggle:
+  #       icon: material/weather-night
+  #       name: Switch to light mode
   palette:
     scheme: preference
     primary: primary
     accent: primary
-
   font:
     text: Roboto
     code: Roboto Mono
-
   features:
-    - instant
-    - tabs
+    - navigation.instant
     - navigation.expand
-
+    - navigation.sections
+    - navigation.tracking
+    - navigation.indexes
+    - toc.integrate
   logo: /img/logo.png
   favicon: /img/favicon.ico
 
-# Extras
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/eartharoid
+      link: https://github.com/discord-tickets
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/eartharoid
+      link: https://twitter.com/DiscordTickets
 
 plugins:
-  - search # necessary for search to work
-  - git-revision-date-localized: # last modified date at bottom of page
+  - search
+  - git-revision-date-localized:
       # type: timeago
-  - awesome-pages # custom nav order
+  # - awesome-pages
 
-# Extensions
 markdown_extensions:
   - admonition
   - codehilite:
       guess_lang: false
   - toc:
       permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
   - footnotes
   - meta
   - pymdownx.arithmatex
@@ -80,3 +92,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed
   - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Installation:
+    - Installation: installation/index.md
+  - Hosting: hosting.md
+  - Changelog: changelog.md
