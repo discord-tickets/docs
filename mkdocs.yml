@@ -36,8 +36,7 @@ theme:
   #       icon: material/weather-night
   #       name: Switch to light mode
   palette:
-    # scheme: preference
-    scheme: slate
+    scheme: slate # scheme: preference
   font:
     text: Roboto
     code: Roboto Mono
