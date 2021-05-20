@@ -36,7 +36,8 @@ theme:
   #       icon: material/weather-night
   #       name: Switch to light mode
   palette:
-    scheme: preference
+    # scheme: preference
+    scheme: slate
     primary: primary
     accent: primary
   font:
