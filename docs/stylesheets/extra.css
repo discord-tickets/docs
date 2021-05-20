@@ -1,3 +1,9 @@
+:root {
+	--md-primary-fg-color: #5865F2;
+	--md-primary-fg-color--light: #7289DA;
+	--md-primary-fg-color--dark: #000000;
+}
+
 a code {
 	color: var(--md-primary-fg-color) !important;
 	background-color: rgba(213, 0, 44, 0.1) !important;
@@ -17,7 +23,8 @@ a code:hover {
 	color: white;
 }
 
-.md-announce a, .md-announce a:hover {
+.md-announce a,
+.md-announce a:hover {
 	color: white !important;
 	/* text-decoration: underline; */
 	font-weight: bold;

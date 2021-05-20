@@ -38,13 +38,11 @@ theme:
   palette:
     # scheme: preference
     scheme: slate
-    primary: primary
-    accent: primary
   font:
     text: Roboto
     code: Roboto Mono
   features:
-    - navigation.instant
+    # - navigation.instant
     - navigation.expand
     - navigation.sections
     - navigation.tracking
