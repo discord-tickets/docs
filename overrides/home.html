@@ -35,7 +35,11 @@
 			<div class="mdx-hero__content">
 				<h1>A free ticketing solution</h1>
 				<p>{{ config.site_description }}</p>
-				<a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+				<!-- <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+					class="md-button md-button--primary umami--click--get-started-button">
+					Get started
+				</a> -->
+				<a href="{{ 'getting-started' | url }}" title="Get started"
 					class="md-button md-button--primary umami--click--get-started-button">
 					Get started
 				</a>
@@ -47,8 +51,19 @@
 	</div>
 </section>
 <div class="md-grid md-typeset">
-	<!-- <h2>What is it?</h2>
-	<h2>What makes it awesome?</h2> -->
+	<div>
+		<h2>What is Discord Tickets?</h2>
+	</div>
+
+	<div>
+		<h2>What makes it awesome?</h2>
+	</div>
+
+	<div>
+		<strong><span id="tickets-count">0</span></strong>
+		<span>tickets</span>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 {% endblock %}
 

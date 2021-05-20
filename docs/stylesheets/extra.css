@@ -16,6 +16,14 @@
 	font-weight: bold;
 }
 
+.md-announce strong {
+	white-space: nowrap
+}
+
+.md-announce .twitter {
+	margin-left: .2em
+}
+
 .md-button:hover,
 .md-button--primary:hover {
 	background: var(--md-primary-fg-color--dark) !important;
