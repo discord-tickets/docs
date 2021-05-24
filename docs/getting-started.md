@@ -1,10 +1,16 @@
 # Getting started
 
-<div class="mdx-iconsearch" data-mdx-component="iconsearch">
-	<input id="bot-id-input" class="md-input md-input--stretch mdx-iconsearch__input" placeholder="Enter your bot's user ID"
-		data-mdx-component="iconsearch-query" />
-</div>
-<small>
-	:octicons-light-bulb-16:
-	**Tip:** some text here
-</small>
+https://forms.office.com/r/LE1UbheBTm
+
+```js hl_lines="1 2"
+	const thing = 2;
+	let thing2 = thing + thing;
+	thing2 = thing2 * thing2 + thing2;
+	console.log(thing2 / thing + thing2);
+```
+
+++ctrl+c++
+
+## OAuth URL generator
+
+--8<-- "includes/oauth-url-gen.html"
