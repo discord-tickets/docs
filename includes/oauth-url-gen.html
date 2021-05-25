@@ -1,12 +1,24 @@
 <div class="mdx-iconsearch" data-mdx-component="iconsearch">
-	<input id="bot-id-input" class="md-input md-input--stretch mdx-iconsearch__input"
-		placeholder="Enter your bot's user ID" data-mdx-component="iconsearch-query" />
+	<input id="bot-id-input" class="md-input md-input--stretch mdx-iconsearch__input" placeholder="Enter your bot's user ID" oninput="urlGen(this)" data-mdx-component="iconsearch-query" />
 </div>
-<small>
-	:octicons-light-bulb-16:
-	**Tip:** some text here
-</small>
+<small>:octicons-light-bulb-16: **Tip:** Enter your bot's ID to generate the URL to add the bot to your guild</small>
 
-<a id="dt-add-bot-button" class="md-button md-button--primary" target="_blank" rel="nofollow" href="#">
+<a id="dt-add-bot-button" class="md-button md-button--primary" target="_blank" rel="nofollow" style="visibility: hidden;">
 	Add bot to Discord :material-open-in-new:
 </a>
+
+<script>
+	const regex = /^\d{17,19}$/g;
+	const button = document.getElementById('dt-add-bot-button');
+	const url = 'https://discord.com/oauth2/authorize?scope=applications.commands%20bot&permissions=126032&client_id=';
+
+	function urlGen(element) {
+		if (regex.test(element.value)) {
+			button.href = url + element.value;
+			button.style.visibility = 'visible';
+		} else {
+			button.style.visibility = 'hidden';
+		}
+	}
+</script>
+<!-- ... -->

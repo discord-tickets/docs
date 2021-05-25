@@ -42,7 +42,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   features:
-    # - navigation.instant
+    - navigation.instant
     - navigation.expand
     - navigation.sections
     - navigation.tracking
@@ -65,6 +65,7 @@ plugins:
   # - awesome-pages
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - codehilite:
@@ -105,4 +106,5 @@ nav:
   - Configuration:
     - Configuration: configuration/index.md
   - Fully managed hosting: hosting.md
+  - Updating: updating.md
   - Changelog: changelog.md
