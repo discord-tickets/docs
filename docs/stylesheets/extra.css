@@ -100,3 +100,36 @@ footer.sponsorship:hover hr {
 footer.sponsorship:not(:hover) .twemoji.heart-throb-hover svg {
 	color: var(--md-default-fg-color--lighter) !important
 }
+
+form#hosting {
+	border: 2px solid #626478;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	padding: 24px;
+	background-color: black;
+
+}
+
+form fieldset {
+	border: 2px solid var(--md-primary-fg-color);
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #2E303E;
+}
+
+form legend {
+	/* color: var(--md-primary-fg-color--light); */
+	color: white;
+	margin-bottom: 0px;
+	margin-left: 16px;
+}
+
+#custom-form-button {
+	margin-top:16px;
+}
+
+#custom-form-button:hover {
+	cursor: pointer;
+}

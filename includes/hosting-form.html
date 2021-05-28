@@ -1,4 +1,4 @@
-<form name="hosting" id="hosting" method="POST" netlify>
+<form name="hosting" id="hosting" action="/api/create" method="POST" onsubmit="submitForm(event, this)" netlify>
 	<div class="admonition danger" style="background-color: #333543;">
 		<p>
 			<strong>All fields are required unless stated otherwise.</strong>
@@ -124,9 +124,23 @@
 			</p>
 	</fieldset>
 	<p style="text-align:center;">
-		<a href="#" class="md-button md-button--primary" style="margin-top:16px;">
-			<!-- <button type="submit" class="md-button md-button--primary">Send</button> -->
-			Submit
-		</a>
+		<button type="submit" class="md-button md-button--primary" id="custom-form-button">Submit</button>
 	</p>
 </form>
+
+<script>
+	function submitForm(event, form) {
+		event.preventDefault()
+		const data = new FormData(form);
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: new URLSearchParams(data).toString()
+		})
+		.then(() => {
+			alert("Submitted successfully; you should receive an email within 2 working days.");
+			form.reset();
+		})
+		.catch((error) => alert(error));
+	}
+</script>
