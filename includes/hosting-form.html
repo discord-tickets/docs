@@ -38,7 +38,7 @@
 				class="md-input md-input--stretch mdx-iconsearch__input"
 			/>
 		</p>
-		<fieldset form="hosting" name="billing.address">
+		<!-- <fieldset form="hosting" name="billing.address">
 			<legend>Billing address</legend>
 			<p class="mdx-iconsearch">
 				<label>Address line 1</label>
@@ -79,17 +79,18 @@
 					required
 				/>
 			</p>
-		</fieldset>
+		</fieldset> -->
 	</fieldset>
 	<fieldset form="hosting" name="bot">
 		<legend>Your bot</legend>
 		<div class="admonition info">
 			<p class="admonition-title">Information</p>
 			<p>
-				If you own a domain you can enter something like <code>tickets.example.com</code>. If you don't enter something like <code>mycompany</code> to get a free subdomain instead: <code>mycompany.discordtickets.app</code>.
+				If you own a domain you can enter something like <code>tickets.example.com</code>. If you don't, you can enter something like <code>mycompany</code> to get a free subdomain instead: <code>mycompany.discordtickets.app</code>.
 			</p>
 		</div>
-		<p class="mdx-iconsearch">
+		<fieldset>
+			<legend>Do you have a domain?</legend>
 			<input
 				type="radio"
 				name="domain-or-subdomain"
@@ -103,28 +104,34 @@
 				value="subdomain"
 				id="subdomain"
 			/>
-			<label for="subdomain">I need a free subdomain</label><br>
+			<label for="subdomain">I need a free discordtickets.app subdomain</label><br>
+		</fieldset>
+		<p class="mdx-iconsearch">
+			<label>Your hostname</label>
+			<input
+				type="text"
+				name="hostname"
+				placeholder="tickets.example.com or example.discordtickets.app"
+				class="md-input md-input--stretch mdx-iconsearch__input"
+				required
+			/>
 		</p>
 		<p class="mdx-iconsearch">
-				<label>Your domain/subdomain</label>
-				<input
-					type="text"
-					name="domain"
-					placeholder="tickets.example.com or example.discordtickets.app"
-					class="md-input md-input--stretch mdx-iconsearch__input"
-					required
-				/>
-			</p>
-		<p class="mdx-iconsearch">
-				<label>Discord token</label>
-				<input
-					type="password"
-					name="token"
-					placeholder="Enter your token"
-					class="md-input md-input--stretch mdx-iconsearch__input"
-					required
-				/>
-			</p>
+			<label>Discord token</label>
+			<input
+				type="password"
+				name="token"
+				placeholder="Enter your token"
+				class="md-input md-input--stretch mdx-iconsearch__input"
+				required
+			/>
+		</p>
+		<p class="mdx-inconsearch">
+			<label>Your <code>config.js</code> file</label>
+			<input type="file" id="configFile" name="config.js">
+			<br>
+			<small>If you don't upload a config, the default will be used.</small>
+		</p>
 	</fieldset>
 	<p style="text-align:center;">
 		<button type="submit" class="md-button md-button--primary" id="custom-form-button">Submit</button>
@@ -141,7 +148,7 @@
 			body: new URLSearchParams(data).toString()
 		})
 		.then(() => {
-			alert("Submitted successfully; you should receive an email within 2 working days.");
+			alert("Submitted successfully; you should receive an email within 2 working days. If not, email contact@discordtickets.app or ask in the support server on Discord.");
 			form.reset();
 		})
 		.catch((error) => alert(error));

@@ -50,6 +50,7 @@
 
 .md-typeset .mdx-columns ol,
 .md-typeset .mdx-columns ul {
+	columns: 2;
 	-moz-columns: 2;
 	column-count: 2
 }
