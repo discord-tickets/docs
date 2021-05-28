@@ -144,7 +144,8 @@
 		const data = new FormData(form);
 		fetch("/", {
 			method: "POST",
-			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			// headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			headers: { "Content-Type": "multipart/form-data" },
 			body: new URLSearchParams(data).toString()
 		})
 		.then(() => {
