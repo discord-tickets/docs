@@ -1,9 +1,12 @@
-<form name="hosting" id="hosting" action="/api/create" method="POST" onsubmit="submitForm(event, this)" netlify>
+<form name="hosting" id="hosting" action="/api/create" method="POST" onsubmit="submitForm(event, this)" netlify-honeypot="bot" netlify>
 	<div class="admonition danger" style="background-color: #333543;">
 		<p>
 			<strong>All fields are required unless stated otherwise.</strong>
 		</p>
 	</div>
+	 <p style="display: none;">
+    	<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+ 	</p>
 	<fieldset form="hosting" name="billing">
 		<legend>Billing information</legend>
 		<p class="mdx-iconsearch">
