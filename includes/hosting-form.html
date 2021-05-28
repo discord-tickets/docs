@@ -1,0 +1,132 @@
+<form name="hosting" id="hosting" method="POST" netlify>
+	<div class="admonition danger" style="background-color: #333543;">
+		<p>
+			<strong>All fields are required unless stated otherwise.</strong>
+		</p>
+	</div>
+	<fieldset form="hosting" name="billing">
+		<legend>Billing information</legend>
+		<p class="mdx-iconsearch">
+			<label>Full name</label>
+			<input
+				type="text"
+				name="name"
+				placeholder="John Smith"
+				class="md-input md-input--stretch mdx-iconsearch__input"
+				required
+			/>
+		</p>
+		<p class="mdx-iconsearch">
+			<label>Email address</label>
+			<input
+				type="email"
+				name="email"
+				placeholder="john.smith@example.com"
+				class="md-input md-input--stretch mdx-iconsearch__input"
+				required
+			/>
+		</p>
+		<p class="mdx-iconsearch">
+			<label>Phone number <small>(optional)</small></label>
+			<input
+				type="tel"
+				name="phone"
+				placeholder="+44 012 345 6789"
+				class="md-input md-input--stretch mdx-iconsearch__input"
+			/>
+		</p>
+		<fieldset form="hosting" name="billing.address">
+			<legend>Billing address</legend>
+			<p class="mdx-iconsearch">
+				<label>Address line 1</label>
+				<input
+					type="text"
+					name="address-1"
+					placeholder="14 Chester Road"
+					class="md-input md-input--stretch mdx-iconsearch__input"
+					required
+				/>
+			</p>
+			<p class="mdx-iconsearch">
+				<label>Address line 2 <small>(optional)</small></label>
+				<input
+					type="text"
+					name="address-2"
+					placeholder="Kingston"
+					class="md-input md-input--stretch mdx-iconsearch__input"
+				/>
+			</p>
+			<p class="mdx-iconsearch">
+				<label>Town or city</label>
+				<input
+					type="text"
+					name="town-or-city"
+					placeholder="London"
+					class="md-input md-input--stretch mdx-iconsearch__input"
+					required
+				/>
+			</p>
+			<p class="mdx-iconsearch">
+				<label>Post code (ZIP)</label>
+				<input
+					type="text"
+					name="post-code"
+					placeholder="KT1 1KY"
+					class="md-input md-input--stretch mdx-iconsearch__input"
+					required
+				/>
+			</p>
+		</fieldset>
+	</fieldset>
+	<fieldset form="hosting" name="bot">
+		<legend>Your bot</legend>
+		<div class="admonition info">
+			<p class="admonition-title">Information</p>
+			<p>
+				If you own a domain you can enter something like <code>tickets.example.com</code>. If you don't enter something like <code>mycompany</code> to get a free subdomain instead: <code>mycompany.discordtickets.app</code>.
+			</p>
+		</div>
+		<p class="mdx-iconsearch">
+			<input
+				type="radio"
+				name="domain-or-subdomain"
+				value="domain"
+				id="domain"
+			/>
+			<label for="domain">I will use my own domain name</label><br>
+			<input
+				type="radio"
+				name="domain-or-subdomain"
+				value="subdomain"
+				id="subdomain"
+			/>
+			<label for="subdomain">I need a free subdomain</label><br>
+		</p>
+		<p class="mdx-iconsearch">
+				<label>Your domain/subdomain</label>
+				<input
+					type="text"
+					name="domain"
+					placeholder="tickets.example.com or example.discordtickets.app"
+					class="md-input md-input--stretch mdx-iconsearch__input"
+					required
+				/>
+			</p>
+		<p class="mdx-iconsearch">
+				<label>Discord token</label>
+				<input
+					type="password"
+					name="token"
+					placeholder="Enter your token"
+					class="md-input md-input--stretch mdx-iconsearch__input"
+					required
+				/>
+			</p>
+	</fieldset>
+	<p style="text-align:center;">
+		<a href="#" class="md-button md-button--primary" style="margin-top:16px;">
+			<!-- <button type="submit" class="md-button md-button--primary">Send</button> -->
+			Submit
+		</a>
+	</p>
+</form>
