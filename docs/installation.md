@@ -6,9 +6,10 @@ These instructions are for installing Discord Tickets on your own server. If you
 
 - A suitable server (a small VPS is fine)
 - Node.JS >14.x (with NPM/PNPM/Yarn)
+- At least `50MB` free RAM and disk space
 - A MySQL/MariaDB/PostgreSQL/MSSQL database is recommended
 
-## Normal installation
+## Standard installation
 
 1. Clone the repository
     1. `#!bash git clone https://github.com/discord-tickets/bot.git`
@@ -22,7 +23,9 @@ These instructions are for installing Discord Tickets on your own server. If you
 
 ## Pterodactyl installation
 
-:egg: coming soon™️
+For the best experience, import the [Discord Tickets egg](https://github.com/discord-tickets/bot/blob/main/pterodactyl.egg.json). If you are not an administrator and your host does not want to add this, the common "discord.js generic" and "node.js" eggs should also work.
+
+If you are using the custom egg, simply create a new server using the egg. Set the `Version` to the latest version on [the releases page](https://github.com/discord-tickets/bot/releases/latest).
 
 <!-- do not delete -->
 --8<-- "includes/terms.md"
