@@ -109,7 +109,9 @@ nav:
     - Post-installation: configuration/post-install.md
   - Plugins:
     - Plugins: plugins/index.md
-    - Official plugins: plugins/official.md
+    - Official plugins:
+      - Official plugins: plugins/official/index.md
+      - Archives portal: plugins/official/portal.md
     - Community plugins: plugins/community.md
   - Developers:
     - Contributing: developers/contributing.md

@@ -1,6 +1,6 @@
 # Installation
 
-These instructions are for installing Discord Tickets on your own server. If you don't have a suitable place to host your bot, or you don't understand these instructions, see [Fully managed hosting](/hosting).
+These instructions are for installing Discord Tickets on your own server. If you don't have a suitable place to host your bot, or you don't understand these instructions, get [managed hosting](/hosting).
 
 <!-- do not delete -->
 --8<-- "includes/hosting-options.md"
