@@ -53,20 +53,28 @@
 <div class="md-grid md-typeset">
 	<div>
 		<h2>What is Discord Tickets?</h2>
+		<p></p>
 	</div>
 
 	<div>
 		<h2>What makes it awesome?</h2>
+		<p></p>
 	</div>
 
 	<div>
-		<strong><span id="tickets-count">0</span></strong>
-		<span>tickets</span>
+		<h2>There are currently...</h2>
+		<p id="stats">
+			<strong><span id="clients-count">0</span> instances</strong> with<br>
+			<strong><span id="tickets-count">0</span> tickets</strong> across<br>
+			<strong><span id="guilds-count">0</span> guilds</strong> with<br>
+			<strong><span id="members-count">0</span> members.</strong>
+		</p>
 	</div>
+	<br><br><br>
 </div>
 {% endblock %}
 
-{% block content %}{% endblock %}
+{% block content %}{% endblock %}S
 
 {% block footer %}
 	{% include "partials/footer.html" %}

@@ -133,3 +133,10 @@ form legend {
 #custom-form-button:hover {
 	cursor: pointer;
 }
+
+#stats {
+	font-weight: 400;
+	font-size: 1.25em;
+	line-height: 1.5;
+	letter-spacing: -.01em;
+}

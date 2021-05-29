@@ -102,9 +102,17 @@ nav:
   - Home: index.md
   - Try Discord Tickets: try.md
   - Getting started: getting-started.md
+  - Managed hosting: hosting.md
   - Installation: installation.md
   - Configuration:
     - Configuration: configuration/index.md
-  - Fully managed hosting: hosting.md
+    - Post-installation: configuration/post-install.md
+  - Plugins:
+    - Plugins: plugins/index.md
+    - Official plugins: plugins/official.md
+    - Community plugins: plugins/community.md
+  - Developers:
+    - Contributing: developers/contributing.md
+    - Plugins: developers/plugins.md
   - Updating: updating.md
   - Changelog: changelog.md
