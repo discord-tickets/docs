@@ -43,7 +43,7 @@ theme:
     code: Roboto Mono
   features:
     - navigation.instant
-    - navigation.expand
+    # - navigation.expand
     - navigation.sections
     - navigation.tracking
     - navigation.indexes
