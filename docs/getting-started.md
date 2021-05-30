@@ -11,7 +11,7 @@ Discord Tickets was originally made to be self-hosted, but if you don't have a s
 1. [Create your Discord bot application](#getting-your-bot-token)
 2. [Add your bot to Discord](#invite-url-generator)
 3. [Install](/installation) or get [managed hosting](/hosting)
-4. [Configure](/configuration) your bot
+4. [Configure](/configuration/post-install) your bot
 5. Optionally, complete [this survey](https://forms.office.com/r/LE1UbheBTm) ***(please) :slight_smile:***
 
 ### Getting your bot token

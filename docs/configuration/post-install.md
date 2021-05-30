@@ -46,7 +46,7 @@ You **must** set your token in the `.env` file.
 	- `microsoft`
 	
 	!!! warning
-		**Note that SQLite cannot handle fast writes and is not suitable if you want to use ticket archives or are using the bot in multiple guilds.**
+		Note that SQLite cannot handle fast writes and is not suitable if you want to use ticket archives or are using the bot in multiple guilds.
 
 ??? summary "DB_HOST"
 	### DB_HOST
@@ -115,13 +115,13 @@ All properties are required and not nullable.
 
 	??? summary "colour"
 		#### colour
-		:octicons-checklist-24: Type: `string or Array<number>`
+		:octicons-checklist-24: Type: [`ColorResolvable`](https://discord.js.org/#/docs/main/stable/typedef/ColorResolvable)
 		{: .details }
 
 		:octicons-checklist-24: Default: `#009999`
 		{: .details }
 
-		The default embed colour. Must be a [ColorResolvable](https://discord.js.org/#/docs/main/stable/typedef/ColorResolvable)
+		The default embed colour.
 
 	??? summary "command_prefix"
 		#### command_prefix
