@@ -88,7 +88,7 @@ After making your changes, you can re-upload the file with `-settings` as the me
 	- [Help to translate](https://github.com/discord-tickets/.github/blob/main/CONTRIBUTING.md#translating)
 
 ??? summary "log_messages"
-	### footer
+	### log_messages
 	:octicons-checklist-24: Type: `Boolean`
 	{: .details }
 
