@@ -15,6 +15,9 @@ New features include:
 - Multiple support roles per category
 - Multiple panels, with 2 new panel types (multi-category, and reaction-less)
 - Localisation
+- Opening questions separate to the opening message
+- Tags
+- Surveys
 
 <!-- do not delete -->
 --8<-- "includes/terms.md"
