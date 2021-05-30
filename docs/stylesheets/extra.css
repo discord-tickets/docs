@@ -140,3 +140,8 @@ form legend {
 	line-height: 1.5;
 	letter-spacing: -.01em;
 }
+
+.details {
+	/* color: #777CA1 !important; */
+	color: #7E84AA !important;
+}

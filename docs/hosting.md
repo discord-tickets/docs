@@ -28,3 +28,5 @@ Until a subscription management site is created, please use this temporary form 
 <!-- do not delete -->
 --8<-- "includes/hosting-form.html"
 <!-- /do not delete -->
+
+Hosting provided by [CapeStar](https://capestar.xyz/) and [Kiaura](https://kiaura.eu/).

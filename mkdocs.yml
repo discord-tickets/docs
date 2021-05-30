@@ -25,17 +25,6 @@ theme:
   name: material
   language: en
   custom_dir: overrides/
-  # palette:
-  #   - media: "(prefers-color-scheme: light)"
-  #     scheme: default
-  #     toggle:
-  #       icon: material/weather-sunny
-  #       name: Switch to dark mode
-  #   - media: "(prefers-color-scheme: dark)"
-  #     scheme: slate
-  #     toggle:
-  #       icon: material/weather-night
-  #       name: Switch to light mode
   palette:
     scheme: slate # scheme: preference
   font:
@@ -43,11 +32,12 @@ theme:
     code: Roboto Mono
   features:
     - navigation.instant
+    - navigation.top
     # - navigation.expand
-    - navigation.sections
+    # - navigation.sections
     - navigation.tracking
     - navigation.indexes
-    - toc.integrate
+    # - toc.integrate
   logo: /img/logo.png
   favicon: /img/favicon.ico
 
@@ -105,16 +95,18 @@ nav:
   - Managed hosting: hosting.md
   - Installation: installation.md
   - Configuration:
-    - Configuration: configuration/index.md
     - Post-installation: configuration/post-install.md
+    - Guild settings: configuration/guild-settings.md
+    - Categories: configuration/categories.md
   - Plugins:
-    - Plugins: plugins/index.md
+    - plugins/index.md
     - Official plugins:
-      - Official plugins: plugins/official/index.md
+      - plugins/official/index.md
       - Archives portal: plugins/official/portal.md
     - Community plugins: plugins/community.md
   - Developers:
     - Contributing: developers/contributing.md
     - Plugins: developers/plugins.md
+  - Privacy: privacy.md
   - Updating: updating.md
   - Changelog: changelog.md
