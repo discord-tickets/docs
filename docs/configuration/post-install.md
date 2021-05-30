@@ -7,6 +7,8 @@ Running the bot once after cloning the repository will create 2 new files: `.env
 
 You **must** set your token in the `.env` file.
 
+Other than setting the database details in the `.env` file, you don't need to do anything but create the database. **Tables will be created automatically.**
+
 ## .env
 
 !!! danger

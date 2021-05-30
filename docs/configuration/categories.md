@@ -30,7 +30,7 @@ To create a new category, [download your guild's settings](../guild-settings#dow
 Re-upload the settings as shown on the previous page. After the settings have been saved the bot will create a new category. Next time you download the settings, the category will have an `id` property.
 
 ??? success "Settings after downloading again"
-	```json
+	```json hl_lines="5"
 	{
 		"categories": [
 			{
