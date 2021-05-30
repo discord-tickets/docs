@@ -1,7 +1,7 @@
 # Guild settings
 
-!!! info
-	This page assumes your prefix is `-`.
+!!! note
+	This page assumes your command prefix is `-`.
 
 Discord Tickets doesn't have a fancy web panel for configuring yet, so you'll need to edit JSON. Do this on your PC in a suitable editor ([VSCode](https://code.visualstudio.com/) or similar, or even [Notepad++](https://notepad-plus-plus.org/), but **not** Windows Notepad).
 
@@ -10,7 +10,7 @@ Discord Tickets doesn't have a fancy web panel for configuring yet, so you'll ne
 Editing the settings is simple but slightly tedious. To modify your guild's settings you first need to download the current settings. To do this:
 
 1. Type `-settings` in a channel that the bot and read and send messages in
-2. Then, save the file to your computer.
+2. Save the file to your computer.
 
 ![(Image)](https://i.imgur.com/gdCWio8.png)
 
@@ -29,7 +29,7 @@ The default settings:
   "log_messages": true,
   "success_colour": "GREEN",
   "surveys": {},
-  "tags": null
+  "tags": {}
 }
 ```
 
@@ -47,7 +47,7 @@ After making your changes, you can re-upload the file with `-settings` as the me
 
 ??? summary "categories"
 	### categories
-	Read the [categories](./categories) settings page.
+	Read the [categories](../categories) settings page.
 
 ??? summary "colour"
 	### colour
@@ -106,8 +106,8 @@ After making your changes, you can re-upload the file with `-settings` as the me
 
 ??? summary "surveys"
 	### surveys
-	Read the [surveys](./surveys) settings page.
+	Read the [surveys](../surveys) settings page.
 
 ??? summary "tags"
 	### tags
-	Read the [tags](./tags) settings page.
+	Read the [tags](../tags) settings page.
