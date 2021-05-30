@@ -111,3 +111,7 @@ After making your changes, you can re-upload the file with `-settings` as the me
 ??? summary "tags"
 	### tags
 	Read the [tags](../tags) settings page.
+
+<!-- do not delete -->
+--8<-- "includes/terms.md"
+<!-- /do not delete -->

@@ -175,3 +175,7 @@ Re-upload the settings as shown on the previous page. After the settings have be
 	{: .details }
 
 	The name of the survey to use when the ticket is closed. Read the [surveys](../surveys) settings page.
+
+<!-- do not delete -->
+--8<-- "includes/terms.md"
+<!-- /do not delete -->

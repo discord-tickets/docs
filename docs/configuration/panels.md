@@ -102,3 +102,7 @@ where:
 	-d "Send a message in this channel with a brief summary of your issue to create a ticket."
 	-c 843239890593251329
 	```
+
+<!-- do not delete -->
+--8<-- "includes/terms.md"
+<!-- /do not delete -->
