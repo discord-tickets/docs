@@ -101,6 +101,7 @@ nav:
     - Panels: configuration/panels.md
     - Tags: configuration/tags.md
     - Surveys: configuration/surveys.md
+  - Commands: commands.md
   - Plugins:
     - plugins/index.md
     - Official plugins:
