@@ -48,6 +48,7 @@ where:
 
 ??? example
 	`Hello, <@{ticket.creator}>.` would result in:
+
 	![(Image)](https://i.imgur.com/6671liT.png)
 
 #### Argument placeholders
@@ -89,6 +90,7 @@ If you have custom placeholders:
 		--reason "you are stupid"
 		```
 	- The output:
+
 		![(Image)](https://i.imgur.com/v5oyvJ9.png)
 
 
