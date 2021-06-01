@@ -14,6 +14,9 @@ The panel command uses [processed args](/commands/#processed-advanced):
 
 The bot will create a new channel with the correct permissions and send the panel message in it.
 
+!!! warning
+	The category ID must be and ID that the bot gives when you [download the settings](../guild-settings#downloading-current-settings). [Create a category](../categories) through the bot, **it will not work if you give the ID of a category which the bot did not make**.
+
 ## Single-category reaction
 
 The most basic panel type - a single reaction per panel which opens a ticket in a specific category.
