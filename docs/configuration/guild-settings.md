@@ -34,7 +34,7 @@ The default settings:
 ```
 
 !!! info
-	You must add at least one [category](./categories).
+	You must add at least one [category](../categories).
 
 ## Modifying the settings
 
