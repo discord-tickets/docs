@@ -23,7 +23,7 @@ If you don't own a domain, you can get a free subdomain: `example.discordtickets
 
 Follow the [getting started](/getting-started#getting-your-bot-token) steps to get your bot token.
 
-Until a subscription management site is created, please use this temporary form to request hosting. You should receive an invoice from [Stripe](https://stripe.com) by email within a couple of days.
+Until a subscription management site is created, please use this temporary form to request hosting. **You should receive an email with a payment link within a couple of days, usually within 24 hours.**
 
 <!-- do not delete -->
 --8<-- "includes/hosting-form.html"
