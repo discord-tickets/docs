@@ -7,7 +7,7 @@ If you're not sure if you want to spend time installing the bot, you can try it 
 !!! tip
 	If you decide to install Discord Tickets afterwards but don't want to redo your settings, you can:
 
-	1. Download the settigns from the test bot
+	1. Download the settings from the test bot
 	2. Remove the `id` property from all of the `categories`
 	3. Change the role IDs for each category's `roles` and `ping` properties
 	4. Upload the modified settings with your newly installed bot
