@@ -39,5 +39,5 @@ If you want to cancel your subscription, go to [billing.discordtickets.app/accou
 Create a ticket in the [Discord support server](https://go.eartharoid.me/discord) by typing `-new` in the #commands channel for support.
 
 > By subscribing to the managed hosting service, you automatically accept the [privacy policy](https://billing.discordtickets.app/privacy) and [terms](https://billing.discordtickets.app/terms).
-> 
+>
 > Hosting provided by [CapeStar](https://capestar.xyz/) and [Kiaura](https://kiaura.eu/).
