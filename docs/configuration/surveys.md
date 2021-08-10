@@ -25,12 +25,12 @@ All strings added to the array will be part of the survey in order.
 
 ??? example
 	```json hl_lines="5"
-"surveys": {
-	"survey_name": [
-    "How did we do today?",
-    "Did your support agent help you?"
-   ]
-}
+	"surveys": {
+		"survey_name": [
+    			"How did we do today?",
+    			"Did your support agent help you?"
+   		]
+	}
 ```
 !!! info Members have the option to skip the survey. They are not required to fill it out.
 
