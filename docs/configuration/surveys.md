@@ -32,8 +32,6 @@ All strings added to the array will be part of the survey in order.
    		]
 	}
 	```
-	
-!!! info Members have the option to skip the survey. They are not required to fill it out.
 
 <!-- do not delete -->
 --8<-- "includes/terms.md"
