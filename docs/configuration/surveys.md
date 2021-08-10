@@ -31,7 +31,8 @@ All strings added to the array will be part of the survey in order.
     			"Did your support agent help you?"
    		]
 	}
-```
+	```
+	
 !!! info Members have the option to skip the survey. They are not required to fill it out.
 
 <!-- do not delete -->
