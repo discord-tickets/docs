@@ -24,7 +24,7 @@ where:
 All strings added to the array will be part of the survey in order.
 
 ??? example
-	```
+	```json
 	"surveys": {
 		"support": [
     			"How did we do today?",
