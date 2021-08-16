@@ -11,7 +11,7 @@ Download your guild's settings using the `-settings` command and add a tag:
 
 ```json hl_lines="2"
 "tags": {
-	"<tag_name>: "<tag_text>"
+	"<tag_name>": "<tag_text>"
 }
 ```
 
