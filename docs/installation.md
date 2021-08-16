@@ -9,17 +9,30 @@ These instructions are for installing Discord Tickets on your own server. If you
 ## Requirements
 
 - A suitable server (a small VPS is fine)
+- [Git](https://git-scm.com/) (for installation)
 - Node.JS >14.x (with NPM/PNPM/Yarn)
-- At least `50MB` free RAM and disk space
+- At least `50MB` free RAM and `100MB` disk space
 - A MySQL/MariaDB/PostgreSQL/MSSQL database is recommended
 
 ## Standard installation
 
 1. Clone the repository
-	1. `#!bash git clone https://github.com/discord-tickets/bot.git`
-	2. Find the most recent version with `#!bash git describe --tags --abbrev=0`
-	3. `#!bash git checkout tags/VERSION`, replacing `VERSION` with the version from step 2 (e.g. `v3.0.0`)
-2. Install dependencies with `#!bash npm i --production`
+	1. 
+		```bash
+		git clone https://github.com/discord-tickets/bot.git
+		```
+	2. Find the most recent version with
+		```bash
+		git describe --tags --abbrev=0
+		```
+	3. Replacing `VERSION` with the version from step 2 (e.g. `v3.0.0`),
+		```bash
+		git checkout tags/VERSION
+		```
+2. Install dependencies with
+	```bash
+	npm i --production
+	```
 3. Start your bot once with `npm start`. This will generate the `.env` and `config.js` files, along with a database encryption key which is stored in the `.env` file
 4. Add your bot token in the `.env` file
 5. Start your bot with `npm start`
