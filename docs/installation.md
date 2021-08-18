@@ -33,9 +33,16 @@ These instructions are for installing Discord Tickets on your own server. If you
 	```bash
 	npm i --production
 	```
-3. Start your bot once with `npm start`. This will generate the `.env` and `config.js` files, along with a database encryption key which is stored in the `.env` file
+3. Start your bot once with
+	```bash
+	npm start
+	```
+	This will generate the `.env` and `config.js` files, along with a database encryption key which is stored in the `.env` file
 4. Add your bot token in the `.env` file
-5. Start your bot with `npm start`
+5. Start your bot with
+	```bash
+	npm start
+	```
 6. You can stop the bot by pressing ++ctrl+c++
 
 ### Running with docker

@@ -10,3 +10,5 @@
     | No experience required                                          | You no longer own the data                                                                            |
     | You don't need to worry about updates                           | You can't make any modifications to the code                                                          |
     |                                                                 | You may need to wait a few days for your bot to be ready                                              |
+
+	[Learn more](/hosting){ .md-button .md-button--primary }

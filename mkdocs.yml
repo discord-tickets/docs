@@ -92,6 +92,8 @@ nav:
   - Home: index.md
   - Try Discord Tickets: try.md
   - Getting started: getting-started.md
+  - Getting your bot token: getting-your-bot-token.md
+  - Invite URL generator: invite-url-generator.md
   - Managed hosting: hosting.md
   - Installation: installation.md
   - Configuration:
