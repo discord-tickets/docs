@@ -53,6 +53,9 @@ plugins:
   - git-revision-date-localized:
       # type: timeago
   # - awesome-pages
+  - redirects:
+        redirect_maps:
+            'sponsor.md': 'https://github.com/discord-tickets/bot/?sponsor=1'
 
 markdown_extensions:
   - abbr
