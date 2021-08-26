@@ -111,7 +111,8 @@ nav:
     - plugins/index.md
     - Official plugins:
       - plugins/official/index.md
-      - Archives portal: plugins/official/portal.md
+      # - Archives portal: plugins/official/portal.md
+      - Text transcripts: plugins/official/text-transcripts.md
     - Community plugins: plugins/community.md
   - Developers:
     - Contributing: developers/contributing.md
