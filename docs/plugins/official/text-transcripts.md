@@ -30,7 +30,10 @@ Due to its simplicity, this plugin does not support localisation and is only ava
 
 ## Installation
 
-1. Run `npm i github:discord-tickets/text-transcripts --no-save`
+1. Run
+   ```
+   npm i dsctickets.text-transcripts  --no-save
+   ```
 2. Add `dsctickets.text-transcripts` to the `plugins` array in your bot's config file (`./user/config.js`):
 	```js hl_lines="2"
 	plugins: [
