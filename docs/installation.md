@@ -72,19 +72,19 @@ docker run -v ./logs:/usr/src/app/logs --name "bot" "discordtickets"
 
 This command will run your image with a volume attached to `./logs` mapped to the container's log file, so that logs are persisted. We also give the container a friendly name, "bot".
 
-If we want to stop the container,
+If we want to stop the container:
 
 ```bash
 docker stop bot
 ```
 
-Or to completely kill the bot,
+Or to completely kill the bot:
 
 ```bash
 docker kill bot
 ```
 
-To see logs,
+To see logs:
 
 ```bash
 docker logs bot -f
