@@ -14,6 +14,10 @@
 		display: none
 	}
 
+	.homepage-content {
+		width: 90%;
+	}
+
 	@media screen and (min-width:60em) {
 		.md-sidebar--secondary {
 			display: none
@@ -23,6 +27,9 @@
 	@media screen and (min-width:76.25em) {
 		.md-sidebar--primary {
 			display: none
+		}
+		.homepage-content {
+			width: 50%;
 		}
 	}
 </style>
@@ -50,47 +57,46 @@
 		</div>
 	</div>
 </section>
-<div class="md-grid md-typeset">
-
-	<p>
-		<small>This website supports <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#keyboard-shortcuts">keyboard shortcuts</a>.</small>
-	</p>
-
-	<div>
-		<h2>What is Discord Tickets?</h2>
-		<p></p>
-	</div>
-
-	<div>
-		<h2>What makes it awesome?</h2>
-		<p></p>
-	</div>
-
-	<!-- 
-		survey
-		https://forms.office.com/r/LE1UbheBTm
-	-->
-
-	<!--
-		stop repeating yourself with tags.
-		surveys.
-		stats.
-	-->
+<div class="md-grid md-typeset homepage-content">
 
 	<div>
 		<h2>There are currently...</h2>
 		<p id="stats">
-			<strong><span id="clients-count">0</span> instances</strong> with<br>
-			<strong><span id="tickets-count">0</span> tickets</strong> across<br>
-			<strong><span id="guilds-count">0</span> guilds</strong> with<br>
-			<strong><span id="members-count">0</span> members.</strong>
+			<strong><span id="clients-count">(refresh the page)</span> instances</strong> with<br>
+			<strong><span id="tickets-count">(refresh the page)</span> tickets</strong> across<br>
+			<strong><span id="guilds-count">(refresh the page)</span> guilds</strong> with<br>
+			<strong><span id="members-count">(refresh the page)</span> members.</strong>
 		</p>
 	</div>
-	<br><br><br>
+
+	<div>
+		{{ page.content }}
+	</div>
+
+	<div>
+		<h2>Sponsored by</h2>
+		<p>
+			Discord Tickets is used by and sponsored by these awesome communities:
+
+			<ul>
+				<li>
+					<a href="https://reskybounds.com/">reSkybounds</a>
+				</li>
+			</ul>
+		</p>
+
+		<iframe src="https://github.com/sponsors/eartharoid/button" title="Sponsor eartharoid" height="35" width="116"
+			style="border: 0;"></iframe>
+	</div>
+
+	<p>
+		<small>
+			This is not an official Discord product. It is not affiliated with nor endorsed by Discord Inc.
+		</small>
+	</p>
+
 </div>
 {% endblock %}
-
-{% block content %}{% endblock %}S
 
 {% block footer %}
 	{% include "partials/footer.html" %}

@@ -31,7 +31,8 @@
 }
 
 footer.sponsorship {
-	text-align: center
+	text-align: center;
+	margin: 1em;
 }
 
 footer.sponsorship hr {
