@@ -1,100 +1,10 @@
-# Post-installation configuration
+# Global config
 
 !!! info
 	You can skip this page if you are using [managed hosting](/hosting).
 
-Running the bot once after cloning the repository will create 2 new files: `.env` and `user/config.js`.
+The config file (`user/config.js`) can be used to configure settings that affect the entire bot (such as the user presence) and default settings. Changes to this file require a restart to take affect.
 
-You **must** set your token in the `.env` file.
-
-Other than setting the database details in the `.env` file, you don't need to do anything but create the database. **Tables will be created automatically.**
-
-## .env
-
-!!! danger
-	**This file should be kept secret**. Do not share this file or push it to GitHub; keep your token and other secrets private.
-
-??? summary "DISCORD_TOKEN"
-	### DISCORD_TOKEN
-	:octicons-file-symlink-file-24: Required
-	{: .details }
-
-	Your Discord bot's token. See [getting started](/getting-started#getting-your-bot-token) for instructions.
-
-??? summary "DB_ENCRYPTION_KEY"
-	### DB_ENCRYPTION_KEY
-	:octicons-file-symlink-file-24: Required
-	{: .details }
-
-	This is automatically generated when you run the bot for the first time.
-
-	!!! warning
-		Keep this key safe or you will lose access to a lot of the data in the database.
-
-??? summary "DB_TYPE"
-	### DB_TYPE
-	:octicons-file-symlink-file-24: Required
-	{: .details }
-
-	:octicons-checklist-24: Default: `sqlite`
-	{: .details }
-
-	The database type:
-
-	- `sqlite` (default)
-	- `mysql` (recommended)
-	- `maria`
-	- `postgres`
-	- `microsoft`
-	
-	!!! warning
-		Note that SQLite cannot handle fast writes and is not suitable if you want to use ticket archives or are using the bot in multiple guilds.
-
-??? summary "DB_HOST"
-	### DB_HOST
-	:octicons-file-symlink-file-24: Not required for SQLite
-	{: .details }
-
-	The hostname for your database (a domain or IP address).
-
-??? summary "DB_PORT"
-	### DB_PORT
-	{: .details }
-
-	The port for your database.
-
-??? summary "DB_NAME"
-	### DB_NAME
-	:octicons-file-symlink-file-24: Not required for SQLite
-	{: .details }
-
-	The database name
-
-??? summary "DB_USER"
-	### DB_USER
-	:octicons-file-symlink-file-24: Not required for SQLite
-	{: .details }
-
-	The database user's username.
-
-??? summary "DB_PASS"
-	### DB_PASS
-	:octicons-file-symlink-file-24: Not required for SQLite
-	{: .details }
-
-	The password for the database user.
-
-??? summary "DB_TABLE_PREFIX"
-	### DB_TABLE_PREFIX
-	:octicons-file-symlink-file-24: Required
-	{: .details }
-
-	:octicons-checklist-24: Default: `dsctickets_`
-	{: .details }
-
-	The prefix for the database table names.
-
-## config.js
 
 All properties are required and not nullable.
 

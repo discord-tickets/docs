@@ -8,7 +8,7 @@
 	```bash
 	git describe --tags --abbrev=0
 	```
-3. Replacing `VERSION` with the version from step 2 (e.g. `v3.0.0`),
+3. Replacing `VERSION` with the version from step 2 (e.g. `git checkout tags/v3.1.0`),
 	```bash
 	git checkout tags/VERSION
 	```

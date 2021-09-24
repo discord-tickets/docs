@@ -98,12 +98,15 @@ nav:
   - Getting your bot token: getting-your-bot-token.md
   - Invite URL generator: invite-url-generator.md
   - Managed hosting: hosting.md
-  - Installation: installation.md
+  - Installation:
+    - Standard installation: installation/standard.md
+    - Docker installation: installation/docker.md
+    - Pterodactyl installation: installation/pterodactyl.md
+  - Using MySQL: using-mysql.md
   - Configuration:
-    - Post-installation: configuration/post-install.md
-    - Guild settings: configuration/guild-settings.md
-    - Categories: configuration/categories.md
-    - Panels: configuration/panels.md
+    - Global config: configuration/global-config.md
+    - Create a category: configuration/categories.md
+    - Create a panel: configuration/panels.md
     - Tags: configuration/tags.md
     - Surveys: configuration/surveys.md
   - Commands: commands.md

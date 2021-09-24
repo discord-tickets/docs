@@ -1,30 +1,27 @@
 # Getting started
 
+!!! danger "IMPORTANT"
+
+	**PLEASE READ THIS!**{ .large .blink }
+
+	Over 90% of the questions asked in the support server have an answer on this website. **Please read the documentation** before rushing in and guessing how to install and configure your bot.
+
+There are four hosting options, three self-hosting installation methods, or managed hosting.
+
+## Self hosting
+
+1. [Standard installation](/installation/standard)
+2. [Docker installation](/installation/docker)
+3. [Pterodactyl installation](/installation/pterodactyl)
+
+## Managed hosting
+
 Discord Tickets was originally made to be self-hosted, but if you don't have a server you can pay for [managed hosting](/hosting).
 
 <!-- do not delete -->
 --8<-- "includes/hosting-options.md"
 <!-- /do not delete -->
 
-## Before you start
+[Managed hosting](/hosting){ .md-button .md-button--primary }
 
-Before you install the bot:
-
-1. [Create your Discord bot application](/getting-your-bot-token)
-2. [Add your bot to Discord](/invite-url-generator)
-
-## Getting your bot running
-
-### Hosting
-
-If you have your own server you can [install the bot](/installation) yourself. If you'd prefer the easier option, you can get [managed hosting](/hosting).
-
-[Self-hosting](/installation){ .md-button .md-button--primary } [Managed hosting](/hosting){ .md-button .md-button--primary }
-
-### Configuration
-
-You need to [configure](/configuration/post-install) your bot (if self-hosting). You can then [change your guild settings](/configuration/guild-settings/) and set up your ticket categories.
-
-### Survey
-
-Optionally, complete [this survey](https://forms.office.com/r/LE1UbheBTm) ***(please) :slight_smile:***
+> If you have a few minutes to spare, please complete [this survey](https://forms.office.com/r/LE1UbheBTm) :slight_smile:

@@ -33,8 +33,10 @@ Some messages can be configured for each server and for each ticket category. Ev
 You can also configure the functionality of the bot to your liking and add commands with plugins.
 
 ### **Localisable**  
-If the bot hasn't already been translated to your (community's) language, you can [translate](https://github.com/discord-tickets/.github/blob/main//CONTRIBUTING.md#translating) it yourself.
+If the bot hasn't already been translated to your (community's) language, you can [translate](https://github.com/discord-tickets/.github/blob/main/CONTRIBUTING.md#translating) it yourself.
 Plugin authors are encouraged to support multiple languages as well.
+
+[![Weblate](https://i18n.capestar.net/widgets/discord-tickets/-/bot/287x66-white.png)](https://i18n.capestar.net/engage/discord-tickets/)
 
 ### **Multiple ticket categories**  
 Each ticket category has its own settings for messages and the support team roles. There's also multiple methods of creating a ticket.
@@ -44,7 +46,3 @@ Each ticket category has its own settings for messages and the support team role
 
 ### **Open-source and self-hosted**  
 It's yours, you have full control.
-
-### **Supports multiple databases**  
-Discord Tickets uses [Sequelize](https://github.com/sequelize/sequelize) to allow you to choose from SQLite, MySQL, MariaDB, PostgreSQL, or MSSQL for your database, with very little setup.
-If you choose SQLite, which is the default as it is the easiest, you don't need to do anything! If you choose to use another database (recommended), you only need to install the package(s) with NPM and create the database. All of the database tables are created automatically, regardless of which database type you use.

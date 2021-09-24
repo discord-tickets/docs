@@ -1,44 +1,39 @@
 # Surveys
 
-!!! note
-	This page assumes your command prefix is `-`.
-
 Surveys allow members to review your support by answering a few questions when you close the ticket but right before the channel is deleted.
 
-## Creating a Survey
+## Download the surveys file
 
-Download your guild's settings using the `-settings` command and add a survey:
+Type `tickets/surveys` and download the `surveys.json` file. The first time you do this it will be an empty JSON object:
 
 ```json
-"surveys": {
-	"survey_name": []
+{}
+```
+
+## Creating a survey
+
+```json
+{
+	"example_survey": [
+		"Example question 1",
+		"Example question 2"
+	]
 }
 ```
 
-where:
+## Saving your changes
 
-- `<survey_name>` is a string **without spaces** (but can contain `:`, `_`, `-`, `.` etc)
+Upload the file to Discord with `tickets/surveys` as the message content:
 
-## Adding Questions to your Survey
+![(Image)](https://static.eartharoid.me/sharex/21/09/DiscordPTB_PgvTItC9NU.png)
 
-All strings added to the array will be part of the survey in order.
 
-??? example
-	```json
-	"surveys": {
-		"support": [
-    			"How did we do today?",
-    			"Did your support agent help you?"
-   		]
-	}
-	```
 
 ## Viewing responses
 
-To review responses to your survey, simply run the `-survey` command and include the surveys name to recieve an html file with all responses.
+Use `/survey` to view responses.
 
 ??? example
-	`-survey support` and it will respond with an HTML file looking something like this:
 	![(Image)](https://i.imgur.com/qqE4o5x.png)
 
 <!-- do not delete -->
