@@ -4,7 +4,16 @@
 	NOTE: MOST RECENT SHOULD BE AT THE TOP!
 -->
 
-## v3.1.0 (2021-09-25)
+## v3.1.1 (2021-09-25)
+
+Minor bug fixes.
+
+- Fix pterodactyl egg
+- Fix error when opening a ticket and both ticket claiming and the close button are disabled
+- Fix error when using `/tag` command with no subcommand
+
+
+## v3.1.0 (2021-09-24)
 
 v3.1 replaces reactions and classic commands with buttons and slash commands.
 
