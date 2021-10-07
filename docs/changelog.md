@@ -4,13 +4,24 @@
 	NOTE: MOST RECENT SHOULD BE AT THE TOP!
 -->
 
+## v3.1.2 (2021-10-07)
+
+Major and minor bug fixes.
+
+- **SECURITY:** Fixed anyone being able to close any ticket
+- Fixed errors with `tag` command
+- Fixed setting `opening_questions`
+- Fixed new lines in opening messages and panel descriptions
+- Fixed surveys using reactions instead of buttons
+- Fixed creating multi-category panels when you're not using an English locale *(although it was the Discord client's fault)*
+
 ## v3.1.1 (2021-09-25)
 
 Minor bug fixes.
 
-- Fix pterodactyl egg
-- Fix error when opening a ticket and both ticket claiming and the close button are disabled
-- Fix error when using `/tag` command with no subcommand
+- Fixed pterodactyl egg
+- Fixed error when opening a ticket and both ticket claiming and the close button are disabled
+- Fixed error when using `/tag` command with no subcommand
 
 
 ## v3.1.0 (2021-09-24)
