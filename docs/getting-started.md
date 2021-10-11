@@ -24,9 +24,9 @@ Self hosting is recommended if you have experience with system administration. T
 
 #### PebbleHost
 
-Discord Tickets is partnered with [PebbleHost](https://billing.pebblehost.com/aff.php?aff=1841) to provide cheap bot hosting (including the database).
+Discord Tickets is partnered with [PebbleHost](https://billing.pebblehost.com/aff.php?aff=1841)[^1] to provide cheap bot hosting (including the database).
 
-PebbleHost's preinstalls feature does the first few installation steps for you. Click the logo below[^1] to get started.
+PebbleHost's preinstall feature does the first few installation steps for you. Click the logo below[^1] to get started.
 
 [![PebbleHost](https://img.eartharoid.me/insecure/rs:auto:150/plain/s3://eartharoid/sharex/21/10/pebblehost.webp)](https://billing.pebblehost.com/aff.php?aff=1841)
 
