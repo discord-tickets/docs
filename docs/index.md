@@ -44,5 +44,7 @@ Each ticket category has its own settings for messages and the support team role
 ### **A beautiful ticket archives portal**  
 **COMING SOON:** Add the official [Discord Tickets Portal](https://github.com/discord-tickets/portal) plugin for an instant ticket archives website.
 
+You can use [text transcripts](/plugins/official/text-transcripts/) whilst you wait for the portal.
+
 ### **Open-source and self-hosted**  
 It's yours, you have full control.
