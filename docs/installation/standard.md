@@ -42,6 +42,6 @@ You should download the bot using Git to make updating easier in the future.
 7. For improved performance and to allow messages to be stored (so you can have ticket transcripts), optionally [configure the bot to use MySQL](/using-mysql).
 8. [Add your bot to Discord](/invite-url-generator)
 9. Start the bot with `npm start`. You can stop it with ++ctrl+c++
-10. Configure your bot
+10. [Configure](/configuration/categories/) your bot
 
 Note that you may need to use `systemd`, `screen`, or `pm2` to keep the bot running in the background.
