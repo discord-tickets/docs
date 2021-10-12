@@ -14,11 +14,13 @@ To install Discord Tickets you need a suitable server (VPS or dedicated server) 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/) v16 and NPM
 - A MySQL database *(recommended)*
-- Basic sysadmin experience (get [managed hosting](/hosting) if you don't)
+- Basic sysadmin experience (get [managed hosting](/managed) if you don't)
 
-You should download the bot using Git to make updating easier in the future. 
+If you don't have a server, see [hosting providers](/getting-started#hosting-providers).
 
 ## Installation
+
+You should download the bot using Git to make updating easier in the future. 
 
 1. Clone the repository
 	```bash
@@ -43,5 +45,6 @@ You should download the bot using Git to make updating easier in the future.
 8. [Add your bot to Discord](/invite-url-generator)
 9. Start the bot with `npm start`. You can stop it with ++ctrl+c++
 10. [Configure](/configuration/categories/) your bot
+11. Complete [this survey](https://forms.office.com/r/LE1UbheBTm) *(please :slight_smile:)*
 
 Note that you may need to use `systemd`, `screen`, or `pm2` to keep the bot running in the background.

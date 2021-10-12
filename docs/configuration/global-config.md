@@ -1,7 +1,7 @@
 # Global config
 
 !!! info
-	You can skip this page if you are using [managed hosting](/hosting).
+	You can skip this page if you are using [managed hosting](/managed).
 
 The config file (`user/config.js`) can be used to configure settings that affect the entire bot (such as the user presence) and default settings. Changes to this file require a restart to take affect.
 

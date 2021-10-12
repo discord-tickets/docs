@@ -40,6 +40,8 @@ theme:
     # - toc.integrate
   logo: /img/logo.png
   favicon: /img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
 
 extra:
   social:
@@ -78,7 +80,11 @@ markdown_extensions:
       linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      repo_url_shortener: true
+      user: discord-tickets
+      # repo: bot
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
@@ -97,7 +103,7 @@ nav:
   - Getting started: getting-started.md
   - Getting your bot token: getting-your-bot-token.md
   - Invite URL generator: invite-url-generator.md
-  - Managed hosting: hosting.md
+  - Managed hosting: managed.md
   - Installation:
     - Standard installation: installation/standard.md
     - Docker installation: installation/docker.md
