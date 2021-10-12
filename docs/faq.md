@@ -1,35 +1,46 @@
-# frequently asked questions / errors
+# Answers to FAQs and problems
 
- - my bot isn't starting
-   - Privileged intent provided is not enabled or whitelisted
-   - Missing Access
-   - Please install the package(s) for your selected database type: "mysql2"
+## `Privileged intent provided is not enabled or whitelisted`
 
+??? help "Solution"
+	Go to the [Discord developer portal](https://discord.com/developers/applications) and enable the server members intent.
 
-
-
-## Privileged intent provided is not enabled or whiltelisted
-
-Check the Discord developer portal [Link](https://discord.com/developers/applications) that the following toggle is set to ON:
-  ![(Image)](https://static.eartharoid.me/sharex/21/09/tsCX8IVoaa.png)
+	![(Image)](https://static.eartharoid.me/sharex/21/10/bHrSk381SG.png)
   
-## Missing Access
-Re-Invite the Bot using the Invite URL Generator [here](https://discordtickets.app/invite-url-generator/)
+## `DiscordAPIError: Missing Access`
 
-## Please install the package(s) for your selected database type: "mysql2"
+??? help "Solution"
+	The bot needs permission to create application (slash) commands. Use the [invite URL generator](https://discordtickets.app/invite-url-generator/) and add the bot to your Discord server again.
 
-### Standard Hosting
-- navigate to the Bot folder
-- type `npm i mysql2`
-- start the Bot
+## `Please install the package(s) for your selected database type: "mysql2"`
 
-### Pterodactyl Hosting
-Change the start command to the following:
-```
-if [[ ! -z ${VERSION} ]]; then    echo -e "Using version ${VERSION}";else    echo -e "Please set the VERSION variable (e.g. v3.0.0)";    exit 0;fi;if [[ -d .git ]]; then    git fetch --all --tags;    git checkout tags/${VERSION};fi;if [[ ! -z ${PLUGINS} ]]; then    /usr/local/bin/npm install ${PLUGINS};fi;if [ -f /home/container/package.json ]; then /usr/local/bin/npm install --production;npm i mysql2 --save;fi;/usr/local/bin/npm start
-```
+??? help "Solution for Standard installations"
+	In the bot directory, type `npm i -P mysql2` and restart the bot.
+
+??? help "Solution for Pterodactyl installations"
+	**If you are using the Discord Tickets egg:**
+
+	- Add `mysql2` to the `Plugins` field on the server startup page
+	- Restart your bot/server
+	- If the issue persists, ensure you are using the latest version of the egg
+
+	**For other eggs:**
+
+	- Try to find a field on the server startup page for additional NPM/Node packages
+	- Add `mysql2`
+
+??? help "Solution for PebbleHost installations"
+	Go to the "Node Package Manager" page in the control panel and install `mysql2`.
 
 ### The `/panel` command is greyed out
-please check the following:
-1. you have to have at least one category. you can check this by using this command `/settings categories list`
-2. you have to be in the "Staff Roles" of the category you want to create a panel for.
+
+??? help "Solution"
+	Some commands will appear disabled at first as they are limited to staff members. To be classified as a staff member you need to:
+
+	1. Have created at least one category (with `/settings categories create`)
+	2. Have at least one role that is assigned to one or more categories (`roles`)
+
+## What MySQL version does Discord Tickets support?
+
+??? help "Answer"
+	The bot is not tested on various versions, however it should work on version 8 of the MySQL Community Server.
