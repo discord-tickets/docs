@@ -32,7 +32,7 @@
 ??? help "Solution for PebbleHost installations"
 	Go to the "Node Package Manager" page in the control panel and install `mysql2`.
 
-### The `/panel` command is greyed out
+## The `/panel` command is greyed out
 
 ??? help "Solution"
 	Some commands will appear disabled at first as they are limited to staff members. To be classified as a staff member you need to:
