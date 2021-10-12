@@ -6,9 +6,9 @@
     
     | :white_check_mark: Benefits                                     | :x: Drawbacks                                                                                         |
     |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-    | Cheaper and better for the environment than getting your own VPS | No access to the config, you'll need to create a ticket to get something (like the presences) changed |
-    | No experience required                                          | You no longer own the data                                                                            |
-    | You don't need to worry about updates                           | You can't make any modifications to the code                                                          |
-    |                                                                 | You may need to wait a few days for your bot to be ready                                              |
+    | Cheaper and better for the environment than getting your own VPS| No access to the config, you'll need to create a ticket to get something (like the presences) changed |
+    | No experience required, you need to do very little              | You no longer own the data                                                                            |
+    | You don't need to worry about updates, it is done for you       | You can't make any modifications to the code                                                          |
+    |                                                                 | You may need to wait a couple of days for your bot to be ready                                        |
 
 	[Learn more](/hosting){ .md-button .md-button--primary }

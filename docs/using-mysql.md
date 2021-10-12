@@ -25,4 +25,4 @@ If you are using the Discord Tickets egg, add `mysql2` to the "Plugins" field in
 If you are using a generic egg, add `mysql2` to the additional node/npm packages field.
 
 !!! info
-	You can also try using `maria`, `postgres`, or `microsoft`, however only `sqlite` and `mysql` are officially supported. You are much likely to encounter issues regarding the database if you use one of these unsupported databases.
+	You can also try using `maria`, `postgres`, or `microsoft`, however only `sqlite` and `mysql` are officially supported. You are much more likely to encounter issues regarding the database if you use one of these unsupported databases.
