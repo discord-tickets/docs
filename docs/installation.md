@@ -54,7 +54,9 @@ Discord Tickets has it's own [Dockerfile](https://github.com/discord-tickets/bot
 ```bash
 docker build . -t "discordtickets"
 ```
-**Note**: You can name the image anything using the `-t` flag.
+
+!!! note
+	You can name the image anything using the `-t` flag.
 
 Now that you have the image built, you can see current images using:
 
@@ -68,7 +70,8 @@ To start the Discord Tickets bot:
 docker run -v ./logs:/usr/src/app/logs --name "bot" "discordtickets"
 ```
 
-**Note**: If you renamed your image, change the `discordtickets` at the end of the run command to the name of your image instead.
+!!! note
+	If you renamed your image, change the `discordtickets` at the end of the run command to the name of your image instead.
 
 This command will run your image with a volume attached to `./logs` mapped to the container's log file, so that logs are persisted. We also give the container a friendly name, "bot".
 
@@ -90,7 +93,8 @@ To see logs:
 docker logs bot -f
 ```
 
-**Note**: `-f` flag here means "follow", which will give you all logs and continue to until you exit with `ctrl-c`. 
+!!! note
+	`-f` flag here means "follow", which will give you all logs and continue to until you exit with `ctrl-c`. 
 
 
 ## Pterodactyl installation
