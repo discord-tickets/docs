@@ -1,6 +1,6 @@
 # docs
 
-Documentation for Discord Tickets.
+Documentation for Discord Tickets **v3.0**.
 
 [discordtickets.app](https://discordtickets.app)
 
