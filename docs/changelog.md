@@ -4,17 +4,11 @@
 	NOTE: MOST RECENT SHOULD BE AT THE TOP!
 -->
 
-## v3.1.4 (2021-10-26)
-
-Minor improvements.
-
-- Fixed deferring interaction responses
 
 ## v3.1.3 (2021-10-26)
 
 Minor improvements.
 
-- Defer interaction responses to prevent interactions failing
 - Changed the `settings` command array parsing
 
 ## v3.1.2 (2021-10-07)
