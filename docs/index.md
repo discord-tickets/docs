@@ -5,6 +5,10 @@ title: Discord Tickets
 
 !!! info "Hey!"
 	If you have 5 minutes to spare, please complete [this survey](https://forms.office.com/r/LE1UbheBTm) about ticket bots.
+	
+
+[![ProductHunt](https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=321112&theme=light)](https://www.producthunt.com/posts/discord-tickets?utm_source=badge-review&utm_medium=badge&utm_souce=badge-discord-tickets#discussion-body)
+
 
 ## What is Discord Tickets?
 
