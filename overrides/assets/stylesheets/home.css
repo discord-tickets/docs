@@ -27,6 +27,10 @@
 	width: 100%
 }
 
+.md-typeset a:hover {
+  color: #828dd9 !important;
+}
+
 
 .md-typeset .mdx-insiders {
 	color: #e91e63
