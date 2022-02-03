@@ -27,7 +27,7 @@ You should download the bot using Git to make updating easier in the future.
 	git clone https://github.com/discord-tickets/bot.git .
 	```
 	
-	Note: The . at the end of 1. can be used to clone into the current directory...
+	Note: The . can be used to clone into the current directory...
 2. Find the most recent version with
 	```bash
 	git describe --tags --abbrev=0
