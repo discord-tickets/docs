@@ -22,6 +22,14 @@ Self hosting is recommended if you have experience with system administration. T
 
 ### Hosting providers
 
+#### PebbleHost
+
+Discord Tickets is partnered with [PebbleHost](https://pebblehost.com/bot-hosting)[^1] to provide cheap bot hosting (including the database).
+
+PebbleHost's preinstall feature does the first few installation steps for you. **This is the easiest way to install Discord Tickets if you want more control than a managed bot.** Click the logo below[^1] to get started.
+
+[![PebbleHost](https://img.eartharoid.me/insecure/rs:auto:180/plain/s3://eartharoid/sharex/21/10/pebblehost.webp)](https://pebblehost.com/bot-hosting)
+
 #### VPS hosting
 
 If you prefer a VPS, try one of these recommended hosts:
