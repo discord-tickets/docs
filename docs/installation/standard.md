@@ -26,9 +26,6 @@ You should download the bot using Git to make updating easier in the future.
 	```bash
 	git clone https://github.com/discord-tickets/bot.git .
 	```
-	
-	!!! warning
-		Note: The . can be used to clone into the current directory...
 2. Find the most recent version with
 	```bash
 	git describe --tags --abbrev=0
@@ -50,4 +47,8 @@ You should download the bot using Git to make updating easier in the future.
 10. [Configure](/configuration/categories/) your bot
 11. Complete [this survey](https://forms.office.com/r/LE1UbheBTm) *(please :slight_smile:)*
 
-Note that you may need to use `systemd`, `screen`, or `pm2` to keep the bot running in the background.
+!!! note
+	Note that you may need to use `systemd`, `screen`, or `pm2` to keep the bot running in the background.
+
+!!! note
+	The . under 1. can be used to clone to the current directory...
