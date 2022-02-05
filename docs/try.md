@@ -6,3 +6,27 @@ If you're not sure if you want to spend time installing the bot, you can try it 
 
 !!! warning
 	The public demo bot is not verified by Discord; **it leaves all guilds when it gets close to 100 guilds.** You can try it for a week but please kick the bot when you are done.
+
+!!! warning
+	It should be borne in mind that the bot does not need all permissions, for security reasons it is recommended to uncheck permissions that the bot does not need!
+	<br>
+	<br>
+	<br>
+	The following authorizations are required:
+	<br>
+	<br>
+	Manage channels
+	<br>
+	Read messages
+	<br>
+	Send messages
+	<br>
+	Manage messages
+	<br>
+	Embed links
+	<br>
+	Attach files
+	<br>
+	Nachrichtenverlauf anzeigen
+	<br>
+	Add reactions
