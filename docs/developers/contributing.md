@@ -1,3 +1,3 @@
 # Contributing
 
-<https://github.com/discord-tickets/.github/blob/main/CONTRIBUTING.md>
+Are you a developer? Do you have experience with Discord.js? Then [work with us](https://github.com/discord-tickets/.github/blob/main/CONTRIBUTING.md)...
