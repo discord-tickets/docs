@@ -34,7 +34,7 @@ PebbleHost's preinstall feature does the first few installation steps for you. *
 
 If you prefer a VPS, try one of these recommended hosts:
 
-- [**Hetzner**](https://hetzner.cloud/?ref=6LDitpgQpB3V)[^1] - An affordable German VPS provider
+- [**Hetzner**](https://hetzner.cloud/?ref=6LDitpgQpB3V)[^1] - An affordable German VPS provider (link gives €20 account credit)
 
 ## Managed hosting
 
