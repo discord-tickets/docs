@@ -45,6 +45,8 @@ theme:
 
 extra:
   social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/8MmEZC722J
     - icon: fontawesome/brands/github-alt
       link: https://github.com/discord-tickets
     - icon: fontawesome/brands/twitter
