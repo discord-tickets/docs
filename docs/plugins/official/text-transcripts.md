@@ -7,6 +7,7 @@ A simple plugin for Discord Tickets which adds basics text transcripts.
 This plugin has been tested on Discord Tickets versions:
 
 - 3.0
+- 3.1.3
 
 It may not work on versions not listed above.
 
