@@ -7,7 +7,7 @@ A simple plugin for Discord Tickets which adds basics text transcripts.
 This plugin has been tested on Discord Tickets versions:
 
 - 3.0
-- 3.1.3
+- 3.1
 
 It may not work on versions not listed above.
 
@@ -50,7 +50,7 @@ Due to its simplicity, this plugin does not support localisation and is only ava
 		},
 		'dsctickets.text-transcripts': {
 			channels: {
-				'<GUILD ID>': '<TEXT CHANNEL ID'
+				'<GUILD ID>': '<TEXT CHANNEL ID>'
 			}
 		},
 		locale: 'en-GB',
