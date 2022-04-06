@@ -25,7 +25,7 @@ Type `tickets/surveys` and download the `surveys.json` file. The first time you 
 
 Upload the file to Discord with `tickets/surveys` as the message content:
 
-![(Image)](https://static.eartharoid.me/sharex/21/09/DiscordPTB_PgvTItC9NU.png)
+![image](https://user-images.githubusercontent.com/86845749/162047498-8c18ba27-a61a-49c8-b5ca-7bd3255f6ba5.png)
 
 
 
