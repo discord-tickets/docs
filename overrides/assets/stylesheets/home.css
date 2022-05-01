@@ -28,7 +28,7 @@
 }
 
 .md-typeset a:hover {
-  color: #828dd9 !important;
+	color: #828dd9 !important;
 }
 
 
@@ -285,4 +285,15 @@
 .md-typeset .mdx-sponsorship-count,
 .md-typeset .mdx-sponsorship-total {
 	font-weight: 700
+}
+
+
+p.sponsor-list {
+	text-align: center;
+}
+
+.sponsor-list a img {
+	height: 128px;
+	width: auto;
+	margin: 12px;
 }
