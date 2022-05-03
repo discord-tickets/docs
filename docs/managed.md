@@ -31,8 +31,6 @@ If you don't own a domain, you can get a free subdomain: `example.discordtickets
 If you want to cancel your subscription, go to [billing.discordtickets.app/account](https://billing.discordtickets.app/account), click "Open customer portal", then cancel. Your bot will go offline after your billing cycle ends.
 If there is an issue, [send me an email](https://eartharoid.me/contact) and I will manually cancel your subscription.
 
-<!-- --8<-- "includes/hosting-form.html" -->
-
 ## Support
 
 Create a ticket in the [Discord support server](https://go.eartharoid.me/discord) by typing `/new` for support. Alternatively, [send me an email](https://eartharoid.me/contact).
