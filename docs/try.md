@@ -2,7 +2,15 @@
 
 If you're not sure if you want to spend time installing the bot, you can try it first.
 
+<!--
 <a class="md-button md-button--primary" href="https://discord.com/oauth2/authorize?scope=applications.commands%20bot&permissions=126032&client_id=891279986848309259" target="_blank">Add bot to Discord :material-open-in-new:</a>
+-->
 
-!!! warning
-	The public demo bot is not verified by Discord; **it leaves all guilds when it gets close to 100 guilds.** You can try it for a week but please kick the bot when you are done.
+!!! fail "Notice"
+	**The public demo bot is temporarily unavailable until v4 is released which is estimated to be in July 2022.**
+	
+	You can easily run the bot on your PC for testing purposes in just a few minutes:
+	
+	1. Install [Node.js](https://nodejs.org)
+	2. [Download](https://github.com/discord-tickets/bot/archive/refs/heads/main.zip) the code
+	3. Continue [installation instructions](/installation/standard/#installation) **4 and onward**
