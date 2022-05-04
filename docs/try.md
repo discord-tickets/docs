@@ -13,4 +13,4 @@ If you're not sure if you want to spend time installing the bot, you can try it 
 	
 	1. Install [Node.js](https://nodejs.org)
 	2. [Download](https://github.com/discord-tickets/bot/archive/refs/heads/main.zip) the code
-	3. Continue [installation instructions](/installation/standard/#installation) **4 and onward**
+	3. Continue [installation instructions](/installation/standard/#installation) **2 and onward**
