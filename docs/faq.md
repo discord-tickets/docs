@@ -15,7 +15,7 @@
 ## `Please install the package(s) for your selected database type: "mysql2"`
 
 ??? help "Solution for Standard installations (click to expand)"
-	In the bot directory, type `npm i -P mysql2`, wait for it to complete then restart the bot.
+	In the bot directory, type `npm i -P mysql2`, wait for it to complete, then restart the bot.
 
 ??? help "Solution for Pterodactyl installations (click to expand)"
 	**If you are using the Discord Tickets egg:**
