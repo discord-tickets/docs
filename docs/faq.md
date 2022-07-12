@@ -20,7 +20,7 @@
 ??? help "Solution for Pterodactyl installations (click to expand)"
 	**If you are using the Discord Tickets egg:**
 
-	- Type `mysql2` under the `Plugins` field on the server startup page on your bots panel
+	- Type `mysql2` under the `Plugins` field on the server startup page on your bot's panel
 	- Restart your bot/server
 	- If the issue persists, ensure you are using the latest version of the egg
 
