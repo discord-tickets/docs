@@ -1,56 +1,39 @@
 {% extends "base.html" %}
 
-{% set title = config.site_name %}
-{% if page and page.title and not page.is_homepage %}
-	{% set title = config.site_name ~ " - " ~ page.title | striptags %}
-{% endif %}
-
-{% block htmltitle %}	
-	<title>{{ title }}</title>
-{% endblock %}
-
-{% block extrahead %}
-	{% set image = config.site_url ~ '/assets/images/banner.png' %}
-	<meta name="theme-color" content="#5865F2">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="{{ title }}">
-	<meta property="og:description" content="{{ config.site_description }}">
-	<meta property="og:url" content="{{ page.canonical_url }}">
-	<meta property="og:image" content="{{ image }}">
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="1920">
-	<meta property="og:image:height" content="1080">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@DiscordTickets">
-	<meta name="twitter:creator" content="@DiscordTickets">
-	<meta name="twitter:title" content="{{ title }}">
-	<meta name="twitter:description" content="{{ config.site_description }}">
-	<meta name="twitter:image" content="{{ image }}">
-	<link rel="stylesheet" href="{{ 'assets/stylesheets/home.css' | url }}">
-{% endblock %}
-
 {% block analytics %}
-	<script async defer src="https://umami.eartharoid.me/umami.js" data-website-id="48b947fc-47d4-4ac8-b9bb-9f57160930bc"
+<script async defer src="https://umami.eartharoid.me/umami.js" data-website-id="48b947fc-47d4-4ac8-b9bb-9f57160930bc"
 	data-domains="discordtickets.app"></script>
 {% endblock %}
 
 {% block announce %}
-	{% include "announce.html" ignore missing %}
+<a href="https://twitter.com/DiscordTickets">
+	Follow <strong>@DiscordTickets</strong> on
+	<span class="twemoji twitter">
+		{% include ".icons/fontawesome/brands/twitter.svg" %}
+	</span>
+	<strong>Twitter</strong>
+	for updates.
+</a>
 {% endblock %}
 
 {% block content %}
-	{{ super() }}
-	<small>This website supports <a
-			href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#keyboard-shortcuts">keyboard
-			shortcuts</a></small>
-	<footer class="sponsorship">
-		<hr>
-		<a href="https://github.com/discord-tickets/bot/?sponsor=1" title="Donate to support this project">
-			<span class="twemoji heart-throb-hover">
-				{% set icon = "octicons/heart-fill-16" %}
-				{% include ".icons/" ~ icon ~ ".svg" %}
-			</span>
-		</a>
-		<hr>
-	</footer>
+{{ super() }}
+
+<small>
+	This website supports <a
+		href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#keyboard-shortcuts">
+		keyboard
+		shortcuts
+	</a>.
+</small>
+<footer class="sponsorship">
+	<hr>
+	<a href="https://github.com/discord-tickets/bot/?sponsor=1" title="Donate to support this project">
+		<span class="twemoji heart-throb-hover">
+			{% set icon = "octicons/heart-fill-16" %}
+			{% include ".icons/" ~ icon ~ ".svg" %}
+		</span>
+	</a>
+	<hr>
+</footer>
 {% endblock %}

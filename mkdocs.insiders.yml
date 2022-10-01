@@ -1,0 +1,22 @@
+INHERIT: mkdocs.yml
+theme:
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: octicons/sun-16
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: octicons/moon-16
+        name: Switch to system preference
+plugins:
+  - git-committers:
+      repository: discord-tickets/docs
+      branch: main
+  # - social
