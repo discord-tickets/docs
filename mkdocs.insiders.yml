@@ -68,6 +68,8 @@ extra:
       link: https://twitter.com/DiscordTickets
   status:
     new: Recently added
+  tags:
+    Archives: archives
 
 plugins:
   - search
@@ -81,6 +83,8 @@ plugins:
       enabled: !ENV [CI, false]
       repository: discord-tickets/docs
       branch: main
+  - tags:
+      tags_file: tags.md
   - meta # must be before blog
   - blog:
       archive: false

@@ -33,6 +33,9 @@ theme:
   favicon: favicon.ico
   icon:
     repo: fontawesome/brands/github
+    tag:
+      default: octicons/tag-16
+      archives: octicons/archive-16
 
 markdown_extensions:
   - abbr

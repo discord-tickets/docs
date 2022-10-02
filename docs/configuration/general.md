@@ -1,1 +1,6 @@
+---
+tags:
+  - archives
+---
+
 # General settings
