@@ -1,36 +1,43 @@
 const umamiSite = "{{ config.extra.analytics.website }}";
 
-function feedback () {
+function feedback() {
 	const form = document.forms.feedback;
-	if (form) {
-		/* Show feedback */
-		form.hidden = false;
-		form.outerHTML = form.outerHTML;
-		form.addEventListener("submit", function (ev) {
-			ev.preventDefault();
+	if (!form) console.warn('no feedback form');
+	
+	/* Show feedback */
+	form.hidden = false;
+	// form.outerHTML = form.outerHTML;
 
-			/* Retrieve page and feedback value */
-			let page = document.location.pathname;
-			let data = ev.submitter.getAttribute("data-md-value");
+	form.addEventListener("submit", function (ev) {
+		ev.preventDefault();
 
-			/* Disable form and show note, if given */
-			form.firstElementChild.disabled = true;
-			let note = form.querySelector(
-				".md-feedback__note [data-md-value='" + data + "']"
-			);
-			if (note) note.hidden = false;
+		/* Retrieve page and feedback value */
+		let page = document.location.pathname;
+		let data = ev.submitter.getAttribute("data-md-value");
 
-			/* Send feedback value */
-			console.log(page, data);
-			umami.trackEvent('feedback', { value: data }, page, umamiSite);
-		});
-	}
+		/* Disable form and show note, if given */
+		form.firstElementChild.disabled = true;
+		let note = form.querySelector(
+			".md-feedback__note [data-md-value='" + data + "']"
+		);
+		if (note) note.hidden = false;
+
+		/* Send feedback value */
+		console.log(page, data);
+		umami.trackEvent('feedback', { value: data }, page, umamiSite);
+	});
 }
 
-feedback();
+
 
 document.addEventListener("DOMContentLoaded", function () {
 	feedback();
+	location$.subscribe(function (url) {
+		console.log(url)
+		setTimeout(function () {
+			feedback();
+		}, 2000)
+	});
 });
 
 
