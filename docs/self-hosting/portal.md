@@ -1,7 +1,7 @@
 ---
 status: new
 tags:
-  - archives
+  - Archives
 ---
 
 # Portal installation
