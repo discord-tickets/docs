@@ -4,7 +4,7 @@ description: A detailed guide to all of the bot's commands
 
 # Commands
 
-!!! info Symbols
+!!! info "Symbols"
 	- :octicons-alert-16:{ .orange title="Required" } denotes a required option
 
 ## `/add`
