@@ -1,10 +1,5 @@
 {% extends "base.html" %}
 
-{% block analytics %}
-<script async defer src="https://umami.eartharoid.me/umami.js" data-website-id="48b947fc-47d4-4ac8-b9bb-9f57160930bc"
-	data-domains="discordtickets.app"></script>
-{% endblock %}
-
 {% block announce %}
 <a href="https://twitter.com/DiscordTickets">
 	Follow <strong>@DiscordTickets</strong> on
@@ -18,14 +13,7 @@
 
 {% block content %}
 {{ super() }}
-
-<!-- <small>
-	This website supports <a
-		href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#keyboard-shortcuts">
-		keyboard
-		shortcuts
-	</a>. -->
-</small>
+<br>
 <footer class="sponsorship">
 	<hr>
 	<a href="https://github.com/discord-tickets/bot/?sponsor=1" title="Donate to support this project">

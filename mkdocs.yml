@@ -10,7 +10,8 @@ edit_uri: https://github.com/discord-tickets/docs/blob/master/docs/
 
 extra_css:
   - stylesheets/extra.css
-# extra_javascript:
+extra_javascript:
+  - javascripts/feedback.js
 
 theme:
   name: material
@@ -32,15 +33,6 @@ theme:
   favicon: favicon.ico
   icon:
     repo: fontawesome/brands/github
-
-plugins:
-  - search: {}
-  - git-revision-date-localized:
-      enabled: !ENV [CI, false]
-      enable_creation_date: true
-  - redirects:
-      redirect_maps:
-        "sponsor.md": "https://github.com/discord-tickets/bot/?sponsor=1"
 
 markdown_extensions:
   - abbr
@@ -112,7 +104,7 @@ nav:
           - Environment variables: self-hosting/installation/pebblehost/env.md
       - Reverse proxy setup: self-hosting/reverse-proxy.md
       - Further configuration: self-hosting/configuration.md
-      - Portal installation: self-hosting/portal.md
+      # - Portal installation: self-hosting/portal.md
       - Updating: self-hosting/updating.md
     - Configuration:
       - Configuration: configuration/index.md
