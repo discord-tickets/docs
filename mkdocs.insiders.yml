@@ -55,4 +55,7 @@ plugins:
       branch: main
   - blog:
       blog_dir: changelogs
-  - social: {}
+  - social:
+      cards_color:
+        fill: "#5865F2" 
+        text: "#FFFFFF"

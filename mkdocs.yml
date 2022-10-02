@@ -28,8 +28,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: /img/logo.png
-  favicon: /favicon.ico
+  logo: img/logo.png
+  favicon: favicon.ico
   icon:
     repo: fontawesome/brands/github
 
@@ -120,7 +120,7 @@ nav:
       - Panels: configuration/panels.md
       - Tags: configuration/tags.md
     - Troubleshooting: troubleshooting.md
+    - Terms of service: terms.md
   - Blog: https://blog.discordtickets.app
   - Changelogs: changelogs/index.md
-  - Terms: terms.md
   - Privacy: privacy.md
