@@ -9,6 +9,14 @@
 	/* --md-accent-fg-color: #EB459E; */
 }
 
+.blurple {
+	color: var(--md-primary-fg-color);
+}
+
+.orange {
+	color: #FFA724;
+}
+
 .md-banner, .md-banner a {
 	/* background-color: var(--md-primary-fg-color--dark) !important; */
 	color: white;
