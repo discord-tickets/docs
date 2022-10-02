@@ -35,7 +35,9 @@ theme:
 
 plugins:
   - search: {}
-  # - git-revision-date-localized: {}
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      enable_creation_date: true
   - redirects:
       redirect_maps:
         "sponsor.md": "https://github.com/discord-tickets/bot/?sponsor=1"
