@@ -58,11 +58,10 @@ plugins:
       blog_dir: changelogs
       post_url_date_format: yyyy
       post_url_format: "{slug}"
-      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      post_slugify:
+        !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
       post_slugify_separator: "-"
   - social:
       cards_color:
-        fill: "#5865F2" 
+        fill: "#5865F2"
         text: "#FFFFFF"
