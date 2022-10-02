@@ -14,8 +14,6 @@ For simple changes, you can easily create a fork, edit the files you want to cha
 
 If you want to preview locally, clone the repo and then run `pip install -r requirements.txt` and `mkdocs serve`.
 
-## Disclaimer
-
 If you choose to run a local preview, the site will not look the same as the production version. This is normal as the V4 documentation uses a newer version of MkDocs that is configured differently.
 
 ## Spontaneous Puffin Image
