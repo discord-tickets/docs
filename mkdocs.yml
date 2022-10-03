@@ -2,7 +2,7 @@ site_name: Discord Tickets
 site_description: An open-source ticket management bot for Discord - a free alternative to the premium and white-label plans of other popular ticketing bots.
 site_author: eartharoid
 site_url: https://discordtickets.app
-copyright: "&copy; 2022 Isaac Saunders"
+copyright: "&copy; 2022 Isaac Saunders. Discord Tickets is not affiliated with nor endorsed by Discord Inc."
 
 repo_name: discord-tickets/bot
 repo_url: https://github.com/discord-tickets/bot

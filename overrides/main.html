@@ -1,14 +1,7 @@
 {% extends "base.html" %}
 
 {% block announce %}
-<a href="https://twitter.com/DiscordTickets">
-	Follow <strong>@DiscordTickets</strong> on
-	<span class="twemoji twitter">
-		{% include ".icons/fontawesome/brands/twitter.svg" %}
-	</span>
-	<strong>Twitter</strong>
-	for updates.
-</a>
+{% include "partials/announce.html" %}
 {% endblock %}
 
 {% block content %}
@@ -24,4 +17,8 @@
 	</a>
 	<hr>
 </footer>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+<script src="{{ 'javascripts/bundle.e815e226.min.js' | url }}"></script>
 {% endblock %}

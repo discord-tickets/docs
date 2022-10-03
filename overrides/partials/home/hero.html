@@ -1,0 +1,94 @@
+<!--
+  Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Parallax group: hero (above the fold) -->
+<section class="mdx-parallax__group" data-md-color-scheme="slate">
+	{% for layer in [
+	{ "depth": 8, "position": "30%", "image": "1-LpbyDENbQQg-darkened", "type": ".jpg" },
+	{ "depth": 5, "position": "10%", "image": "2-pebble", "type": ".webp" },
+	] %}
+	{% set image = "img/home/" ~ layer["image"] %}
+	{% set type = layer["type"] %}
+	{% set style = "style=\"" ~ [
+	"--md-parallax-depth: " ~ layer["depth"],
+	"--md-image-position: " ~ layer["position"]
+	] | join(";") ~ "\"" %}
+
+	<picture class="mdx-parallax__layer" {{ style }}>
+		<!-- <img srcset="
+	          {{ image ~ '-small' ~ type }} 480w,
+	          {{ image ~ '-medium' ~ type }} 1080w,
+	          {{ image ~ '-large' ~ type }} 2560w,
+	          {{ image ~ '-xlarge' ~ type }} 3840w
+	        " src="{{ image ~ type }}" alt="" class="mdx-parallax__image" /> -->
+		<img src="{{ image ~ type }}" alt="" class="mdx-parallax__image" />
+		<!-- srcset="
+		{{ image ~ type }} 1280w,
+		{{ image ~ '@2x' ~ type }} 1920w,
+		{{ image ~ '@3x' ~ type }} 2560w,
+		{{ image ~ '@4x' ~ type }} 3840w
+		" -->
+	</picture>
+	{% endfor %}
+
+	<!-- <picture class="mdx-parallax__layer" style="--md-parallax-depth:8;--md-image-position:30%;">
+		<img src="https://static.eartharoid.me/discord-tickets/banners/blurple-no-text.png" alt="" class="mdx-parallax__image" />
+		<img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0" alt="" class="mdx-parallax__image" />
+	</picture> -->
+
+	<!-- Parallax layer: gradient for blending -->
+	<div class="mdx-parallax__layer mdx-parallax__blend"></div>
+
+	<!-- Hero -->
+	<div class="mdx-hero" data-mdx-component="hero">
+		<div class="mdx-hero__scrollwrap md-grid">
+
+			<!-- Navigation tabs (must be moved here) -->
+			{% include "partials/tabs.html" %}
+
+			<!-- Hero content -->
+			<div class="mdx-hero__inner">
+				<div class="mdx-hero__teaser md-typeset">
+					<h1>Premium features for free</h1>
+					<p>{{ config.site_description }}</p>
+					<a href="getting-started/" class="md-button">
+						Get started
+					</a>
+					<a href="#what-makes-it-awesome" class="md-button md-button--secondary">
+						Learn more
+					</a>
+
+					<!-- Attribution link -->
+					<a href="https://unsplash.com/@sebastiansvenson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+						class="mdx-hero__attribution" tabIndex="-1">
+						<strong>© Sebastian Svenson</strong>
+					</a>
+				</div>
+
+				<!-- More indicator -->
+				<div class="mdx-hero__more">
+					{% include ".icons/material/arrow-down.svg" %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
