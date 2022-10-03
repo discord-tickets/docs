@@ -133,10 +133,6 @@ footer.sponsorship:not(:hover) .twemoji.heart-throb-hover svg {
 }
 
 
-footer .md-main__inner>.md-content, .md-main__inner>.md-sidebar--secondary {
-	display: none
-}
-
 footer .md-content__inner {
 	margin-bottom: 0;
 	padding: 2rem 0
