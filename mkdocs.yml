@@ -6,7 +6,7 @@ copyright: "&copy; 2022 Isaac Saunders. Discord Tickets is not affiliated with n
 
 repo_name: discord-tickets/bot
 repo_url: https://github.com/discord-tickets/bot
-edit_uri: https://github.com/discord-tickets/docs/blob/master/docs/
+edit_uri: https://github.com/discord-tickets/docs/blob/main/docs/
 
 extra_css:
   - stylesheets/extra.css
