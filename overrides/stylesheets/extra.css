@@ -102,3 +102,63 @@ footer.sponsorship:hover hr {
 footer.sponsorship:not(:hover) .twemoji.heart-throb-hover svg {
 	color: var(--md-default-fg-color--lighter) !important
 }
+
+.mdx-content__column:last-child {
+	margin-top: 2.4rem
+}
+
+.mdx-content__column p:last-child {
+	margin-bottom: 0
+}
+
+@media screen and (min-width:60em) {
+	.mdx-content__inner {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 6.4rem
+	}
+
+	.mdx-content__column {
+		margin-top: 0
+	}
+
+	.mdx-content__column:first-child {
+		flex: 2 0
+	}
+
+	.mdx-content__column:last-child {
+		flex: 1 0;
+		margin-top: 0
+	}
+}
+
+
+footer .md-main__inner>.md-content, .md-main__inner>.md-sidebar--secondary {
+	display: none
+}
+
+footer .md-content__inner {
+	margin-bottom: 0;
+	padding: 2rem 0
+}
+
+footer .md-content__inner:before {
+	display: none
+}
+
+footer .mdx-connect {
+	display: block;
+}
+
+footer .mdx-connect .mdx-connect__link {
+	color: var(--md-default-fg-color--light) !important;
+	display: block
+}
+
+footer .mdx-connect a:hover {
+	color: var(--md-primary-fg-color) !important;
+}
+
+footer .mdx-connect .mdx-connect__link span {
+	margin-right: .2rem
+}
