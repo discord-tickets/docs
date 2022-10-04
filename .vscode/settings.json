@@ -1,5 +1,15 @@
 {
 	"yaml.schemas": {
 		"https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
-	}
+	},
+	"grammarly.selectors": [
+		{
+			"language": "html",
+			"scheme": "file"
+		},
+		{
+			"language": "markdown",
+			"scheme": "file"
+		}
+	]
 }
