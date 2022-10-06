@@ -33,6 +33,10 @@
 	font-size: large;
 }
 
+.larger-icons .twemoji {
+	font-size: larger;
+}
+
 .md-banner, .md-banner a {
 	/* background-color: var(--md-primary-fg-color--dark) !important; */
 	color: white;
@@ -72,6 +76,10 @@ footer.sponsorship:not(:hover) .twemoji.heart-throb-hover svg {
 .twemoji.heart-throb svg, .twemoji.heart-throb-hover svg {
 	position: relative;
 	color: var(--md-heart);
+	animation: pulse 1.5s ease infinite
+}
+
+.pulse {
 	animation: pulse 1.5s ease infinite
 }
 

@@ -17,15 +17,21 @@ Now that you've chosen to use the best ticket bot for Discord, you need to decid
 Please compare the three options, then click on a button at the bottom of the table to jump to the relevant section of the documentation.
 If you need help choosing, [ask for help](#useful-links).
 
+<div class="larger-icons" markdown>
+
 |                                |                   Add the public bot { .text-lg }                   |                   Get a managed bot { .text-lg }                    |                             Self-host { .text-lg }                             |
 | :----------------------------- | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: | :----------------------------------------------------------------------------: |
 | Difficulty                     |                        Very easy { .green }                         |                           Easy { .green }                           |                      Moderately difficult[^1] { .orange }                      |
 | Cost                           |                              **Free**                               |                  As low as **£2/month** (£20/year)                  |                                   Varies[^2]                                   |
 | Experience required            |                              **None**                               |                              **None**                               |                   Sysadmin or hosting experience recommended                   |
-| Custom bot (username and icon) |                                 :x:                                 |                         :white_check_mark:                          |                               :white_check_mark:                               |
-| No installation                |                         :white_check_mark:                          |                         :white_check_mark:                          |                                      :x:                                       |
+| All features                   |                         :white_check_mark:                          |                         :white_check_mark:                          |                               :white_check_mark:                               |
+| Custom bot (username and icon) |                      :x:<br>(shared bot user)                       |                         :white_check_mark:                          |                               :white_check_mark:                               |
+| No installation                |                         :white_check_mark:                          |                         :white_check_mark:                          |                     :x:<br>(requires manual installation)                      |
 | Always has the latest features |                         :white_check_mark:                          |  :white_check_mark:<br>(you may be contacted to schedule updates)   |                        :x:<br>(requires manual updates)                        |
+| Support me & bot development   |                                :+1:                                 |                          :heart:{ .pulse }                          |                        :+1:<br>(better if you sponsor)                         |
 | **Let's start!**               | [Add the public bot](./public.md){ .md-button .md-button--primary } | [Get a managed bot](./managed.md){ .md-button .md-button--primary } | [Host your own bot](./self-hosting/index.md){ .md-button .md-button--primary } |
+
+</div>
 
 !!! note
 	It may be beneficial to take a tour of Discord Tickets' features and familiarise yourself with the core concepts before continuing.
