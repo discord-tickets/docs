@@ -20,7 +20,7 @@ If you need help choosing, [ask for help](#useful-links).
 |                                |                   Add the public bot { .text-lg }                   |                   Get a managed bot { .text-lg }                    |                             Self-host { .text-lg }                             |
 | :----------------------------- | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: | :----------------------------------------------------------------------------: |
 | Difficulty                     |                        Very easy { .green }                         |                           Easy { .green }                           |                      Moderately difficult[^1] { .orange }                      |
-| Cost                           |                              **Free**                               |                  As low as **£2/month** (£20/year)                  |                                     Varies                                     |
+| Cost                           |                              **Free**                               |                  As low as **£2/month** (£20/year)                  |                                   Varies[^2]                                   |
 | Experience required            |                              **None**                               |                              **None**                               |                   Sysadmin or hosting experience recommended                   |
 | Custom bot (username and icon) |                                 :x:                                 |                         :white_check_mark:                          |                               :white_check_mark:                               |
 | No installation                |                         :white_check_mark:                          |                         :white_check_mark:                          |                                      :x:                                       |
@@ -41,3 +41,4 @@ Please search this site *(there's a search bar at the top!)* before asking for s
 - [Suggestions](https://lnk.earth/dsctickets-feedback)
 
 [^1]: Self-hosting difficulty depends on the hosting method chosen
+[^2]: Pricing depends on the chosen hosting provider
