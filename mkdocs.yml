@@ -86,6 +86,7 @@ nav:
        - Features: features/index.md
        - Commands: features/commands.md
     - FAQs: faqs.md
+    - Public bot: public.md
     - Managed hosting: managed.md
     - Self hosting:
       - Self hosting: self-hosting/index.md
