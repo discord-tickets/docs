@@ -43,6 +43,7 @@ markdown_extensions:
   - attr_list
   - codehilite:
       guess_lang: false
+  - def_list
   - footnotes
   - md_in_html
   - meta
@@ -66,7 +67,9 @@ markdown_extensions:
       # repo: bot
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.tasklist:

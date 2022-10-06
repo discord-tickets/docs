@@ -27,6 +27,11 @@ If you need help choosing, [ask for help](#useful-links).
 | Always has the latest features |                         :white_check_mark:                          |  :white_check_mark:<br>(you may be contacted to schedule updates)   |                        :x:<br>(requires manual updates)                        |
 | **Let's start!**               | [Add the public bot](./public.md){ .md-button .md-button--primary } | [Get a managed bot](./managed.md){ .md-button .md-button--primary } | [Host your own bot](./self-hosting/index.md){ .md-button .md-button--primary } |
 
+!!! note
+	It may be beneficial to take a tour of Discord Tickets' features and familiarise yourself with the core concepts before continuing.
+	
+	[:material-list-box: Features & concepts](./features/index.md){ .md-button }
+
 ## Useful links
 
 Please search this site *(there's a search bar at the top!)* before asking for support on Discord or GitHub. :slight_smile:
