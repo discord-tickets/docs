@@ -37,6 +37,12 @@
 	font-size: larger;
 }
 
+#gs-table table>thead>tr>th:nth-of-type(3),
+#gs-table table>tbody>tr>td:nth-of-type(3) {
+	background-color: rgba(88, 101, 242, .1);
+	/* rgba(255, 238, 16, .1) rgba(0, 180, 0, .1) */
+}
+
 .md-banner, .md-banner a {
 	/* background-color: var(--md-primary-fg-color--dark) !important; */
 	color: white;

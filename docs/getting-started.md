@@ -17,7 +17,7 @@ Now that you've chosen to use the best ticket bot for Discord, you need to decid
 Please compare the three options, then click on a button at the bottom of the table to jump to the relevant section of the documentation.
 If you need help choosing, [ask for help](#useful-links).
 
-<div class="larger-icons" markdown>
+<div id="gs-table" class="larger-icons" markdown>
 
 |                                |                   Add the public bot { .text-lg }                   |                   Get a managed bot { .text-lg }                    |                             Self-host { .text-lg }                             |
 | :----------------------------- | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: | :----------------------------------------------------------------------------: |
