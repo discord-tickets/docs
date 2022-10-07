@@ -26,7 +26,7 @@ If you need help choosing, [ask for help](#useful-links).
 | Experience required            |                              **None**                               |                              **None**                               |                   Sysadmin or hosting experience recommended                   |
 | All features                   |                         :white_check_mark:                          |                         :white_check_mark:                          |                               :white_check_mark:                               |
 | Custom bot (username and icon) |                      :x:<br>(shared bot user)                       |                         :white_check_mark:                          |                               :white_check_mark:                               |
-| No installation                |                         :white_check_mark:                          |                         :white_check_mark:                          |                     :x:<br>(requires manual installation)                      |
+| No installation                |                       :white_check_mark: [^3]                       |                       :white_check_mark: [^3]                       |                     :x:<br>(requires manual installation)                      |
 | Always has the latest features |                         :white_check_mark:                          |  :white_check_mark:<br>(you may be contacted to schedule updates)   |                        :x:<br>(requires manual updates)                        |
 | Support me & bot development   |                                :+1:                                 |                          :heart:{ .pulse }                          |                        :+1:<br>(better if you sponsor)                         |
 | **Let's start!**               | [Add the public bot](./public.md){ .md-button .md-button--primary } | [Get a managed bot](./managed.md){ .md-button .md-button--primary } | [Host your own bot](./self-hosting/index.md){ .md-button .md-button--primary } |
@@ -45,3 +45,4 @@ Please search this site *(there's a search bar at the top!)* before asking for s
 
 [^1]: Self-hosting difficulty depends on the hosting method chosen
 [^2]: Pricing depends on the chosen hosting provider
+[^3]: Installation-free methods still require bot configuration within your guild (unless you purchase the configuration service) 
