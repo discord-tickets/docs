@@ -22,3 +22,9 @@
 	<hr>
 </footer>
 {% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<!-- conflicting var name with something (only with insiders config) - needs to be module -->
+<script type="module" src="https://cdn.sell.app/embed/script.js"></script>
+{% endblock %}

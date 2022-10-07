@@ -9,6 +9,14 @@
 	/* --md-accent-fg-color: #EB459E; */
 }
 
+img.embed-object-contain {
+	display: none !important;
+}
+
+.embed-flex {
+	color: #1A1A1A;
+}
+
 .blurple {
 	color: var(--md-primary-fg-color);
 }
