@@ -85,14 +85,14 @@ plugins:
       branch: main
   - tags:
       tags_file: tags.md
-  # - meta # must be before blog
-  # - blog:
-  #     archive: false
-  #     blog_dir: changelogs
-  #     post_url_date_format: yyyy
-  #     post_url_format: "{slug}"
-  #     post_slugify_separator: "-"
-  # - social:
-  #     cards_color:
-  #       fill: "#5865F2"
-  #       text: "#FFFFFF"
+  - meta # must be before blog
+  - blog:
+      archive: false
+      blog_dir: changelogs
+      post_url_date_format: yyyy
+      post_url_format: "{slug}"
+      post_slugify_separator: "-"
+  - social:
+      cards_color:
+        fill: "#5865F2"
+        text: "#FFFFFF"
