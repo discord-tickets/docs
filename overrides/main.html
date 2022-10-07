@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block analytics %}
+{{ super() }}
+{% endblock %}
+
 {% block announce %}
 {% include "partials/announce.html" %}
 {% endblock %}
