@@ -2,7 +2,7 @@
 description: An affordable managed bot is the easiest way to get your own ticket bot.
 ---
 
-# Managed
+# Managed bot
 
 An affordable managed bot is the easiest way to get your own ticket bot.
 Choose a plan to get started.
@@ -18,9 +18,9 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
 | Price                     |                                   **£2/month** or **£20/year**                                    |                       **£3/month** or **£30/year**                        |
 | Uptime                    |                                          Best effort[^1]                                          |                              **99%** SLA[^2]                              |
 | Archiving (transcripts)   |                                                :x:                                                |                            :white_check_mark:                             |
-| Archives portal (web app) |                                        :octicons-dash-24:                                         | :white_check_mark:<br>(custom domain or `*.discordtickets.app` subdomain) |
+| Portal (web app)          |                                                :x:                                                | :white_check_mark:<br>(custom domain or `*.discordtickets.app` subdomain) |
 | Feedback                  | :warning:<br>The [portal](../features/index.md#portal) is currently the only way to view feedback |                            :white_check_mark:                             |
-| Configuration service[^3] |             [£8](https://store.discordtickets.app/product/setupconfiguration-service)              |                            :white_check_mark:                             |
+| Configuration service[^3] |             [£8](https://store.discordtickets.app/product/setupconfiguration-service)             |                            :white_check_mark:                             |
 
 <div class="grid">
 <button class="md-button md-button--primary" data-sell-store="6303" data-sell-product="27469" data-sell-theme="#5865F2"
