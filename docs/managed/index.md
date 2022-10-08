@@ -20,7 +20,7 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
 | Archiving (transcripts)   |                                                :x:                                                |                            :white_check_mark:                             |
 | Archives portal (web app) |                                        :octicons-dash-24:                                         | :white_check_mark:<br>(custom domain or `*.discordtickets.app` subdomain) |
 | Feedback                  | :warning:<br>The [portal](../features/index.md#portal) is currently the only way to view feedback |                            :white_check_mark:                             |
-| Configuration service[^3] |             [£8](https://discordtickets.sell.app/product/setupconfiguration-service)              |                            :white_check_mark:                             |
+| Configuration service[^3] |             [£8](https://store.discordtickets.app/product/setupconfiguration-service)              |                            :white_check_mark:                             |
 
 <div class="grid">
 <button class="md-button md-button--primary" data-sell-store="6303" data-sell-product="27469" data-sell-theme="#5865F2"
@@ -33,7 +33,7 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
 </button>
 </div>
 
-**If the buttons or modal are not working correctly, try going to [the store page](https://discordtickets.sell.app/?group=3371).** 
+**If the buttons or modal are not working correctly, try going to [the store page](https://store.discordtickets.app/?group=3371).** 
 
 ### FAQs
 
@@ -82,4 +82,4 @@ Please [join the Discord server](https://lnk.earth/discord), and if you have not
 
 [^1]: I will try my best to keep your bot working all the time, but there is no guarantee of uptime
 [^2]: See the [terms](../terms.md) for SLA details
-[^3]: See the [store page](https://discordtickets.sell.app/product/setupconfiguration-service) for details
+[^3]: See the [store page](https://store.discordtickets.app/product/setupconfiguration-service) for details
