@@ -72,7 +72,8 @@ markdown_extensions:
       auto_append:
         - includes/abbreviations.md
   - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -91,7 +92,9 @@ nav:
        - Commands: features/commands.md
     - FAQs: faqs.md
     - Public bot: public.md
-    - Managed hosting: managed.md
+    - Managed bot:
+        - Managed bot: managed/index.md
+        - Setup: managed/setup.md
     - Self hosting:
       - Self hosting: self-hosting/index.md
       - Creating your Discord application: self-hosting/discord-application.md
