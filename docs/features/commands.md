@@ -29,10 +29,10 @@ Add a member to either a specific ticket or the ticket channel the command is us
 
 #### Options
 
-|                          Name                          |                         Description                          |    Example    |
-| :----------------------------------------------------: | :----------------------------------------------------------: | :-----------: |
-| :material-asterisk:{ .pink title="Required" } `member` |               The member to add to the ticket                | `@eartharoid` |
-|                        `ticket`                        | The ticket to add the member to. Defaults to current channel | `#ticket-91`  |
+|                          Name                          |                            Description                            |    Example    |
+| :----------------------------------------------------: | :---------------------------------------------------------------: | :-----------: |
+| :material-asterisk:{ .pink title="Required" } `member` |                  The member to add to the ticket                  | `@eartharoid` |
+|                        `ticket`                        | The ticket to add the member to (defaults to the current channel) | `#ticket-91`  |
 
 ??? example
 	Add the mentioned member to the ticket that the command is used in:
