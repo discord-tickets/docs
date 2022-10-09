@@ -37,7 +37,7 @@ Buying with an affiliate link supports me at no extra cost to you.
 
 <div markdown>
 
-### Dedicated/Virtual machines
+### Dedicated/virtual machines
 Get €20 account credit:
 
 [![Hetzner](../../img/hetzner.png)](https://lnk.earth/hetzner)
