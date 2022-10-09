@@ -83,7 +83,9 @@ plugins:
       enabled: !ENV [CI, false]
       repository: discord-tickets/docs
       branch: main
-  - glightbox
+  - glightbox:
+      skip_classes: 
+        - no-glightbox
   - tags:
       tags_file: tags.md
   - meta # must be before blog

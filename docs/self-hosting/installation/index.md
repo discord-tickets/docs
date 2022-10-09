@@ -3,7 +3,7 @@
 
 !!! pebble ""
 	<div class="grid ccc" style="text-align:center;font-size:larger;" markdown>
-		<p markdown>[![PebbleHost](../../img/pebblehost.webp)](https://pebble.host/discordtickets)</p>
+		<p markdown>[![PebbleHost](../../img/pebblehost.webp){ .no-glightbox }](https://pebble.host/discordtickets)</p>
 		<p markdown>
 		**Discord Tickets is partnered with [PebbleHost](https://pebble.host/discordtickets) to give you affordable hosting.**
 		Click on the logo to use the affiliate link to support me at no extra cost to you.
@@ -30,7 +30,7 @@ Buying with an affiliate link supports me at no extra cost to you.
 <div markdown>
 
 ### Shared
-[![PebbleHost](../../img/pebblehost.webp)](https://pebble.host/discordtickets)
+[![PebbleHost](../../img/pebblehost.webp){ .no-glightbox }](https://pebble.host/discordtickets)
 
 </div>
  
@@ -40,7 +40,7 @@ Buying with an affiliate link supports me at no extra cost to you.
 ### Dedicated/virtual machines
 Get €20 account credit:
 
-[![Hetzner](../../img/hetzner.png)](https://lnk.earth/hetzner)
+[![Hetzner](../../img/hetzner.png){ .no-glightbox }](https://lnk.earth/hetzner)
 
 </div>
 
