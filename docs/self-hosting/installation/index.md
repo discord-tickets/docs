@@ -2,11 +2,11 @@
 
 
 !!! pebble ""
-	<div class="grid ccc" style="text-align:center;" markdown>
-		<p style="padding-top:3px;margin:5px 0;" markdown>[![PebbleHost](../../img/pebblehost.webp)](https://pebble.host/discordtickets)</p>
+	<div class="grid ccc" style="text-align:center;font-size:larger;" markdown>
+		<p markdown>[![PebbleHost](../../img/pebblehost.webp)](https://pebble.host/discordtickets)</p>
 		<p markdown>
 		**Discord Tickets is partnered with [PebbleHost](https://pebble.host/discordtickets) to give you affordable hosting.**
-		Click on the logo to use the affiliate link to support me without spending any extra money.
+		Click on the logo to use the affiliate link to support me at no extra cost to you.
 		</p>
 	</div>
 	
