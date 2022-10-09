@@ -5,18 +5,34 @@ description: A detailed guide to all of the bot's commands
 # Commands
 
 !!! info "Symbols"
-	- :octicons-alert-16:{ .orange title="Required" } denotes a required option
+	:material-asterisk:{ .pink title="Required" } denotes a required option
 
-## `/add`
+	:material-headset:{ .orange title="Staff-only" } denotes a staff-only command or option
 
-> :material-text-box: Add a member to a ticket
+## Context menu commands
 
-### Options
+### Message
 
-|                           Name                           |                         Description                          |    Example    |
-| :------------------------------------------------------: | :----------------------------------------------------------: | :-----------: |
-| :octicons-alert-16:{ .orange title="Required" } `member` |               The member to add to the ticket                | `@eartharoid` |
-|                         `ticket`                         | The ticket to add the member to. Defaults to current channel | `#ticket-91`  |
+#### `Create a ticket from message`
+
+#### `Pin message`
+
+### User
+
+#### :material-headset:{ .orange title="Staff-only" } `Create a ticket for user`
+
+## Chat (slash) commands
+
+### `/add`
+
+Add a member to either a specific ticket or the ticket channel the command is used in.  
+
+#### Options
+
+|                          Name                          |                         Description                          |    Example    |
+| :----------------------------------------------------: | :----------------------------------------------------------: | :-----------: |
+| :material-asterisk:{ .pink title="Required" } `member` |               The member to add to the ticket                | `@eartharoid` |
+|                        `ticket`                        | The ticket to add the member to. Defaults to current channel | `#ticket-91`  |
 
 ??? example
 	Add the mentioned member to the ticket that the command is used in:
@@ -29,4 +45,4 @@ description: A detailed guide to all of the bot's commands
 	/add member: @eartharoid ticket: #ticket-91
 	```
 
-## `/claim`
+### `/claim`
