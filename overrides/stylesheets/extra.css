@@ -51,6 +51,31 @@ img.embed-object-contain {
 	/* rgba(255, 238, 16, .1) rgba(0, 180, 0, .1) */
 }
 
+.md-typeset .admonition.pebble,
+.md-typeset details.pebble {
+	border-color: rgb(43, 155, 70);
+}
+
+.twitter {
+	color: #00acee;
+}
+
+.docker {
+	color: #1F97EE;
+}
+
+.pebblehost {
+	color: #51AE59;
+}
+
+.linux {
+	color: #F5BE03;
+}
+
+.pterodactyl {
+	color: #BD6E35;
+}
+
 .md-banner, .md-banner a {
 	/* background-color: var(--md-primary-fg-color--dark) !important; */
 	color: white;
@@ -61,8 +86,8 @@ img.embed-object-contain {
 	text-decoration: underline;
 }
 
+
 .md-banner .twitter {
-	color: #00acee;
 	margin-left: .2em
 }
 
