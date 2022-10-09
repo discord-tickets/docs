@@ -21,16 +21,16 @@ img.embed-object-contain {
 	color: var(--md-primary-fg-color);
 }
 
+.tip {
+	color: #00BFA5;
+}
+
 .green {
 	color: #00C853
 }
 
 .orange {
 	color: #FFA724;
-}
-
-.coral {
-	color: #FF7624;
 }
 
 .red {

@@ -1,4 +1,4 @@
-*[server]: An always-online computer
+*[server]: Software that serves requests, or an always-online computer that runs the software
 *[guild]: A Discord server
 *[guilds]: Discord servers
 *[VPS]: Virtual Private Server
