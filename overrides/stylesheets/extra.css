@@ -51,6 +51,13 @@ img.embed-object-contain {
 	/* rgba(255, 238, 16, .1) rgba(0, 180, 0, .1) */
 }
 
+.ccc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .md-typeset .admonition.pebble,
 .md-typeset details.pebble {
 	border-color: rgb(43, 155, 70);
