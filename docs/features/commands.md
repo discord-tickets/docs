@@ -45,4 +45,23 @@ Add a member to either a specific ticket or the ticket channel the command is us
 	/add member: @eartharoid ticket: #ticket-91
 	```
 
-### `/claim`
+### `/priority`
+
+Sets an emoji in front of the channel name to declare the tickets priority
+
+#### Options
+
+|                          Name                            |                            Description                            |    Example    |
+| :------------------------------------------------------: | :---------------------------------------------------------------: | :-----------: |
+| :material-asterisk:{ .pink title="Required" } `priority` |                  The priority to set		               |     `HIGH`    |
+
+??? example
+	Set the priority to high:
+	``` title="Example 1"
+	/priority priority: HIGH
+	```
+	---
+	Set the priority to low:
+	``` title="Example 2"
+	/priority priority: LOW
+	```
