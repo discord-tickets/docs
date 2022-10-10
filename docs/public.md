@@ -2,7 +2,7 @@
 
 The public bot is completely free, requires no installation (because it's hosted), and can be added to as many servers as you want.
 
-[Terms of service](./terms.md) apply.
+[Terms of service](./terms.md) and [privacy policy](privacy.md#service-privacy-policy) apply.
 
 To get started:
 

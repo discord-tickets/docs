@@ -61,7 +61,6 @@ img.embed-object-contain {
 	justify-content: center;
 }
 
-
 .md-typeset .admonition.pebble,
 .md-typeset details.pebble {
 	border-color: rgb(43, 155, 70);
@@ -209,7 +208,7 @@ footer.sponsorship:not(:hover) .twemoji.heart-throb-hover svg {
 
 footer .md-content__inner {
 	margin-bottom: 0;
-	padding: 2rem 0
+	padding: 1rem 0
 }
 
 footer .md-content__inner:before {
@@ -226,9 +225,22 @@ footer .mdx-connect .mdx-connect__link {
 }
 
 footer .mdx-connect a:hover {
-	color: var(--md-primary-fg-color) !important;
+	/* color: var(--md-primary-fg-color) !important; */
+	color: white !important;
 }
 
 footer .mdx-connect .mdx-connect__link span {
 	margin-right: .2rem
+}
+
+.md-footer-meta__inner a {
+	color: var(--md-default-fg-color--light) !important;
+	/* text-decoration-line: underline;
+	text-decoration-style: dotted; */
+}
+
+.md-footer-meta__inner a:hover,
+.md-footer-meta__inner a:focus,
+.md-footer-meta__inner a:active {
+	color: white !important;
 }
