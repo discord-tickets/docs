@@ -69,7 +69,7 @@ Remove a member to either a specific ticket or the ticket channel the command is
 
 ### `/priority`
 
-Sets an emoji in front of the channel name to declare the tickets priority
+Add an emoji before the channel name to declare the ticket's priority.
 
 #### Options
 
