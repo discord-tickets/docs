@@ -47,14 +47,14 @@ Add a member to either a specific ticket or the ticket channel the command is us
 	
 ### `/remove`
 
-Remove a member to either a specific ticket or the ticket channel the command is used in.  
+Remove a member from either a specific ticket or the ticket channel the command is used in.  
 
 #### Options
 
-|                          Name                          |                            Description                               |    Example    |
-| :----------------------------------------------------: | :------------------------------------------------------------------: | :-----------: |
-| :material-asterisk:{ .pink title="Required" } `member` |                  The member to remove to the ticket                  | `@eartharoid` |
-|                        `ticket`                        | The ticket to remove the member to (defaults to the current channel) | `#ticket-91`  |
+|                          Name                          |                              Description                               |    Example    |
+| :----------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+| :material-asterisk:{ .pink title="Required" } `member` |                   The member to remove to the ticket                   | `@eartharoid` |
+|                        `ticket`                        | The ticket to remove the member from (defaults to the current channel) | `#ticket-91`  |
 
 ??? example
 	Remove the mentioned member to the ticket that the command is used in:
