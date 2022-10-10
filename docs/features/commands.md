@@ -75,7 +75,7 @@ Add an emoji before the channel name to declare the ticket's priority.
 
 |                          Name                            |                            Description                            |    Example    |
 | :------------------------------------------------------: | :---------------------------------------------------------------: | :-----------: |
-| :material-asterisk:{ .pink title="Required" } `priority` |                  The priority to set		               |     `HIGH`    |
+| :material-asterisk:{ .pink title="Required" } `priority` |                  The new ticket priority		               |               |
 
 ??? example
 	Set the priority to high:
