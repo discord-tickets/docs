@@ -44,7 +44,18 @@ Add a member to either a specific ticket or the ticket channel the command is us
 	``` title="Example 2"
 	/add member: @eartharoid ticket: #ticket-91
 	```
-	
+
+### `/priority`
+
+Add an emoji before the channel name to declare the ticket's priority.
+
+#### Options
+
+|                           Name                           |       Description       | Example |
+| :------------------------------------------------------: | :---------------------: | :-----: |
+| :material-asterisk:{ .pink title="Required" } `priority` | The new ticket priority |         |
+
+
 ### `/remove`
 
 Remove a member from either a specific ticket or the ticket channel the command is used in.  
@@ -66,13 +77,3 @@ Remove a member from either a specific ticket or the ticket channel the command 
 	``` title="Example 2"
 	/remove member: @eartharoid ticket: #ticket-91
 	```
-
-### `/priority`
-
-Add an emoji before the channel name to declare the ticket's priority.
-
-#### Options
-
-|                           Name                           |       Description       | Example |
-| :------------------------------------------------------: | :---------------------: | :-----: |
-| :material-asterisk:{ .pink title="Required" } `priority` | The new ticket priority |         |
