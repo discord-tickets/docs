@@ -66,7 +66,7 @@ Add a member to either a specific ticket or the ticket channel the command is us
 	/add member: @eartharoid ticket: #ticket-91
 	```
 
-### `/priority`
+### :material-ticket:{ .blue title="Tickets-only" } `/priority`
 
 Add an emoji before the channel name to declare the ticket's priority.
 
