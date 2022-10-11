@@ -13,5 +13,8 @@ description: A detailed guide to all of the bot's features
 	Multiple ticket categories can belong to a single Discord channel category. 
 
 [`Panels`](#concept:panels){ #concept:panels }
-:   Unlike other bots, panels are not a central concept in Discord Tickets.
+:   Unlike some other bots, panels are not a central concept in Discord Tickets.
 	Tickets belong to categories, and a panel is one of several ways you can create a ticket.
+
+[`Staff`](#concept:staff){ #concept:staff }
+:	A staff member is any member who has at least 1 role that is assigned to any ticket category within the guild.
