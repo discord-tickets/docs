@@ -9,17 +9,38 @@ description: A detailed guide to all of the bot's commands
 
 	:material-headset:{ .orange title="Staff-only" } denotes a staff-only command or option
 
+	:material-ticket:{ .blue title="Tickets-only" } denotes a command or option that can only be used within tickets
+
 ## Context menu commands
 
-### Message
+### Messages
 
 #### `Create a ticket from message`
 
-#### `Pin message`
+Create a ticket with reference to the target message.
+This can be used for reporting messages (and their senders).
 
-### User
+??? example
+	**Result:**
+
+	![Screenshot](../img/DiscordPTB_XVpUHk0B3Y.png)
+
+#### :material-ticket:{ .blue title="Tickets-only" } `Pin message`
+
+Allows members that don't have manage messages permission to pin messages in their own tickets.
+Pinned messages can be easily found later in archives. 
+
+### Users
 
 #### :material-headset:{ .orange title="Staff-only" } `Create a ticket for user`
+
+Send a prompt (in the channel the command is used in) for the target user to create a ticket by clicking a button.
+If you have multiple [categories](./index.md#concept:categories) configured,
+the staff member will be asked to select the category that the ticket will be created in.
+
+This can be used as an alternative to repeatedly asking members to "please create a ticket with [`/new`](#new)". 
+
+<!-- TODO: add screenshot -->
 
 ## Chat (slash) commands
 
