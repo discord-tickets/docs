@@ -4,6 +4,11 @@ description: A detailed guide to all of the bot's features
 
 # Features
 
+!!! tip "Switching from another bot?"
+	See how Discord Tickets is different from other popular bots:
+
+	[View comparisons](https://blog.discordtickets.app/tag/comparison/){ .md-button .md-button--primary }
+
 ## Concepts
 
 [`Categories`](#concept:categories){ #concept:categories }
