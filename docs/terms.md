@@ -117,13 +117,19 @@ You may not use the service in a way, intentionally or otherwise, that:
 4. bypasses restrictions or limitations
 5. takes advantage of a vulnerability
 6. includes accessing data that you are not permitted to
-7. violates the [Discord Terms of Service](https://discord.com/terms) or [Discord Community Guidelines](https://discord.com/guidelines) -
-	notably, do not:   
+7. violates (or use the service in a Discord guild that violates)
+   	the [Discord Terms of Service](https://discord.com/terms) or [Discord Community Guidelines](https://discord.com/guidelines) -
+	notably:   
 
-	> Exploit, distribute or publicly inform other members of any game error, miscue or bug which gives an unintended advantage;
-	> violate any applicable laws or regulations; or promote or encourage illegal activity including,
-	> but not limited to, hacking, cracking or distribution of counterfeit software, compromised accounts,
-	> or cheats or hacks for the Service.
+	> - Do not organize, promote, or participate in hate speech or hateful conduct
+	> - Do not use Discord for the organization, promotion, or support of violent extremism
+	> - Do not share sexually explicit content of other people without their consent
+	> - Do not share content that violates anyone's intellectual property or other rights
+	> - Do not coordinate or participate in malicious impersonation of an individual or an organization
+	> - Do not engage in activities intended to cause damage or gain unauthorized access to another user's account, network, or system.
+	> - Do not distribute or provide access to content involving the hacking, cracking, or distribution of stolen goods, pirated content, or accounts.
+		This includes sharing or selling game cheats or hacks.
+	> - Do not organize, promote, or engage in any illegal or dangerous behaviour
 	
 8. is otherwise unlawful in either your jurisdiction or the United Kingdom
 9. would be considered unfair or abusive by a reasonable person
