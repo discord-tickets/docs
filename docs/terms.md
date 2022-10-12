@@ -28,7 +28,9 @@ The "services" include, but are not limited to:
 
 - The discordtickets.app website
 - The blog.discordtickets.app website
+- The store.discordtickets.app website
 - The status.discordtickets.app website
+- The feedback.discordtickets.app website
 - Discord Tickets StatsAPI (stats.discordtickets.app)
 - Discord Tickets Proxy (proxy.discordtickets.app)
 - The publicly-hosted Discord Tickets Bot
@@ -91,6 +93,16 @@ That invitation may be revoked without notice for any reason. Such reasons inclu
 	- too many tickets
 	- too many visitors
 
+#### 3.1.4. Feedback
+
+You agree to not submit spam or repetitive ideas or comments.
+
+#### 3.1.5. Store
+
+You agree to not submit spam support requests/tickets, or fraudulent, misleading, or false feedback/ratings/reviews.
+
+See [4. Payments](#4-payments).
+
 ### 3.2. Hosted bots
 
 Unless specified otherwise, there is no guarantee of service (uptime or availability).
@@ -127,7 +139,7 @@ and that refunds will not be given (though may be considered for exceptional cir
 The "Basic" (formerly "Standard") plan comes with no guarantee of uptime or availability.
 You accept that you will not be offered compensation or refunds for downtime, malfunctions, or any other problems with the service.
 
-##### 3.2.2.A SLA
+##### 3.2.2.A. SLA
 
 The "Professional" (formerly "Premium") plan comes with the following agreement:
 
