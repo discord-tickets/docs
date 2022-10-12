@@ -11,6 +11,10 @@ description: A detailed guide to all of the bot's commands
 
 	:material-ticket:{ .blue title="Tickets-only" } denotes a command or option that can only be used within tickets
 
+
+The command names, options, and choices on this page are in their original (English) form,
+but you may see them translated in your Discord client. 
+
 ## Context menu commands
 
 ### Messages
