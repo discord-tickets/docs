@@ -6,6 +6,7 @@ description: An affordable managed bot is the easiest way to get your own ticket
 
 An affordable managed bot is the easiest way to get your own ticket bot.
 Choose a plan to get started.
+[Terms of service](./terms.md) and [privacy policy](privacy.md#service-privacy-policy) apply.
 
 ## Plans
 
@@ -78,6 +79,16 @@ Users **can** submit feedback on the Basic plan, but the portal is currently the
 		Choose the **Professional** plan to be able to view feedback
 	=== "No"
 		Choose the **Basic** or the **Professional** plan
+
+#### Can my bot have a custom status/activity?
+
+Yes, you can include this in the comments field when you order, or ask later in a ticket on Discord.
+Check [the documentation](./self-hosting/configuration.md#presence) for available placeholders.
+
+#### Can I pay with PayPal?
+
+No. Subscription payments are securely processed through [Stripe](https://stripe.com),
+which accepts all major credit and debit cards, Apple Pay, and Google Pay.
 
 #### What happens after I pay?
 
