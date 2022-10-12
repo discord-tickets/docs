@@ -20,7 +20,7 @@ If you do not accept these terms (or [the privacy policy](./privacy.md#service-p
 
 ## 1. Definitions
 
-Throughout this document, "I", "me"/"my", and "eartharoid" refer to the creator, [Isaac Saunders](https://eartharoid.me/contact
+Throughout this document, "I", "me"/"my", and "eartharoid" refer to the creator, [Isaac Saunders](https://eartharoid.me/contact)
 (and "we"/"our" may refer to me and my business partners).
 
 
