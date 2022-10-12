@@ -111,9 +111,9 @@ nav:
           - PebbleHost: self-hosting/installation/pebblehost/index.md
           - Environment variables: self-hosting/installation/pebblehost/env.md
       - Creating your Discord application: self-hosting/discord-application.md
-      - Reverse proxy setup: self-hosting/reverse-proxy.md
-      # - Portal installation: self-hosting/portal.md
       - Further configuration: self-hosting/configuration.md
+      - Reverse proxy setup: self-hosting/reverse-proxy.md
+      - Portal installation: self-hosting/portal.md
       - Updating: self-hosting/updating.md
     - Configuration:
       - Configuration: configuration/index.md
