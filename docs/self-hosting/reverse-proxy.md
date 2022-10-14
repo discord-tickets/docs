@@ -25,10 +25,12 @@ If not, there are several options available:
 | Bot installations   |   Docker/Standalone   |          All          |                   All                   | PebbleHost only |
 | Portal installation |          Any          |          Any          | [Netlify](https://www.netlify.com) only |       Any       |
 
-> If you are installing the Portal on Netlify, use the Netlify proxy.
-> 
-> If you are **not* using
+**If you are installing the Portal on Netlify, use the Netlify proxy.**
+If you are not using Netlify:
 
+- For **Docker/Standalone** bot installs, use **Nginx** (or Cloudflare)
+- For **Pterodactyl** bot installs, use **Discord Tickets Proxy**
+- For **PebbleHost** bot installs, use **PebbleHost**'s proxy
 
 ## Nginx
 
@@ -79,4 +81,4 @@ server {
 
 ## PebbleHost
 
-<!-- TODO: add pebblehost proxy -->
+Follow PebbleHost's [help centre guide](https://help.pebblehost.com/en/minecraft/how-to-setup-a-reverse-proxy).
