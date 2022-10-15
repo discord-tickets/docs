@@ -44,26 +44,111 @@ Your privacy policy should mention the collection, processing, and storage of th
 
 As you must be at least 13 years old to use Discord, under-13s' data is not knowingly stored or processed.
 
+No data is shared with or sold to third parties, although some data passes through third-party service providers.
+
 #### Services
 
 ##### Websites
 
+The websites may collect anonymous analytical data, without the use of third-party services or cookies.
+No other data is collected.
+
 ##### Hosted bots (public and managed)
+
+Please refer to the above privacy notice for information regarding stored data.
+Each managed bot is isolated and has its own database (with different credentials), and a unique encryption key.
+Yes, as with any public Discord bot, I could read your users' messages if I wanted to, but I have no reason to, and certainly don't have the time to.
+
+The existence of archives is a choice of guild administrators.
+Potential reasons for storing messages include staff training, evidence/protection,
+or simply allowing users to read support team responses in the future so they don't need to ask the same question twice.
+Archival ticket data such as message content and usernames may be stored indefinitely, for as long as the Discord guild administrators want.
+
+Any data available to the bot through the Discord API may be received and temporarily cached,
+though data that is not required for operation is not processed and not stored.
+
+Managed bot customers' personal and private information such as name, address, email address, phone number, and credit card details are stored to take payment.
+This data is stored securely by Stripe, but names and email addresses may be copied for the sole purpose of maintaining records of bots and their owners.
 
 ##### StatsAPI
 
+The anonymous data that you (or your bot) submit is stored indefinitely.
+
+Submitted data includes:
+
+- number of activated users
+- system architecture
+- average resolution time
+- average response time 
+- number of categories
+- database provider/type
+- number of guilds
+- MD5-hashed application/client/user ID
+	(so your bot can update the original data)
+- number of guild members
+- number of archived messages
+- Node.js version
+- operating system name
+- number of tags
+- number of tickets
+- bot version.
+
+The IP address is not stored or processed.
+
+This data is submitted optionally and is used for aggregated statistics to satisfy curiosity,
+and to guide bot development based on usage or systems.
+
 ##### Proxy
+
+All unencrypted data proxied through the Discord Tickets Proxy *could* be seen by me, but is not.
+You can see the source code [on GitHub](https://github.com/discord-tickets/proxy/blob/main/index.js).
+
+The following data is logged and may be stored for up to 7 days (or longer for investigations):
+
+- request ID
+- requester IP address
+- target (origin) IP address and path (full URL).
+
+Request and response bodies are not read; the response from the origin is proxied directly to the requester without intercept.
 
 ##### Third-party services
 
 ###### Cloudflare
 
+Cloudflare provides hosting and hosting-related services for Discord Tickets services.
+
+Read [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
+
 ###### Netlify
+
+This website (`discordtickets.app`) and the Portal (`portal.discordtickets.app`) are hosted by Netlify.
+
+Read [Netlify's privacy policy](https://www.netlify.com/privacy/) and [data protection statement](https://www.netlify.com/gdpr-ccpa/).
+
+###### Stripe
+
+Stripe provides payment processing services.
+
+Read [Stripe's privacy policy](https://stripe.com/gb/privacy).
+
+###### Sell
+
+Sell provides the `store.discordtickets.app` storefront website.
+
+Read [Sell (Toffee, Inc.)'s privacy policy](https://sell.app/privacy-policy).
 
 ### Duration of data storage
 
+Data is stored for as long as necessary, which may be explained in more detail for each service above.
+
 ### Requesting a copy of your data
+
+If you would like to know what personal data is being stored, please [create a ticket on Discord](https://lnk.earth/discord) or email <contact@discordtickets.app>.
 
 ### Requesting changes to your data
 
+To update your personal information on your billing profile, [create a ticket on Discord](https://lnk.earth/discord) or email <contact@discordtickets.app>.
+
 ### Requesting removal of your data
+
+If you would like your data to be erased, [create a ticket on Discord](https://lnk.earth/discord) or email <contact@discordtickets.app>.
