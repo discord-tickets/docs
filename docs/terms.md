@@ -64,6 +64,9 @@ The information provided on these websites is done so with good intentions,
 and correct to the best of my knowledge at the time of publication, but there is no guarantee of validity.
 The information is not intended to deceive or mislead readers.
 
+Hyperlinks on this site may link to external websites, the content of which is beyond my control.
+Some of those links may be affiliate links, meaning I receive a reward if you make a purchase on the linked site after clicking the link.
+
 By using the websites, you agree to not abuse features and bugs or APIs, and not intentionally damage the site or its infrastructure or harm the experience of other visitors.
 
 #### 3.1.2. StatsAPI
