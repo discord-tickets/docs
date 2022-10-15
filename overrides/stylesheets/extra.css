@@ -234,7 +234,7 @@ footer .mdx-connect .mdx-connect__link span {
 }
 
 .md-footer-meta__inner a {
-	color: var(--md-default-fg-color--light) !important;
+	color: hsla(232, 75%, 90%, 0.62) !important;
 	/* text-decoration-line: underline;
 	text-decoration-style: dotted; */
 }
