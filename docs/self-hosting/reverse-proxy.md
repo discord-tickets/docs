@@ -1,7 +1,6 @@
 # Reverse proxy setup
 
-If you want to [install the Portal](portal.md), your bot('s API) needs to have [SSL/TLS encryption](https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/).
-As the bot does not use SSL/TLS certificates itself, you need to proxy the HTTP traffic through a web server that does.
+As the bot does not use [SSL/TLS encryption](https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/) itself, you need to proxy the HTTP traffic through a web server that does.
 
 !!! info annotate
 	**If you choose to host the portal on [Netlify](https://www.netlify.com) (which is recommended),
@@ -9,7 +8,9 @@ As the bot does not use SSL/TLS certificates itself, you need to proxy the HTTP 
 	Make sure you change the `_redirects` file to have the correct IP address and port for your bot:
 
 	```
-	/api/*  http://your.bot.ip:port/:splat(1)  200!
+	/api/*       http://your.bot.ip:port/:splat(1)  200!
+	/auth/*      http://your.bot.ip:port/:splat(1)  200!
+	/settings/*  http://your.bot.ip:port/:splat(1)  200!
 	```
 
 	and remove the environment variable.
