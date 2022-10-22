@@ -100,12 +100,12 @@ Remove a member from either a specific ticket or the ticket channel the command 
 |                        `ticket`                        | The ticket to remove the member from (defaults to the current channel) | `#ticket-91`  |
 
 ??? example
-	Remove the mentioned member to the ticket that the command is used in:
+	Remove the mentioned member from the ticket that the command is used in:
 	``` title="Example 1"
 	/remove member: @eartharoid
 	```
 	---
-	Remove the mentioned member to the specified ticket:
+	Remove the mentioned member from the specified ticket:
 	``` title="Example 2"
 	/remove member: @eartharoid ticket: #ticket-91
 	```
