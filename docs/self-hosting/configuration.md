@@ -111,11 +111,8 @@ The full external URL used to access the portal (if you have installed the porta
 	```
 
 ### `PUBLIC_BOT`
-<small>
-:octicons-question-16: Optional
-
-:material-factory: Default: `false`
-</small>
+<small>:octicons-question-16: Optional</small>
+<small>:material-factory: Default: `false`</small>
 
 You should keep this as `false`.
 
@@ -226,11 +223,8 @@ The activity name, which may contain one these placeholders:
 
 ##### `type`
 
-<small>
-:octicons-question-16: Optional
-
-:material-factory: Default: `0`
-</small>
+<small>:octicons-question-16: Optional</small>
+<small>:material-factory: Default: `0`</small>
 
 The activity type (playing, watching etc).
 
