@@ -12,8 +12,8 @@ Regardless of the installation method you choose, the bot requires:
 - **2 free ports** (only 1 needs to be open)
 - at least **120MB memory** available
     - 150MB recommended for large guilds
-- at least **500MB disk** space available
-    - 750MB recommended for archiving in large guilds
+- at least **1GB disk** space available (shared between files and database)
+    - at least 100MB of database space is recommended for archiving
 - a [supported database](#supported-databases) (MySQL recommended)
 
 Using `git` is strongly recommended.
