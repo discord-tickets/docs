@@ -3,6 +3,11 @@
 This page is about the global bot configuration.
 For per-guild configuration, refer to the [Configuration](../configuration/index.md) page.
 
+!!! info
+	Changes to environment variables or the main configuration file require a restart to take effect.
+	If you aren't using a panel or other daemonisation method to run the bot,
+	type `exit` or press ++ctrl+c++ a couple of times to kill the process.
+
 ## Environment variables
 
 In most cases, the environment variables can be set by editing the `.env` file (which the bot creates for you if you follow the installation instructions).
@@ -266,3 +271,17 @@ If archives should be disabled, regardless of guild settings.
 If stats should be posted to the Discord Tickets StatsAPI.
 
 [Terms of service](../terms.md) and [Privacy policy](../privacy.md) apply.
+
+### `templates`
+
+#### `transcript`
+
+<small>:material-factory: Default: `transcript.md`</small>
+
+The (partial) name of the file, relative to `user/templates`, that contains the [Mustache](https://mustache.github.io/) template for text transcripts.
+The actual file must have the `.mustache` file extension appended to the end of this name (`transcript.md` --> `transcript.md.mustache`).
+
+The generated transcript file's type/extension comes from the second dot-separated segment of the file name,
+so if you want users to download ` .log` or `.txt` file instead of `.md`,
+you would change this option to `transcript.txt` and rename the file to `transcript.txt.mustache`.
+
