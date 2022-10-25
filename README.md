@@ -6,7 +6,7 @@ This is the source for the Discord Tickets v4 documentation (and marketing) webs
 You can view the latest build of the site [here](https://discordtickets.app/).
 
 > **Note**
-> For the v3 documentation, visit [v3.discordtickets.app](https://v3.discordtickets.app) or look at the v3 branch.
+> For the v3 documentation, visit [v3.discordtickets.app](https://v3.discordtickets.app) or look at the `v3.1` branch.
 
 ## Contributing
 
