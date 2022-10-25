@@ -88,7 +88,15 @@ Check [the documentation](./self-hosting/configuration.md#presence) for availabl
 #### Can I pay with PayPal?
 
 No. Subscription payments are securely processed through [Stripe](https://stripe.com),
-which accepts all major credit and debit cards, Apple Pay, and Google Pay.
+which accepts all major credit and debit cards.
+
+#### Can I pay with crypto?
+
+If you want to pay with crypto, you must pre-pay for a year and manually renew your plan.
+You'll need to create a ticket to get your bot as there is no automation for non-Stripe payments.
+
+- [Buy Basic (£22)](https://commerce.coinbase.com/checkout/0cc724d7-5de9-4048-bcff-a9365eda74dc)
+- [Buy Premium (£33)](https://commerce.coinbase.com/checkout/c209103d-8f8a-4dd2-b95d-759584c643a0)
 
 #### What happens after I pay?
 
