@@ -11,6 +11,8 @@ description: A detailed guide to all of the bot's commands
 
 	:material-ticket:{ .blue title="Tickets-only" } denotes a command or option that can only be used within tickets
 
+	:material-comment-text:{ .tip title="Autocompleted" } denotes a dynamic option that uses autocomplete
+
 
 The command names, options, and choices on this page are in their original (English) form,
 but you may see them translated in your Discord client. 
@@ -54,10 +56,10 @@ Add a member to either a specific ticket or the ticket channel the command is us
 
 #### Options
 
-|                          Name                          |                            Description                            |    Example    |
-| :----------------------------------------------------: | :---------------------------------------------------------------: | :-----------: |
-| :material-asterisk:{ .pink title="Required" } `member` |                  The member to add to the ticket                  | `@eartharoid` |
-|                        `ticket`                        | The ticket to add the member to (defaults to the current channel) | `#ticket-91`  |
+|                                  Name                                  |                            Description                            |    Example    |
+| :--------------------------------------------------------------------: | :---------------------------------------------------------------: | :-----------: |
+|         :material-asterisk:{ .pink title="Required" } `member`         |                  The member to add to the ticket                  | `@eartharoid` |
+| :material-comment-text:{ .tip title="Autocompleted" } `ticket` | The ticket to add the member to (defaults to the current channel) |      N/A      |
 
 ??? example
 	Add the mentioned member to the ticket that the command is used in:
@@ -67,7 +69,7 @@ Add a member to either a specific ticket or the ticket channel the command is us
 	---
 	Add the mentioned member to the specified ticket:
 	``` title="Example 2"
-	/add member: @eartharoid ticket: #ticket-91
+	/add member: @eartharoid ticket: 91
 	```
 
 ### :material-ticket:{ .blue title="Tickets-only" } `/priority`
@@ -94,10 +96,10 @@ Remove a member from either a specific ticket or the ticket channel the command 
 
 #### Options
 
-|                          Name                          |                              Description                               |    Example    |
-| :----------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
-| :material-asterisk:{ .pink title="Required" } `member` |                   The member to remove to the ticket                   | `@eartharoid` |
-|                        `ticket`                        | The ticket to remove the member from (defaults to the current channel) | `#ticket-91`  |
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|         :material-asterisk:{ .pink title="Required" } `member`         |                   The member to remove to the ticket                   | `@eartharoid` |
+| :material-comment-text:{ .tip title="Autocompleted" } `ticket` | The ticket to remove the member from (defaults to the current channel) |      N/A      |
 
 ??? example
 	Remove the mentioned member from the ticket that the command is used in:
@@ -107,5 +109,5 @@ Remove a member from either a specific ticket or the ticket channel the command 
 	---
 	Remove the mentioned member from the specified ticket:
 	``` title="Example 2"
-	/remove member: @eartharoid ticket: #ticket-91
+	/remove member: @eartharoid ticket: 91
 	```
