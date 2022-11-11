@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{{ super() }}
+<!-- conflicting var name with something (only with insiders config) - needs to be module -->
+<script type="module" src="{{ 'javascripts/sellapp.js' | url }}" crossorigin="anonymous"></script>
+{% endblock %}
