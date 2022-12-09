@@ -80,6 +80,13 @@ You'll need to create a ticket to get your bot as there is no automation for non
 - [Buy Basic (£22)](https://commerce.coinbase.com/checkout/0cc724d7-5de9-4048-bcff-a9365eda74dc)
 - [Buy Premium (£33)](https://commerce.coinbase.com/checkout/c209103d-8f8a-4dd2-b95d-759584c643a0)
 
+#### How can I cancel my subscription?
+
+You can manage your subscriptions on the [Stripe billing dashboard](https://billing.stripe.com/p/login/4gw7uK9kg2PL3xScMM),
+or by creating a ticket on Discord.
+
+[Manage subscriptions](https://billing.stripe.com/p/login/4gw7uK9kg2PL3xScMM){: .md-button .md-button--primary}
+
 #### What happens after I pay?
 
 Please [join the Discord server](https://lnk.earth/discord), and if you have not received a DM within 24 hours, create a ticket.
