@@ -20,8 +20,9 @@ Choose a plan to get started.
 Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discount.
 </small>
 
-<stripe-pricing-table pricing-table-id="prctbl_1MDE08Ebl2jK6wYdiPaLl7I3" publishable-key="pk_live_51MD8wcEbl2jK6wYdEgyQzlmV73jAIMRB41gZoesOe5B2zCEZHgGoZvG9YIxfX7TxPePre6szwFfIWJOLF4uWmILU00NoUviGyK">
-</stripe-pricing-table>
+<div class="pricing-table-container">
+<stripe-pricing-table pricing-table-id="prctbl_1MDE08Ebl2jK6wYdiPaLl7I3" publishable-key="pk_live_51MD8wcEbl2jK6wYdEgyQzlmV73jAIMRB41gZoesOe5B2zCEZHgGoZvG9YIxfX7TxPePre6szwFfIWJOLF4uWmILU00NoUviGyK" />
+</div>
 
 ### FAQs
 

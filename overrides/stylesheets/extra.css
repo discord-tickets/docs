@@ -9,6 +9,13 @@
 	/* --md-accent-fg-color: #EB459E; */
 }
 
+.pricing-table-container {
+	padding: 15px;
+	background-color: rgb(88, 101, 242);
+	border: 3px solid rgba(255, 255, 255, 0.3);
+	border-radius: 15px;
+}
+
 img.embed-object-contain {
 	display: none !important;
 }
