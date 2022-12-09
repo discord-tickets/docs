@@ -131,12 +131,6 @@ Stripe provides payment processing services.
 
 Read [Stripe's privacy policy](https://stripe.com/gb/privacy).
 
-###### Sell
-
-Sell provides the `store.discordtickets.app` storefront website.
-
-Read [Sell (Toffee, Inc.)'s privacy policy](https://sell.app/privacy-policy).
-
 ### Duration of data storage
 
 Data is stored for as long as necessary, which may be explained in more detail for each service above.

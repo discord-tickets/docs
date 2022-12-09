@@ -11,36 +11,17 @@ Choose a plan to get started.
 
 ## Plans
 
-<small markdown>
-Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discount.
-</small>
-
-|                           |                                       Basic { .text-lg }                                       |                         Professional { .text-lg }                         |
-| :------------------------ | :--------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
-| Price                     |                                  **£2/month** or **£20/year**                                  |                       **£3/month** or **£30/year**                        |
-| Uptime                    |                                        Best effort[^1]                                         |                              **99%** SLA[^2]                              |
-| Archiving (transcripts)   |                                              :x:                                               |                            :white_check_mark:                             |
-| Portal (web app)          |                                              :x:                                               | :white_check_mark:<br>(custom domain or `*.discordtickets.app` subdomain) |
-| Feedback                  | :warning:<br>The [portal](features/index.md#portal) is currently the only way to view feedback |                            :white_check_mark:                             |
-| Configuration service[^3] |           [£8](https://store.discordtickets.app/product/setupconfiguration-service)            |                            :white_check_mark:                             |
-
-<div class="grid">
-<button class="md-button md-button--primary" data-sell-store="6303" data-sell-product="27469" data-sell-theme="#5865F2"
-	data-sell-darkmode="false">
-	Buy Basic
-</button>
-<button class="md-button md-button--primary" data-sell-store="6303" data-sell-product="27473" data-sell-theme="#5865F2"
-	data-sell-darkmode="false">
-	Buy Professional
-</button>
-</div>
-
 !!! warning "Before you buy"
 	You need to follow [this guide](self-hosting/discord-application.md)
 	<small><abbr title="This should take about 3 minutes">:octicons-clock-24: 3m</abbr></small>
 	to correctly create your Discord application and find the bot token.
 
-**If the buttons or modal are not working correctly, try going to [the store page](https://store.discordtickets.app/?group=3371).** 
+<small markdown>
+Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discount.
+</small>
+
+<stripe-pricing-table pricing-table-id="prctbl_1MDE08Ebl2jK6wYdiPaLl7I3" publishable-key="pk_live_51MD8wcEbl2jK6wYdEgyQzlmV73jAIMRB41gZoesOe5B2zCEZHgGoZvG9YIxfX7TxPePre6szwFfIWJOLF4uWmILU00NoUviGyK">
+</stripe-pricing-table>
 
 ### FAQs
 

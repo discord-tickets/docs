@@ -10,7 +10,6 @@ edit_uri: https://github.com/discord-tickets/docs/blob/main/docs/
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/sellapp.css
 extra_javascript:
   - javascripts/feedback.js
 

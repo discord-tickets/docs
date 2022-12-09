@@ -2,6 +2,5 @@
 
 {% block scripts %}
 {{ super() }}
-<!-- conflicting var name with something (only with insiders config) - needs to be module -->
-<script type="module" src="{{ 'javascripts/sellapp.js' | url }}" crossorigin="anonymous"></script>
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 {% endblock %}

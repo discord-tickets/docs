@@ -154,15 +154,14 @@ The "Professional" (formerly "Premium") plan comes with the following agreement:
 
 - The service may be occasionally unavailable for short periods (typically less than 5 minutes) for upgrades/maintenance to be performed
 - Scheduled downtime may last up to 15 minutes without compensation
-- After the first 15 minutes of scheduled downtime, the downtime becomes unscheduled
-- If requested (via a ticket, DM, or email), you may receive 15p (£0.15) of credit (on store.discordtickets.app) per 1 hour of unscheduled downtime
+- If requested (via a ticket, DM, or email), you may receive 15p (£0.15) of credit per 1 hour of unscheduled downtime
 - You may receive a maximum of 150p (£1.50) of credit per month
 - Your credit has no expiration date
 - Your credit cannot be transferred to other persons
 
 ## 4. Payments
 
-Payments are handled by our payment processor partners, including [Sell](https://sell.app/), [Stripe](https://stripe.com/), and [PayPal](https://www.paypal.com/).
+Payments are handled by our payment processor partners, including [Stripe](https://stripe.com/) and [PayPal](https://www.paypal.com/).
 
 You must have permission and the legal right to fulfil the transaction(s), including being of legal age to enter a contract.
 You will not charge back or dispute payments and refunds will not be granted unless required by law.
