@@ -86,14 +86,10 @@ You'll need to create a ticket to get your bot as there is no automation for non
 You can manage your subscriptions on the [Stripe billing dashboard](https://billing.stripe.com/p/login/4gw7uK9kg2PL3xScMM),
 or by creating a ticket on Discord.
 
-[Manage subscriptions](https://billing.stripe.com/p/login/4gw7uK9kg2PL3xScMM){: .md-button .md-button--primary}
+[Manage subscriptions](https://billing.stripe.com/p/login/4gw7uK9kg2PL3xScMM){ .md-button .md-button--primary }
 
 #### What happens after I pay?
 
 Please [join the Discord server](https://lnk.earth/discord), and if you have not received a DM within 24 hours, create a ticket.
 
 > **:question: Still have questions? Create a ticket [on Discord](https://lnk.earth/discord) for help.**
-
-[^1]: I will try my best to keep your bot working all the time, but there is no guarantee of uptime
-[^2]: See the [terms](terms.md) for SLA details
-[^3]: See the [store page](https://store.discordtickets.app/product/setupconfiguration-service) for details
