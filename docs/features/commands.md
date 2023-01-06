@@ -90,6 +90,22 @@ Add an emoji before the channel name to declare the ticket's priority.
 - `🟠 Medium`
 - `🟢 Low`
 
+### :material-ticket:{ .blue title="Tickets-only" } `/transfer`
+
+Transfer ticket to another specific user
+
+#### Options
+
+|                         Name                           |              Description           |       Example        |
+| :----------------------------------------------------: | :--------------------------------: | :------------------: |
+| :material-asterisk:{ .pink title="Required" } `user`   | The user to transfer the ticket to |     `@eartharoid`    |
+
+??? example
+	Transfer the ticket to the mentioned user:
+	``` title="Example"
+	/transfer user: @eartharoid
+	```
+
 ### `/remove`
 
 Remove a member from either a specific ticket or the ticket channel the command is used in.  
