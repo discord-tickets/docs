@@ -47,6 +47,9 @@ These instructions are for installing Discord Tickets on your own server. If you
 
 ### Running with Docker
 
+!!! info
+	There is [a comunity guide](https://wiki.foxco-network.de/en/docker-portainer/install-discord-tickets-bot) for Portainer users.
+
 [Docker](https://www.docker.com/) is a great tool that allows you to build out images and run containers for easy deployment. Make sure you have Docker installed on the machine you wish to deploy (or develop using [Docker Development Environments](https://docs.docker.com/desktop/dev-environments/)). 
 
 Discord Tickets has it's own [Dockerfile](https://github.com/discord-tickets/bot/blob/main/Dockerfile) and [docker-compose file](https://github.com/discord-tickets/bot/blob/main/docker-compose.yml) that you can use to get started quickly without defining your own files. Here's how to build the Docker image:
