@@ -4,7 +4,7 @@ A MySQL database is recommended for improved performance and allowing you to hav
 
 !!! danger "WARNING" 
 
-	For be sure too don't have Sequelize error on bot startup use the 'utf8_unicode_ci' collation for your database.
+	For be sure to don't have Sequelize error on bot startup use the 'utf8_unicode_ci' collation for your database.
 
 ## Edit `.env`
 
