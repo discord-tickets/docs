@@ -2,6 +2,10 @@
 
 A MySQL database is recommended for improved performance and allowing you to have ticket transcripts/archives. SQLite is too slow to support storing messages.
 
+!!! danger "WARNING" 
+
+	For be sure too don't have Sequelize error on bot startup use the 'utf8_unicode_ci' collation for your database.
+
 ## Edit `.env`
 
 1. Set `DB_TYPE` to `mysql`
