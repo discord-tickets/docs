@@ -15,3 +15,5 @@
 | HTTP_EXTERNAL     | http://host:port                                   |
 | HTTP_BIND         | port                                               |
 | SETTINGS_BIND     | port for settings http panel                       |
+| HTTP_HOST         | 0.0.0.0                                            |
+| SETTINGSQ_HOST    | 0.0.0.0                                            |
