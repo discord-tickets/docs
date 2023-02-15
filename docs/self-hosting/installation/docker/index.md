@@ -5,7 +5,7 @@ description: How to install Discord Tickets with Docker
 # Docker  
 **Docker & Docker-compose must be installed!**  
 Clone the repo  
-``docker build -t discord-ticket-v4 .``  
+``docker build -t ticket-bot .``  
 Check if there's any error  
 If not, edit docker-compose.yml and change env variables (see env.md)  
   
