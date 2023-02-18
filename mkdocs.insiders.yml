@@ -75,7 +75,7 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        "sponsor.md": "https://github.com/discord-tickets/bot/?sponsor=1#sponsors"
+        "sponsor.md": "https://github.com/discord-tickets/bot/?sponsor=1#-sponsors"
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       enable_creation_date: true
