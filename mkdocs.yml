@@ -103,7 +103,7 @@ nav:
         - Pterodactyl: self-hosting/installation/pterodactyl.md
         - PebbleHost: self-hosting/installation/pebblehost.md
       - Creating your Discord application: self-hosting/discord-application.md
-      - Further configuration: self-hosting/configuration.md
+      - Configuration: self-hosting/configuration.md
       - Reverse proxy setup: self-hosting/reverse-proxy.md
       - Updating: self-hosting/updating.md
     - Configuration:

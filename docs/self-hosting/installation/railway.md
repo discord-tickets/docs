@@ -9,6 +9,9 @@ description: How to install Discord Tickets on Railway
 	you are more likely to encounter rate limits. It should be fine for testing or small servers,
 	but you should consider other hosting options if you expect high usage.
 
+
+**pricing/usage**
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/eB6TkX?referralCode=Z3aYd2) 
 
 --8<-- "includes/encryption-key.html"

@@ -28,7 +28,6 @@ The "services" include, but are not limited to:
 
 - The discordtickets.app website
 - The blog.discordtickets.app website
-- The store.discordtickets.app website
 - The status.discordtickets.app website
 - The feedback.discordtickets.app website
 - Discord Tickets StatsAPI (stats.discordtickets.app)
@@ -73,24 +72,11 @@ By using the websites, you agree to not abuse features and bugs or APIs, and not
 By sending data to the StatsAPI, you agree to not knowingly send incorrect data or make excess HTTP requests in an attempt to disrupt the service, invalidate the aggregated statistics,
 inflict additional cloud usage costs or send requests with any other malicious intent. 
 
-##### 3.1.3.A. Fair use
-
-The service is provided for free through an open invitation to Discord Tickets Bot users.
-That invitation may be revoked without notice for any reason. Such reasons include:
-
-- Using the service for anything other than its intended purpose
-- Disproportionate or excessive bandwidth use or requests, possibly due to:
-	- hosting a large number of bots
-	- a large or disproportionate number of file attachments
-	- too many guilds
-	- too many tickets
-	- too many visitors
-
-#### 3.1.4. Feedback
+#### 3.1.3. Feedback
 
 You agree to not submit spam or repetitive ideas or comments.
 
-#### 3.1.5. Store
+#### 3.1.4. Store
 
 You agree to not submit spam support requests/tickets, or fraudulent, misleading, or false feedback/ratings/reviews.
 
@@ -151,7 +137,7 @@ The "Professional" (formerly "Premium") plan comes with the following agreement:
 
 ## 4. Payments
 
-Payments are handled by our payment processor partners, including [Stripe](https://stripe.com/) and [PayPal](https://www.paypal.com/).
+Payments are handled by our payment processor, [Stripe](https://stripe.com/).
 
 You must have permission and the legal right to fulfil the transaction(s), including being of legal age to enter a contract.
 You will not charge back or dispute payments and refunds will not be granted unless required by law.

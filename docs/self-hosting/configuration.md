@@ -1,4 +1,4 @@
-# Further configuration
+# Configuration
 
 This page is about the global bot configuration.
 For per-guild configuration, refer to the [Configuration](../configuration/index.md) page.
@@ -19,16 +19,19 @@ The installation guides also explain where to find most of the environment varia
 
 !!! example
 	```bash title=".env"
-	DISCORD_SECRET=rUpDU2T8K4ZXie8kdpzYsMTLbUhvmBRd
-	DISCORD_TOKEN=ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3UERxwANAZhQiA
 	DB_CONNECTION_URL="mysql://bots:VerySecurePassword123@localhost/tickets0"
 	DB_PROVIDER=mysql
+	DISCORD_SECRET=rUpDU2T8K4ZXie8kdpzYsMTLbUhvmBRd
+	DISCORD_TOKEN=ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3UERxwANAZhQiA
 	ENCRYPTION_KEY=445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a
-	HTTP_BIND=8080
-	HTTP_EXTERNAL=http://tickets-admin.example.com:8080
-	SETTINGS_BIND=8888
-	PORTAL=https://tickets.example.com
+	HTTP_EXTERNAL=https://tickets.example.com
+	HTTP_HOST=0.0.0.0
+	HTTP_PORT=8080
+	HTTP_TRUST_PROXY=true
+	OVERRIDE_ARCHIVE=
 	PUBLIC_BOT=false
+	SETTINGS_HOST=127.0.0.1
+	SETTINGS_PORT=8169
 	SUPER=319467558166069248
 	```
 
@@ -171,23 +174,25 @@ If it doesn't exist, run the bot and it will be generated for you.
 
 !!! example
 	```yaml title="user/config.yml"
-	logs:
-	  files:
-	    directory: ./logs
-	    enabled: true
-	    keepFor: 30
-	  level: info
-	presence:
-	  activities:
-	    - name: /new
-	    - name: with {totalTickets} tickets
-	    - name: '{openTickets} tickets'
-	      type: 3
-	    - name: '{avgResponseTime} response time'
-	      type: 3
-	  interval: 20
-	  status: online
-	stats: true
+    logs:
+      files:
+        directory: ./logs
+        enabled: true
+        keepFor: 30
+      level: info
+    presence:
+      activities:
+        - name: /new
+        - name: with {totalTickets} tickets
+        - name: "{openTickets} tickets"
+          type: 3
+        - name: "{avgResponseTime} response time"
+          type: 3
+      interval: 20
+      status: online
+    stats: true
+    templates:
+      transcript: transcript.md
 	```
 
 ### `logs`
@@ -243,7 +248,7 @@ The activity name, which may contain these placeholders:
 - `{avgResolutionTime}`
 - `{avgResponseTime}`
 - `{openTickets}`
-- `{totalTickets`}
+- `{totalTickets}`
 
 ##### `type`
 
