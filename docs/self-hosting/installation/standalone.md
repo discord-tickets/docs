@@ -1,8 +1,11 @@
 ---
-description: Links to other guides that may be useful
+description: How to install Discord Tickets
 ---
 
-# Additional help
+# Standalone
+
+
+## Additional help
 
 !!! tip
 	These community guides will help you install and setup dependencies on your system.
@@ -21,7 +24,7 @@ description: Links to other guides that may be useful
 
     ---
 
-    How to install and securely setup MySQL on various Linux distributions.
+    How to install and securely set up MySQL on various Linux distributions.
 
     [:octicons-arrow-right-24: DigitalOcean Community](https://www.digitalocean.com/community/tutorial_collections/how-to-install-mysql)
 

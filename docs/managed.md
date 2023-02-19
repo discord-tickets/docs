@@ -28,10 +28,7 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
 
 #### Why are there two plans?
 
-Both plans run exactly the same code, the only differences are in configuration:
-
-1. Archiving is disabled in the Basic plan
-2. The portal is not installed in the Basic plan
+Both plans run exactly the same code, the only difference is that archiving is disabled on the Basic plan.
 
 !!! abstract
 	£3/month is already quite cheap, especially considering **you're paying for my time to install and update your bot so you don't have to.**
@@ -40,14 +37,9 @@ Both plans run exactly the same code, the only differences are in configuration:
 #### Why do archives cost extra?
 
 - Archiving dramatically increases CPU and database/storage usage
-- Hosting & updating the portal requires more of my time
 - Not everyone needs archives, so it would be unfair to make everyone pay more
 
 Instead of thinking of it as archives costing more, think of it as you can save money by not using archives if you don't need to.
-
-#### Why can't I view feedback?
-
-Users **can** submit feedback on the Basic plan, but the portal is currently the only way to view feedback, so you cannot view it.
 
 #### Which plan should I choose?
 
@@ -57,9 +49,9 @@ Users **can** submit feedback on the Basic plan, but the portal is currently the
 	=== "No"
 		Choose the **Basic** or the **Professional** plan
 
-??? question "Do you need the feedback feature?"
+??? question "Do you have an FQDN (domain name)?"
 	=== "Yes"
-		Choose the **Professional** plan to be able to view feedback
+		Choose the **Professional** plan
 	=== "No"
 		Choose the **Basic** or the **Professional** plan
 

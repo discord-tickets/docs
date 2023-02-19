@@ -12,12 +12,12 @@
 	
 Discord Tickets can be hosted either on a dedicated/virtualised machine or shared hosting. 
 
-| :fontawesome-brands-docker:<br>Docker { .docker .text-lg } | :fontawesome-brands-linux:<br>Standalone { .linux .text-lg } |           <br>Pterodactyl { .pterodactyl .text-lg }           |            <br>PebbleHost { .pebblehost .text-lg }             |
-| :--------------------------------------------------------: | :----------------------------------------------------------: | :-----------------------------------------------------------: | :------------------------------------------------------------: |
-|            Linux and Docker experience required            |                  Linux experience required                   |                Node.js experience recommended                 |                 Node.js experience recommended                 |
-|                       Most difficult                       |                     Moderately difficult                     |                            Easier                             |                            Easiest                             |
-|                  :octicons-clock-24: 15m                   |                   :octicons-clock-24: 15m                    |                    :octicons-clock-24: 10m                    |                    :octicons-clock-24: 10m                     |
-|  [Start](docker/index.md){.md-button .md-button--primary}  | [Start](standalone/index.md){.md-button .md-button--primary} | [Start](pterodactyl/index.md){.md-button .md-button--primary} | [Start](pebblehost/index.md){ .md-button .md-button--primary } |
+| :fontawesome-brands-docker:<br>Docker { .docker .text-lg } | :fontawesome-brands-linux:<br>Standalone { .linux .text-lg } | :fontawesome-solid-train:<br>Railway { .railway .text-lg } | :fontawesome-solid-crow:<br>Pterodactyl { .pterodactyl .text-lg } | :fontawesome-solid-cube:<br>PebbleHost { .pebblehost .text-lg } |
+| :--------------------------------------------------------: | :----------------------------------------------------------: | :--------------------------------------------------------: | :---------------------------------------------------------------: | :-------------------------------------------------------------: |
+|                 Docker experience required                 |                  Linux experience required                   |               Docker experience recommended                |                  Node.js experience recommended                   |                 Node.js experience recommended                  |
+|                       Most difficult                       |                     Moderately difficult                     |                            Easy                            |                              Easier                               |                             Easiest                             |
+|                  :octicons-clock-24: 15m                   |                   :octicons-clock-24: 15m                    |                  :octicons-clock-24: 10m                   |                      :octicons-clock-24: 10m                      |                     :octicons-clock-24: 10m                     |
+|     [Start](docker.md){.md-button .md-button--primary}     |    [Start](standalone.md){.md-button .md-button--primary}    |    [Start](railway.md){.md-button .md-button--primary}     |      [Start](pterodactyl.md){.md-button .md-button--primary}      |    [Start](pebblehost.md){ .md-button .md-button--primary }     |
 
 ## Hosting providers
 

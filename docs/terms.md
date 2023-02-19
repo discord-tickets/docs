@@ -32,7 +32,6 @@ The "services" include, but are not limited to:
 - The status.discordtickets.app website
 - The feedback.discordtickets.app website
 - Discord Tickets StatsAPI (stats.discordtickets.app)
-- Discord Tickets Proxy (proxy.discordtickets.app)
 - The publicly-hosted Discord Tickets Bot
 - Managed (private) Discord Tickets Bots
 
@@ -73,15 +72,6 @@ By using the websites, you agree to not abuse features and bugs or APIs, and not
 
 By sending data to the StatsAPI, you agree to not knowingly send incorrect data or make excess HTTP requests in an attempt to disrupt the service, invalidate the aggregated statistics,
 inflict additional cloud usage costs or send requests with any other malicious intent. 
-
-#### 3.1.3. Proxy
-
-The using [the proxy service](https://proxy.discordtickets.app), you acknowledge that the service is designed to encrypt data between the service and the end-user('s web browser),
-and by doing so, you are allowing me to process unencrypted data. Please read [the privacy policy](./privacy.md#service-privacy-policy).
-You acknowledge that whilst the origin (your server's IP) is encoded, it is not hidden by the service, and anyone can decode the URL.
-
-By using the service, you accept that the service is provided for free to make it easier for users to self-host the Discord Tickets Bot,
-and proxying anything other than the bot's internal web server (API, settings UI etc) is strictly forbidden.
 
 ##### 3.1.3.A. Fair use
 

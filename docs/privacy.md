@@ -98,19 +98,6 @@ The IP address is not stored or processed.
 This data is submitted optionally and is used for aggregated statistics to satisfy curiosity,
 and to guide bot development based on usage or systems.
 
-##### Proxy
-
-All unencrypted data proxied through the Discord Tickets Proxy *could* be seen by me, but is not.
-You can see the source code [on GitHub](https://github.com/discord-tickets/proxy/blob/main/index.js).
-
-The following data is logged and may be stored for up to 7 days (or longer for investigations):
-
-- request ID
-- requester IP address
-- target (origin) IP address and path (full URL).
-
-Request and response bodies are not read; the response from the origin is proxied directly to the requester without intercept.
-
 ##### Third-party services
 
 ###### Cloudflare

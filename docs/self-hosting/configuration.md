@@ -15,8 +15,7 @@ In most cases, the environment variables can be set by editing the `.env` file (
 The installation guides also explain where to find most of the environment variable values.  
 
 !!! warning
-	Keep your environment variables (`.env` file) safe.
-	It contains **secret** values and should be treated like a password.
+	Keep your environment variables safe, they should remain secret.
 
 !!! example
 	```bash title=".env"
@@ -62,9 +61,6 @@ The type of database the bot will use; one of:
 - `postgresql`
 - `sqlite`
 
-:octicons-alert-16: Warning: must match one of the above exactly, including being lowercase
-{ .orange }
-
 ### `DISCORD_SECRET`
 
 Your Discord application's secret key, used for OAuth2.
@@ -87,12 +83,6 @@ You can also run `npm run keygen` to generate a new key.
 	If someone manages to get access to your database (or a dump/backup) and they have the encryption key, your users' messages will be readable.
 	Similarly, if you lose this key, you will need to completely reset the database.
 
-### `HTTP_BIND`
-
-<small>:material-factory: Default: `8080`</small>
-
-The port number that the integrated web server will bind to.
-
 ### `HTTP_EXTERNAL`
 
 <small>:material-factory: Default: `http://localhost:8080`</small>
@@ -104,32 +94,62 @@ The full external URL used to access the bot's API or settings panel.
 	HTTP_EXTERNAL=http://tickets-admin.example.com
 	```
 
-### `PORTAL`
+### `HTTP_HOST`
+
+<small>:material-factory: Default: `0.0.0.0`</small>
+
+The interface that the integrated web server will listen on. 
+
+### `HTTP_PORT`
+
+<small>:material-factory: Default: `8080`</small>
+
+The port number that the integrated web server will bind to.
+
+!!! info
+	Ports lower than 1024 may require running as root to bind to.
+
+### `HTTP_TRUST_PROXY`
 
 <small>:octicons-question-16: Optional</small>
 
-The full external URL used to access the portal (if you have installed the portal).
+<small>:material-factory: Default: `false`</small>
 
-??? example
-	```bash title=".env"
-	PORTAL=https://portal.exmaple.com
-	```
+If you are running the bot behind a reverse proxy, set this to `true` (must be lowercase) to trust the `X-Forwarded-` headers.
+
+### `OVERRIDE_ARCHIVE`
+
+<small>:octicons-question-16: Optional</small>
+
+When set to `false` (lowercase), guilds' `archive` setting will be ignored, disabling the archive feature for all guilds.
 
 ### `PUBLIC_BOT`
+
 <small>:octicons-question-16: Optional</small>
 
 <small>:material-factory: Default: `false`</small>
 
 You should keep this as `false`.
 
-### `SETTINGS_BIND`
+### `SETTINGS_HOST`
 
-<small>:material-factory: Default: `8888`</small>
+<small>:material-factory: Default: `127.0.0.1`</small>
 
-The port that the second HTTP server (for the settings panel app) will bind to.
+The interface that the second HTTP server (Express, for the settings panel app) will listen on. 
+
+### `SETTINGS_PORT`
+
+<small>:material-factory: Default: `8169`</small>
+
+The port that Express will bind to.
 Unlike the [`HTTP_BIND`](#http_bind) port, this doesn't need to be open as it is proxied through the main web server.
 
+!!! info
+	Ports lower than 1024 may require running as root to bind to.
+
 ### `SUPER`
+
+<small>:octicons-question-16: Optional</small>
 
 <small>:material-factory: Default: `319467558166069248`</small>
 
@@ -167,8 +187,6 @@ If it doesn't exist, run the bot and it will be generated for you.
 	      type: 3
 	  interval: 20
 	  status: online
-	overrides:
-	  disableArchives: false
 	stats: true
 	```
 
@@ -220,12 +238,12 @@ An array of activities (length must be at least 1).
 
 ##### `name`
 
-The activity name, which may contain one these placeholders:
+The activity name, which may contain these placeholders:
 
-- `avgResolutionTime`
-- `avgResponseTime`
-- `openTickets`
-- `totalTickets`
+- `{avgResolutionTime}`
+- `{avgResponseTime}`
+- `{openTickets}`
+- `{totalTickets`}
 
 ##### `type`
 
@@ -253,16 +271,6 @@ The bot's status, one of:
 - `idle`
 - `invisible`
 - `dnd`
-
-### `overrides`
-
-You shouldn't need to change these options.
-
-#### `disableArchives`
-
-<small>:material-factory: Default: `false`</small>
-
-If archives should be disabled, regardless of guild settings.
 
 ### `stats`
 

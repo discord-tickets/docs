@@ -9,6 +9,12 @@
 	/* --md-accent-fg-color: #EB459E; */
 }
 
+.clickable:hover {
+	cursor: pointer;
+	color: var(--md-accent-fg-color);
+	transition: color .25s ease-out;
+}
+
 .pricing-table-container {
 	padding: 15px;
 	background-color: rgb(88, 101, 242);
@@ -91,6 +97,11 @@ img.embed-object-contain {
 
 .linux {
 	color: #E6B102;
+}
+
+.railway {
+	/* color: #853BCE; */
+	color: #B139CC;
 }
 
 .pterodactyl {

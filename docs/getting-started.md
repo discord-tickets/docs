@@ -27,6 +27,7 @@ If you need help choosing, [ask for help](#useful-links).
 | All features                   |                         :white_check_mark:                          |                         :white_check_mark:                          |                               :white_check_mark:                               |
 | Custom bot (username and icon) |                      :x:<br>(shared bot user)                       |                         :white_check_mark:                          |                               :white_check_mark:                               |
 | No installation [^3]           |                         :white_check_mark:                          |                         :white_check_mark:                          |                     :x:<br>(requires manual installation)                      |
+| Domain with SSL                |                               Shared                                |                  Free subdomain, or bring your own                  |                                 Bring your own                                 |
 | Always has the latest features |                         :white_check_mark:                          |  :white_check_mark:<br>(you may be contacted to schedule updates)   |                        :x:<br>(requires manual updates)                        |
 | Support me & bot development   |                                :+1:                                 |                          :heart:{ .pulse }                          |                        :+1:<br>(better if you sponsor)                         |
 | **Let's start!**               | [Add the public bot](./public.md){ .md-button .md-button--primary } | [Get a managed bot](./managed.md){ .md-button .md-button--primary } | [Host your own bot](./self-hosting/index.md){ .md-button .md-button--primary } |
@@ -43,6 +44,6 @@ Please search this site *(there's a search bar at the top!)* before asking for s
 - [GitHub Discussions](https://github.com/discord-tickets/bot/discussions)
 - [Suggestions](https://lnk.earth/dsctickets-feedback)
 
-[^1]: Self-hosting difficulty depends on the hosting method chosen
+[^1]: Self-hosting difficulty depends on the hosting method chosen and your experience
 [^2]: Pricing depends on the chosen hosting provider
 [^3]: Installation-free methods still require bot configuration within your guild (unless you purchase the configuration service) 

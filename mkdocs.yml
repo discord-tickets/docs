@@ -11,6 +11,7 @@ edit_uri: https://github.com/discord-tickets/docs/blob/main/docs/
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
+  - javascripts/extra.js
   - javascripts/feedback.js
 
 theme:
@@ -96,23 +97,14 @@ nav:
       - Self-hosting: self-hosting/index.md
       - Installation:
         - Installation: self-hosting/installation/index.md
-        - Docker:
-          - Docker: self-hosting/installation/docker/index.md
-          - Environment variables: self-hosting/installation/docker/env.md
-        - Standalone:
-          - Standalone: self-hosting/installation/standalone/index.md
-          - Environment variables: self-hosting/installation/standalone/env.md
-          - Additional help: self-hosting/installation/standalone/additional-help.md
-        - Pterodactyl:
-          - Pterodactyl: self-hosting/installation/pterodactyl/index.md
-          - Environment variables: self-hosting/installation/pterodactyl/env.md
-        - PebbleHost:
-          - PebbleHost: self-hosting/installation/pebblehost/index.md
-          - Environment variables: self-hosting/installation/pebblehost/env.md
+        - Docker: self-hosting/installation/docker.md
+        - Standalone: self-hosting/installation/standalone.md
+        - Railway: self-hosting/installation/railway.md
+        - Pterodactyl: self-hosting/installation/pterodactyl.md
+        - PebbleHost: self-hosting/installation/pebblehost.md
       - Creating your Discord application: self-hosting/discord-application.md
       - Further configuration: self-hosting/configuration.md
       - Reverse proxy setup: self-hosting/reverse-proxy.md
-      - Portal installation: self-hosting/portal.md
       - Updating: self-hosting/updating.md
     - Configuration:
       - Configuration: configuration/index.md
