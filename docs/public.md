@@ -10,7 +10,7 @@ The public bot is completely free, requires no installation (because it's hosted
 
 To get started:
 
-1. [Login to the Discord Tickets Portal](https://portal.discordtickets.app/settings), then click the ":octicons-plus-24: Add" button
+1. [Login to the Discord Tickets Portal](https://portal.discordtickets.app/settings), then click the ":octicons-plus-16:&nbsp;Add" button
 2. [Configure](configuration/index.md) your bot
 
 [Login](https://portal.discordtickets.app/settings){ .md-button .md-button--primary }

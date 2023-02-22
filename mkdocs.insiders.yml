@@ -58,7 +58,7 @@ extra:
 
 
             Thanks for your feedback! Help us improve this page by
-            <a href="https://github.com/discord-tickets/docs/issues" target="_blank" rel="noopener">submitting an issue</a>.
+            <a href="https://github.com/discord-tickets/docs/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">submitting an issue</a>.
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/discord-tickets

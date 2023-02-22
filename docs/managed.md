@@ -11,11 +11,6 @@ Choose a plan to get started.
 
 ## Plans
 
-!!! warning "Before you buy"
-	You need to follow [this guide](self-hosting/discord-application.md)
-	<small><abbr title="This should take about 3 minutes">:octicons-clock-24: 3m</abbr></small>
-	to correctly create your Discord application and find the bot token.
-
 <small markdown>
 Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discount.
 </small>
@@ -57,7 +52,7 @@ Instead of thinking of it as archives costing more, think of it as you can save 
 
 #### Can my bot have a custom status/activity?
 
-Yes, you can include this in the comments field when you order, or ask later in a ticket on Discord.
+Yes, you can specify custom activities when you create a ticket.
 Check [the documentation](./self-hosting/configuration.md#presence) for available placeholders.
 
 #### Can I pay with PayPal?
@@ -82,6 +77,7 @@ or by creating a ticket on Discord.
 
 #### What happens after I pay?
 
-Please [join the Discord server](https://lnk.earth/discord), and if you have not received a DM within 24 hours, create a ticket.
+Please [join the Discord server](https://lnk.earth/discord) and create a ticket.
+Your bot will usually be ready within 24 hours.
 
 > **:question: Still have questions? Create a ticket [on Discord](https://lnk.earth/discord) for help.**

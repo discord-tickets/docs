@@ -27,7 +27,7 @@ description: How to create a new Discord application for Discord Tickets
 
 	![Screenshot](/img/discord-application-3.png)
 5. Click `Add Redirect` and enter the value of your `HTTP_EXTERNAL` environment variable, followed by `/auth/callback`.
-	Then click `Save Changes`.
+	Then click `Save Changes`. **If you are getting a [managed bot](../managed.md), skip this step and come back to it later.**
 
 	!!! example "Examples"
 		- `http://12.345.67.89:8080/auth/callback`

@@ -83,7 +83,6 @@ server {
 2. Change the port to match your bot's `HTTP_PORT` environment variable.
    Also, change the IP address if the bot is running on a different server.
 
-
 ## PebbleHost
 
 <div class="grid cards" markdown>

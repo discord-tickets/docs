@@ -94,7 +94,7 @@ The full external URL used to access the bot's API or settings panel.
 
 ??? example
 	```bash title=".env"
-	HTTP_EXTERNAL=http://tickets-admin.example.com
+	HTTP_EXTERNAL=http://tickets.example.com
 	```
 
 ### `HTTP_HOST`
@@ -107,10 +107,10 @@ The interface that the integrated web server will listen on.
 
 <small>:material-factory: Default: `8080`</small>
 
-The port number that the integrated web server will bind to.
-
-!!! info
+!!! inline end info "Info"
 	Ports lower than 1024 may require running as root to bind to.
+
+The port number that the integrated web server will bind to.
 
 ### `HTTP_TRUST_PROXY`
 
@@ -144,11 +144,11 @@ The interface that the second HTTP server (Express, for the settings panel app) 
 
 <small>:material-factory: Default: `8169`</small>
 
+!!! inline end info "Info"
+	Ports lower than 1024 may require running as root to bind to.
+
 The port that Express will bind to.
 Unlike the [`HTTP_BIND`](#http_bind) port, this doesn't need to be open as it is proxied through the main web server.
-
-!!! info
-	Ports lower than 1024 may require running as root to bind to.
 
 ### `SUPER`
 

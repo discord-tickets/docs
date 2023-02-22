@@ -11,11 +11,15 @@ subtitle: Start here!
 
 ## Welcome
 
+--8<-- "includes/features.md"
+
 Welcome to the Discord Tickets documentation.
 Now that you've chosen to use the best ticket bot for Discord, you need to decide how you want to use it.
 
 Please compare the three options, then click on a button at the bottom of the table to jump to the relevant section of the documentation.
 If you need help choosing, [ask for help](#useful-links).
+
+---
 
 <div id="gs-table" class="larger-icons" markdown>
 
@@ -33,8 +37,6 @@ If you need help choosing, [ask for help](#useful-links).
 | **Let's start!**               | [Add the public bot](./public.md){ .md-button .md-button--primary } | [Get a managed bot](./managed.md){ .md-button .md-button--primary } | [Host your own bot](./self-hosting/index.md){ .md-button .md-button--primary } |
 
 </div>
-
---8<-- "includes/features.md"
 
 ## Useful links
 
