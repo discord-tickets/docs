@@ -5,3 +5,6 @@
 *[VM]: Virtual Machine
 *[RAM]: Random Access Memory
 *[locale]: The name for language and region settings
+*[FQDN]: Fully qualified domain name (e.g. `example.com`)
+*[SSL]: Secure Sockets Layer
+*[TLS]: Transport Layer Security

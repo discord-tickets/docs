@@ -37,7 +37,7 @@ these community guides may help.
 ## Installation
 
 Start by cloning the most recent release from GitHub with the following command,
-where `<tag>` is the name of the latest release tag,
+where `{==<tag>==}` is the name of the latest release tag,
 which you can find at the top right corner of this page,
 or on the [releases page](https://github.com/discord-tickets/bot/releases/latest).
 
@@ -47,12 +47,12 @@ but you can change this by adding a folder name after the URL.
 <div class="annotate" markdown>
 
 ```{ linenums="0" }
-git clone --depth 1 --branch <tag>(1) https://github.com/discord-tickets/bot.git
+git clone --depth 1 --branch {==<tag>==}(1) https://github.com/discord-tickets/bot.git
 ```
 
 </div>
 
-1. Replace `<tag>` with the latest release tag name, e.g. `v4.0.0`
+1. Replace `{==<tag>==}` with the latest release tag name, e.g. `v4.0.0`
 
     !!! example
         ```{ .bash linenums="0" }
@@ -167,7 +167,7 @@ pm2 start .(1)
 
     !!! example
         ```{ .bash linenums="0" }
-        pm2 start . --name tickets
+        pm2 start .{++ --name tickets++}
         ```
 
 Refer to the [PM2 documentation](https://pm2.keymetrics.io/docs/usage/quick-start/) for more information.
@@ -175,3 +175,7 @@ Refer to the [PM2 documentation](https://pm2.keymetrics.io/docs/usage/quick-star
 ## Publishing the commands
 
 Type `commands publish` in the console (whilst the bot is running) to publish the commands to Discord.
+
+## Reverse proxy
+
+If you have an FQDN, you should [set up a reverse proxy](../reverse-proxy.md) with SSL/TLS.
