@@ -1,17 +1,9 @@
----
-description: How to create a new Discord application for Discord Tickets
----
-
-# Creating your Discord application
-
 !!! warning
-	Don't skip this page if you already know how to create a Discord application;
+	Don't skip this section if you already know how to create a Discord application;
 	Discord Tickets requires additional configuration.
 	Using an existing application is not recommended.
 
-1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
-
-	--8<-- "includes/middle-click.md"
+1. Go to the [Discord Developer Portal :octicons-link-external-16:](https://discord.com/developers/applications){ target="_blank" rel="noopener external" }
 
 2. Create an application
 
@@ -27,11 +19,14 @@ description: How to create a new Discord application for Discord Tickets
 
 	![Screenshot](/img/discord-application-3.png)
 5. Click `Add Redirect` and enter the value of your `HTTP_EXTERNAL` environment variable, followed by `/auth/callback`.
-	Then click `Save Changes`. **If you are getting a [managed bot](../managed.md), skip this step and come back to it later.**
+	Then click `Save Changes`.
 
 	!!! example "Examples"
 		- `http://12.345.67.89:8080/auth/callback`
 		- `https://tickets.example.com/auth/callback`
+
+    If you set this to `https://tickets.example.com/auth/callback`,
+    your `HTTP_EXTERNAL` environment variable must be set to `https://tickets.example.com` *(without a trailing `/`)*.
 
 	![Screenshot](/img/discord-application-4.png)
 6. Create the bot user
@@ -43,7 +38,7 @@ description: How to create a new Discord application for Discord Tickets
 7. Configure the bot
 
 	1. Optionally, disable the "public bot" option to prevent other people from adding your bot to their servers.
-	2. Enable the "server members" and "message content" intents.
+	2. **Enable the `server members` and `message content` intents.**
  
 	![Screenshot](/img/discord-application-6.png)
 

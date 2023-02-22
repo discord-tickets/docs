@@ -1,6 +1,6 @@
 # Reverse proxy setup
 
-Securing your bot with [SSL/TLS encryption](https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/) is highly recommended.
+Securing your bot with [SSL/TLS encryption](https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/) is strongly recommended.
 
 To do this, you need:
 
@@ -14,10 +14,10 @@ To do this, you need:
 If you already have a domain and know how to create an HTTPS proxy, you can safely skip this page. 
 If not, there are several options available:
 
-|                   | Traefik + Let's Encrypt | Nginx + Let's Encrypt |   PebbleHost    |
-| :---------------- | :---------------------: | :-------------------: | :-------------: |
-| Difficulty        |  Moderate { .orange }   | Moderate { .orange }  | Easy { .green } |
-| Bot installations |       Docker only       |          Any          | PebbleHost only |
+|                   | [Traefik](#traefik)  |   [Nginx](#nginx)    | [Caddy](#caddy) | [PebbleHost](#pebblehost) |
+| :---------------- | :------------------: | :------------------: | :-------------: | :-----------------------: |
+| Difficulty        | Moderate { .orange } | Moderate { .orange } | Easy { .green } |      Easy { .green }      |
+| Bot installations |     Docker only      |         Any          |       Any       |      PebbleHost only      |
 
 !!! warning
     Make sure you set the bot's `HTTP_TRUST_PROXY` environment variable to `true` if you're using a reverse proxy.
@@ -25,8 +25,8 @@ If not, there are several options available:
 
 ## Traefik
 
+<!-- TODO: -->
 *soon™️*
-
 
 ## Nginx
 
@@ -82,6 +82,11 @@ server {
 1. Replace this with the FQDN that you set in your bot's `HTTP_EXTERNAL` environment variable.
 2. Change the port to match your bot's `HTTP_PORT` environment variable.
    Also, change the IP address if the bot is running on a different server.
+
+## Caddy
+
+<!-- TODO: -->
+https://caddyserver.com/
 
 ## PebbleHost
 

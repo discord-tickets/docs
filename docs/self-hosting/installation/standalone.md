@@ -46,16 +46,16 @@ but you can change this by adding a folder name after the URL.
 
 <div class="annotate" markdown>
 
-```
+```{ linenums="0" }
 git clone --depth 1 --branch <tag>(1) https://github.com/discord-tickets/bot.git
 ```
 
 </div>
 
-1. Replace `<tag_name>` with the latest release tag name, e.g. `v4.0.0`
+1. Replace `<tag>` with the latest release tag name, e.g. `v4.0.0`
 
     !!! example
-        ```bash
+        ```{ .bash linenums="0" }
         git clone --depth 1 --branch v4.0.0 https://github.com/discord-tickets/bot.git tickets
         ```
 
@@ -67,33 +67,111 @@ git clone --depth 1 --branch <tag>(1) https://github.com/discord-tickets/bot.git
 
 Next, install the dependencies with:
 
-```bash
-npm i --production # or `pnpm i --prod`
-```
+=== "npm"
+    ```{ .bash linenums="0" }
+    npm i --production
+    ```
+=== "pnpm"
+    ```{ .bash linenums="0" }
+    pnpm i --prod
+    ```
+
 
 NPM is configured to run scripts before and after installation.
 
 - The pre-install script generates a random encryption key and then creates a `.env` file
 - The post-install script prepares the database, but it won't do anything the first time as you need to tell it which database to use
 
----
+## Environment variables
 
---8<-- "includes/middle-click--inline.md"
+Using the `.env` file is the recommended way to set environment variables.
 
-Now you need to set the environment variables in the `.env` file.
-Refer to the [configuration guide](../configuration.md) for more information, and **return to this page when you have finished.**
+### Creating the Discord application
 
-[Environment variables](../configuration.md#environment-variables){ .md-button .md-button--primary }
+--8<-- "includes/discord-application.md"
 
----
+### Other environment variables
 
-After setting the database-specific environment variables, run the post-install script again:
+The only other required non-default environment variables are `DB_PROVIDER`,
+and `DB_CONNECTION_URL` if you are not using SQLite as your database.
 
-```bash
-npm run postinstall # or `pnpm run postinstall`
+--8<-- "includes/env.md"
+
+After setting the required environment variables, run the post-install script again:
+
+=== "npm"
+    ```{ .bash linenums="0" }
+    npm run postinstall
+    ```
+=== "pnpm"
+    ```{ .bash linenums="0" }
+    pnpm run postinstall
+    ```
+
+This will connect to the database (or create it if using SQLite) and apply migrations to create the tables according to the schema.
+It will also generate the Prisma ORM client.
+
+## Starting the bot
+
+You can now start the bot with:
+
+<div class="annotate" markdown>
+
+```{ linenums="0" }
+node .(1)
 ```
 
-<!--
-once env is set, `node .`, pm2 etc
-#main-configuration-file
--->
+</div>
+
+1. You might have noticed that there isn't an `index.js` file at the root of the repository. 
+    This command works because the `main` field in the `package.json` file is set to `src/`,
+    so `node .` can be used to start Node.js with `src/index.js` as the entrypoint.
+
+The first time you start the bot, it will copy the default configuration into `user/config.yml`.
+
+If you want to customise your bot's status/activities, refer to the [configuration guide](../configuration.md#main-configuration-file).
+You will need to restart the bot for the changes to take effect. (1)
+{ .annotate }
+
+1. Type `exit` or press ++ctrl+c++ to stop the process.
+
+### Daemonising
+
+Currently, the process will end when you close the terminal (or disconnect your SSH session). 
+To run the bot in the background, you can turn it into a service with  `systemd`, `screen`, `pm2` etc.
+
+#### PM2
+
+[PM2](https://pm2.keymetrics.io/) is a process manager made for Node.js applications and is the easiest option.
+
+Start by installing it and then starting the bot:
+
+=== "npm"
+    ```{ .bash linenums="0" }
+    npm i -g pm2
+    ```
+=== "pnpm"
+    ```{ .bash linenums="0" }
+    pnpm add -g pm2
+    ```
+
+<div class="annotate" markdown>
+
+```{ linenums="0" }
+pm2 start .(1)
+```
+
+</div>
+
+1. You can give the process a custom name with the  `--name` flag.
+
+    !!! example
+        ```{ .bash linenums="0" }
+        pm2 start . --name tickets
+        ```
+
+Refer to the [PM2 documentation](https://pm2.keymetrics.io/docs/usage/quick-start/) for more information.
+
+## Publishing the commands
+
+Type `commands publish` in the console (whilst the bot is running) to publish the commands to Discord.

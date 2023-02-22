@@ -14,8 +14,11 @@ In most cases, the environment variables can be set by editing the `.env` file (
 
 The installation guides also explain where to find most of the environment variable values.  
 
-!!! warning
-	Keep your environment variables safe, they should remain secret.
+!!! danger
+	Keep your environment variables safe.
+	Your Discord `token` and `secret` are extremely dangerous in the wrong hands,
+	and your database is useless if you lose the encryption key. 
+	These example values are fake; **do not share real values** (in version control, pastes, screenshots, etc).
 
 !!! example
 	```bash title=".env"
@@ -37,7 +40,7 @@ The installation guides also explain where to find most of the environment varia
 
 ### `DB_CONNECTION_URL`
 
-<small>:octicons-question-16: Optional</small>
+<small>:octicons-question-16: Conditionally optional</small>
 
 The MySQL or PostgreSQL database connection string.
 If you are using SQLite, this is not required.
@@ -67,12 +70,12 @@ The type of database the bot will use; one of:
 ### `DISCORD_SECRET`
 
 Your Discord application's secret key, used for OAuth2.
-Follow the [Creating your Discord application](discord-application.md) guide to find this. 
+Follow the installation guides to find this.
 
 ### `DISCORD_TOKEN`
 
 Your Discord application's authentication token.
-Follow the [Creating your Discord application](discord-application.md) guide to find this. 
+Follow the installation guides to find this.
 
 ### `ENCRYPTION_KEY`
 
@@ -101,7 +104,8 @@ The full external URL used to access the bot's API or settings panel.
 
 <small>:material-factory: Default: `0.0.0.0`</small>
 
-The interface that the integrated web server will listen on. 
+The interface that the integrated web server will listen on.
+The default accepts connections from anywhere (assuming your firewall allows it).
 
 ### `HTTP_PORT`
 
@@ -114,9 +118,10 @@ The port number that the integrated web server will bind to.
 
 ### `HTTP_TRUST_PROXY`
 
-<small>:octicons-question-16: Optional</small>
-
-<small>:material-factory: Default: `false`</small>
+<small>
+:octicons-question-16: Optional ·
+:material-factory: Default: `false`
+</small>
 
 If you are running the bot behind a reverse proxy, set this to `true` (must be lowercase) to trust the `X-Forwarded-` headers.
 
@@ -128,9 +133,10 @@ When set to `false` (lowercase), guilds' `archive` setting will be ignored, disa
 
 ### `PUBLIC_BOT`
 
-<small>:octicons-question-16: Optional</small>
-
-<small>:material-factory: Default: `false`</small>
+<small>
+:octicons-question-16: Optional ·
+:material-factory: Default: `false`
+</small>
 
 You should keep this as `false`.
 
@@ -138,7 +144,9 @@ You should keep this as `false`.
 
 <small>:material-factory: Default: `127.0.0.1`</small>
 
-The interface that the second HTTP server (Express, for the settings panel app) will listen on. 
+The interface that the second HTTP server (Express, for the settings panel app) will listen on.
+
+Keeping the default value is recommended to ensure all traffic is proxied through the main web server.
 
 ### `SETTINGS_PORT`
 
@@ -147,14 +155,16 @@ The interface that the second HTTP server (Express, for the settings panel app) 
 !!! inline end info "Info"
 	Ports lower than 1024 may require running as root to bind to.
 
-The port that Express will bind to.
+The port that Express will bind to, which you shouldn't need to change,
+but is configurable just in case it conflicts with something else.
 Unlike the [`HTTP_BIND`](#http_bind) port, this doesn't need to be open as it is proxied through the main web server.
 
 ### `SUPER`
 
-<small>:octicons-question-16: Optional</small>
-
-<small>:material-factory: Default: `319467558166069248`</small>
+<small>
+:octicons-question-16: Optional ·
+:material-factory: Default: `319467558166069248`
+</small>
 
 A comma-separated list of Discord user IDs that have elevated privileges.
 These users (typically the bot owners) are allowed to manage the settings of any guild, regardless of their roles or permissions in that guild.
@@ -252,9 +262,10 @@ The activity name, which may contain these placeholders:
 
 ##### `type`
 
-<small>:octicons-question-16: Optional</small>
-
-<small>:material-factory: Default: `0`</small>
+<small>
+:octicons-question-16: Optional ·
+:material-factory: Default: `0`
+</small>
 
 The activity type (playing, watching etc).
 
