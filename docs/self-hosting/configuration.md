@@ -82,7 +82,10 @@ Follow the installation guides to find this.
 The key used for encrypting data in the database and signing JWTs (authentication cookies).
 
 This is usually generated for you automatically.
-You can also run `npm run keygen` to generate a new key.
+You can also run `npm run keygen` to generate a new key,
+or use this generator:
+
+--8<-- "includes/encryption-key.html"
 
 !!! danger
 	**Keep this safe!**
