@@ -1,5 +1,9 @@
 # Reverse proxy setup
 
+!!! bug
+    Please disregard this page for now.
+    You are likely to encounter issues, which should be fixed before or in version 4.1.
+
 Securing your bot with [SSL/TLS encryption](https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/) is strongly recommended.
 
 To do this, you need:

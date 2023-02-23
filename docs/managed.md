@@ -25,7 +25,7 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
 
 Both plans run exactly the same code, the only difference is that archiving is disabled on the Basic plan.
 
-!!! abstract
+!!! abstract ""
 	£3/month is already quite cheap, especially considering **you're paying for my time to install and update your bot so you don't have to.**
 	The Basic plan exists so **you can pay even less if you don't need all of the features**.
 

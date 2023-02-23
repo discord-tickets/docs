@@ -4,9 +4,10 @@ description: How to install Discord Tickets on Linux
 
 # Standalone
 
-This guide is written for Linux systems.
-The process is similar on Windows, but the commands may differ.
-Alternatively, you can install the bot on Windows with [Docker](./docker.md).
+!!! info ""
+	This guide is written for Linux systems.
+	The process is similar on Windows, but the commands may differ.
+    Alternatively, you can install the bot on Windows with [Docker](./docker.md).
 
 Before you start, you need to make sure your system meets [the requirements](../index.md#requirements).
 
@@ -46,7 +47,7 @@ but you can change this by adding a folder name after the URL.
 
 <div class="annotate" markdown>
 
-```{ linenums="0" }
+``` linenums="0"
 git clone --depth 1 --branch {==<tag>==}(1) https://github.com/discord-tickets/bot.git
 ```
 
@@ -55,7 +56,7 @@ git clone --depth 1 --branch {==<tag>==}(1) https://github.com/discord-tickets/b
 1. Replace `{==<tag>==}` with the latest release tag name, e.g. `v4.0.0`
 
     !!! example
-        ```{ .bash linenums="0" }
+        ```bash linenums="0"
         git clone --depth 1 --branch v4.0.0 https://github.com/discord-tickets/bot.git tickets
         ```
 
@@ -68,11 +69,11 @@ git clone --depth 1 --branch {==<tag>==}(1) https://github.com/discord-tickets/b
 Next, install the dependencies with:
 
 === "npm"
-    ```{ .bash linenums="0" }
+    ```bash linenums="0"
     npm i --production
     ```
 === "pnpm"
-    ```{ .bash linenums="0" }
+    ```bash linenums="0"
     pnpm i --prod
     ```
 
@@ -100,11 +101,11 @@ and `DB_CONNECTION_URL` if you are not using SQLite as your database.
 After setting the required environment variables, run the post-install script again:
 
 === "npm"
-    ```{ .bash linenums="0" }
+    ```bash linenums="0"
     npm run postinstall
     ```
 === "pnpm"
-    ```{ .bash linenums="0" }
+    ```bash linenums="0"
     pnpm run postinstall
     ```
 
@@ -117,7 +118,7 @@ You can now start the bot with:
 
 <div class="annotate" markdown>
 
-```{ linenums="0" }
+```linenums="0"
 node .(1)
 ```
 
@@ -147,17 +148,17 @@ To run the bot in the background, you can turn it into a service with  `systemd`
 Start by installing it and then starting the bot:
 
 === "npm"
-    ```{ .bash linenums="0" }
+    ```bash linenums="0"
     npm i -g pm2
     ```
 === "pnpm"
-    ```{ .bash linenums="0" }
+    ```bash linenums="0"
     pnpm add -g pm2
     ```
 
 <div class="annotate" markdown>
 
-```{ linenums="0" }
+```linenums="0"
 pm2 start .(1)
 ```
 
@@ -166,7 +167,7 @@ pm2 start .(1)
 1. You can give the process a custom name with the  `--name` flag.
 
     !!! example
-        ```{ .bash linenums="0" }
+        ```bash linenums="0"
         pm2 start .{++ --name tickets++}
         ```
 

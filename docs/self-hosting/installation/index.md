@@ -10,7 +10,7 @@
 		</p>
 	</div>
 	
-Discord Tickets can be hosted either on a dedicated/virtualised machine or shared hosting. 
+Discord Tickets can be hosted either on a dedicated/virtualised machine or shared service. 
 
 | :fontawesome-brands-docker:<br>Docker { .docker .text-lg } | :fontawesome-brands-linux:<br>Standalone { .linux .text-lg } | :fontawesome-solid-train:<br>Railway { .railway .text-lg } | :fontawesome-solid-crow:<br>Pterodactyl { .pterodactyl .text-lg } | :fontawesome-solid-cube:<br>PebbleHost { .pebblehost .text-lg } |
 | :--------------------------------------------------------: | :----------------------------------------------------------: | :--------------------------------------------------------: | :---------------------------------------------------------------: | :-------------------------------------------------------------: |

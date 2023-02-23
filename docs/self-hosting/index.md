@@ -1,6 +1,6 @@
 # Self-hosting
 
-!!! warning
+!!! warning ""
 	Previous experience with hosting is recommended.
 	If you don't understand this section, consider getting a [managed bot](../managed.md) instead.
 
@@ -27,7 +27,7 @@ Using `git` is strongly recommended.
 | `postgresql`              | PostgreSQL        | `9.4`, `10`, `11`, `12`, `13`, `14` |
 | `sqlite`                  | SQLite (built-in) | `*`                                 |
 
-!!! warning
+!!! warning ""
 	**SQLite should be avoided, especially if you are going to use the archiving feature.**
 	It is significantly slower than a separate database server.
 
