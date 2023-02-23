@@ -10,15 +10,16 @@ description: How to install Discord Tickets with Docker
 
 Before you start, you need to make sure your system meets [the requirements](../index.md#requirements).
 
-Unless you already have a database and reverse proxy set up, using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot@main/docker-compose.yml) file is recommended over pure Docker.
+Unless you already have a database and reverse proxy set up, using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file is recommended over pure Docker.
 
 ## Docker Compose
 
 The default docker-compose file contains two services:
+
 - Discord Tickets
 - MySQL
 
-Start by making a directory(1) and downloading the [`docker-compose.yml`](https://dl.discordtickets.app/bot@main/docker-compose.yml) file from GitHub.
+Start by making a directory(1) and downloading the [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file from GitHub.
 { .annotate }
 
 1. The name isn't important, but `tickets-bot` is used as an example in this guide.
@@ -30,15 +31,15 @@ mkdir tickets-bot && cd tickets-bot
 
 === "`wget`"
     ```bash linenums="0"
-    wget https://dl.discordtickets.app/bot@main/docker-compose.yml
+    wget https://dl.discordtickets.app/bot/docker-compose.yml
     ```
 === "`curl`"
 	```bash linenums="0"
-	curl -O https://dl.discordtickets.app/bot@main/docker-compose.yml
+	curl -O https://dl.discordtickets.app/bot/docker-compose.yml
 	```
 === "Other"
     <!-- jsdelivr forces download -->
-    You can also [download the file](https://dl.discordtickets.app/bot@main/docker-compose.yml) in your browser.
+    You can also [download the file](https://dl.discordtickets.app/bot/docker-compose.yml) in your browser.
 
 ### Environment variables
 

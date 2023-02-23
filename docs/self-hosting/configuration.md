@@ -160,7 +160,7 @@ Keeping the default value is recommended to ensure all traffic is proxied throug
 
 The port that Express will bind to, which you shouldn't need to change,
 but is configurable just in case it conflicts with something else.
-Unlike the [`HTTP_BIND`](#http_bind) port, this doesn't need to be open as it is proxied through the main web server.
+Unlike the [`HTTP_PORT`](#http_port), this doesn't need to be open as it is proxied through the main web server.
 
 ### `SUPER`
 
@@ -176,7 +176,7 @@ These users (typically the bot owners) are allowed to manage the settings of any
 	If you keep the default (`319467558166069248`), I can help you without you needing to give me administrator permissions in your guild.
 	You can also add your own ID:
 	
-	```bash title=".env"
+	```bash title=".env" linenums="14"
 	SUPERS=319467558166069248,youruseridhere
 	```
 

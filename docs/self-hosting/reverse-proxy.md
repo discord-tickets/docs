@@ -8,7 +8,7 @@ Securing your bot with [SSL/TLS encryption](https://www.cloudflare.com/en-gb/lea
 
 To do this, you need:
 
-1. A domain name (e.g. `example.com`)
+1. An FQDN (e.g. `example.com`)
 2. To set up a web server as a reverse proxy 
 
 !!! tip

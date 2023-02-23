@@ -179,4 +179,4 @@ Type `commands publish` in the console (whilst the bot is running) to publish th
 
 ## Reverse proxy
 
-If you have an FQDN, you should [set up a reverse proxy](../reverse-proxy.md) with SSL/TLS.
+If you have a domain name, you should [set up a reverse proxy](../reverse-proxy.md) with SSL/TLS.
