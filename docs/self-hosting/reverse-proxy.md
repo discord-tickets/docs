@@ -1,8 +1,7 @@
 # Reverse proxy setup
 
 !!! bug
-    Please disregard this page for now.
-    You are likely to encounter issues, which should be fixed before or in version 4.1.
+    You can attempt this, but you are likely to encounter issues, which should be fixed before or in version 4.1.
 
 Securing your bot with [SSL/TLS encryption](https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/) is strongly recommended.
 
@@ -23,8 +22,8 @@ If not, there are several options available:
 | Difficulty        | Moderate { .orange } | Moderate { .orange } | Easy { .green } |      Easy { .green }      |
 | Bot installations |     Docker only      |         Any          |       Any       |      PebbleHost only      |
 
-!!! warning
-    Make sure you set the bot's `HTTP_TRUST_PROXY` environment variable to `true` if you're using a reverse proxy.
+!!! warning ""
+    Make sure you set the bot's `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
 
 
 ## Traefik

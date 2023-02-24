@@ -10,11 +10,12 @@ description: How to install Discord Tickets with Docker
 
 Before you start, you need to make sure your system meets [the requirements](../index.md#requirements).
 
-Unless you already have a database and reverse proxy set up, using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file is recommended over pure Docker.
+Unless you know what you're doing and already have a database and reverse proxy set up,
+using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file is recommended over [pure Docker](#pure-docker).
 
 ## Docker Compose
 
-The default docker-compose file contains two services:
+The default configuration contains two services:
 
 - Discord Tickets
 - MySQL
@@ -52,6 +53,10 @@ Open `docker-compose.yml` in your preferred text editor(1) and modify the highli
 		nano docker-compose.yml
 		```
 
+!!! bug
+	Due to a design flaw, the internal (container) and external (host) ports must be the same.
+	This may be fixed in v4.1.
+
 --8<-- "includes/env.md"
 
 <div class="annotate" markdown>
@@ -76,7 +81,7 @@ services:
       MYSQL_USER: tickets
   
   bot:
-    image: discord-tickets:4.0 # (3)!
+    image: eartharoid/discord-tickets:4.0 # (3)!
     depends_on:
       - mysql
     restart: unless-stopped
@@ -84,9 +89,11 @@ services:
     networks:
       - discord-tickets
     ports:
-      - 8080:80
+      - 8080:8080
     volumes:
       - tickets-bot:/usr/bot/user
+	tty: true
+    stdin_open: true
     # Please refer to the documentation:
     # https://discordtickets.app/self-hosting/configuration/#environment-variables
     environment:
@@ -97,9 +104,10 @@ services:
       DB_PROVIDER: mysql
       HTTP_EXTERNAL: http://127.0.0.1:8080 # (8)!
       HTTP_HOST: 0.0.0.0
-      HTTP_PORT: 80
+      HTTP_PORT: 8080
       HTTP_TRUST_PROXY: false # (9)!
       PUBLIC_BOT: false
+	  PUBLISH_COMMANDS: false
       OVERRIDE_ARCHIVE: null
       SETTINGS_PORT: 8169
       SETTINGS_HOST: 127.0.0.1
@@ -145,12 +153,55 @@ Copy the value below and set it as the `ENCRYPTION_KEY` environment variable.
 
 ### Starting the bot
 
+Start the containers:
+
+```bash linenums="0"
+docker-compose up -d
+```
+
 
 ### Publishing the commands
 
-docker attach
+First, find the bot container's ID:
+
+```bash linenums="0"
+docker container ls
+```
+
+
+<div class="result" markdown>
+
+```bash
+CONTAINER ID   IMAGE                            COMMAND                  CREATED          STATUS          PORTS                            NAMES
+{==318bb11719d9==}   eartharoid/discord-tickets:4.0   "/usr/bot/scripts/st…"   41 seconds ago   Up 37 seconds   80/tcp, 0.0.0.0:8080->8080/tcp   bot-bot-1
+18a3ae0eb999   mysql:8                          "docker-entrypoint.s…"   41 seconds ago   Up 38 seconds   3306/tcp, 33060/tcp              bot-mysql-1
+```
+
+</div>
+
+Then, attach to the container:
+
+```bash linenums="0"
+docker attach {==318bb11719d9==}
+```
+
+You can now interact with the bot's console and publish the commands to Discord:
+
+```linenums="0"
+commands publish
+```
+
+To disconnect from the container, press ++ctrl+p++ ++ctrl+q++.
+If that doesn't work (e.g. if you using the terminal in VS Code), press ++ctrl+c++ instead (which will also restart the bot).
 
 ### Reverse proxy
+
+If you have a domain name, you should [set up a reverse proxy](../reverse-proxy.md) with SSL/TLS
+and set the `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
+
+### Next steps
+
+--8<-- "includes/configure.md"
 
 ## Pure Docker
 
@@ -159,12 +210,12 @@ docker attach
 
 Some required environment variables that you are unlikely to change have defaults set in the Dockerfile:
 
-| Name            | Value     |
-| --------------- | --------- |
-| `HTTP_HOST`     | 0.0.0.0   |
-| `HTTP_PORT`     | 80        |
-| `SETTINGS_HOST` | 127.0.0.1 |
-| `SETTINGS_PORT` | 8169      |
+| Name            | Value              |
+| --------------- | ------------------ |
+| `HTTP_HOST`     | `#!yaml 0.0.0.0`   |
+| `HTTP_PORT`     | `#!yaml 80`        |
+| `SETTINGS_HOST` | `#!yaml 127.0.0.1` |
+| `SETTINGS_PORT` | `#!yaml 8169`      |
 
 You need to set the other required environment variables.
 
@@ -180,9 +231,10 @@ docker run -itd \
   -e DISCORD_TOKEN="ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3UERxwANAZhQiA" \
   -e ENCRYPTION_KEY="445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a" \
   -e HTTP_EXTERNAL="https://tickets.example.com" \
+  -e HTTP_PORT="8080" \
   -v ~/tickets-storage:/usr/bots/user \
   discord-tickets
 ```
 
-The first time you start the container, don't use the `-d` flag and type `commands publish` in the console to publish the commands to Discord.
+The first time you start the container, don't use the `-d` flag so you can type `commands publish` in the console to publish the commands to Discord.
 You can then restart the container in detached mode.

@@ -1,7 +1,7 @@
 # Configuration
 
 This page is about the global bot configuration.
-For per-guild configuration, refer to the [Configuration](../configuration/index.md) page.
+For per-guild configuration, refer to the (other) [Configuration](../configuration/index.md) page.
 
 !!! info
 	Changes to environment variables or the main configuration file require a restart to take effect.
@@ -33,6 +33,7 @@ The installation guides also explain where to find most of the environment varia
 	HTTP_TRUST_PROXY=true
 	OVERRIDE_ARCHIVE=
 	PUBLIC_BOT=false
+	PUBLISH_COMMANDS=false
 	SETTINGS_HOST=127.0.0.1
 	SETTINGS_PORT=8169
 	SUPER=319467558166069248
@@ -63,9 +64,9 @@ If you are using SQLite, this is not required.
 
 The type of database the bot will use; one of:
 
-- `mysql` (recommended, use this for MariaDB too)
-- `postgresql`
-- `sqlite`
+- `#!yaml mysql` (recommended, use this for MariaDB too)
+- `#!yaml postgresql`
+- `#!yaml sqlite`
 
 ### `DISCORD_SECRET`
 
@@ -82,7 +83,7 @@ Follow the installation guides to find this.
 The key used for encrypting data in the database and signing JWTs (authentication cookies).
 
 This is usually generated for you automatically.
-You can also run `npm run keygen` to generate a new key,
+You can also run `#!bash npm run keygen` to generate a new key,
 or use this generator:
 
 --8<-- "includes/encryption-key.html"
@@ -94,25 +95,25 @@ or use this generator:
 
 ### `HTTP_EXTERNAL`
 
-<small>:material-factory: Default: `http://localhost:8080`</small>
+<small>:material-factory: Default: `#!yaml http://127.0.0.1:8080`</small>
 
 The full external URL used to access the bot's API or settings panel.
 
 ??? example
-	```bash title=".env"
-	HTTP_EXTERNAL=http://tickets.example.com
+	```bash title=".env" linenums="6"
+	HTTP_EXTERNAL=https://tickets.example.com
 	```
 
 ### `HTTP_HOST`
 
-<small>:material-factory: Default: `0.0.0.0`</small>
+<small>:material-factory: Default: `#!yaml 0.0.0.0`</small>
 
 The interface that the integrated web server will listen on.
 The default accepts connections from anywhere (assuming your firewall allows it).
 
 ### `HTTP_PORT`
 
-<small>:material-factory: Default: `8080`</small>
+<small>:material-factory: Default: `#!yaml 8080`</small>
 
 !!! inline end info "Info"
 	Ports lower than 1024 may require running as root to bind to.
@@ -123,16 +124,16 @@ The port number that the integrated web server will bind to.
 
 <small>
 :octicons-question-16: Optional ·
-:material-factory: Default: `false`
+:material-factory: Default: `#!yaml false`
 </small>
 
-If you are running the bot behind a reverse proxy, set this to `true` (must be lowercase) to trust the `X-Forwarded-` headers.
+If you are running the bot behind a reverse proxy, set this to `#!yaml true` (must be lowercase) to trust the `X-Forwarded-` headers.
 
 ### `OVERRIDE_ARCHIVE`
 
 <small>:octicons-question-16: Optional</small>
 
-When set to `false` (lowercase), guilds' `archive` setting will be ignored, disabling the archive feature for all guilds.
+When set to `#!yaml false` (must be lowercase), guilds' `archive` setting will be ignored, disabling the archive feature for all guilds.
 
 ### `PUBLIC_BOT`
 
@@ -141,11 +142,22 @@ When set to `false` (lowercase), guilds' `archive` setting will be ignored, disa
 :material-factory: Default: `false`
 </small>
 
-You should keep this as `false`.
+You should keep this as `#!yaml false`.
+
+### `PUBLISH_COMMANDS`
+
+<small>
+:octicons-question-16: Optional ·
+:material-factory: Default: `false`
+</small>
+
+When set to `#!yaml true` (must be lowercase), commands  will automatically be published to Discord.
+Enabling this is not recommended if you are going to restart your bot frequently,
+but it is useful for removing the need to publish the commands manually when you install or update the bot.
 
 ### `SETTINGS_HOST`
 
-<small>:material-factory: Default: `127.0.0.1`</small>
+<small>:material-factory: Default: `#!yaml 127.0.0.1`</small>
 
 The interface that the second HTTP server (Express, for the settings panel app) will listen on.
 
@@ -153,7 +165,7 @@ Keeping the default value is recommended to ensure all traffic is proxied throug
 
 ### `SETTINGS_PORT`
 
-<small>:material-factory: Default: `8169`</small>
+<small>:material-factory: Default: `#!yaml 8169`</small>
 
 !!! inline end info "Info"
 	Ports lower than 1024 may require running as root to bind to.
@@ -166,18 +178,18 @@ Unlike the [`HTTP_PORT`](#http_port), this doesn't need to be open as it is prox
 
 <small>
 :octicons-question-16: Optional ·
-:material-factory: Default: `319467558166069248`
+:material-factory: Default: `#!yaml 319467558166069248`
 </small>
 
 A comma-separated list of Discord user IDs that have elevated privileges.
 These users (typically the bot owners) are allowed to manage the settings of any guild, regardless of their roles or permissions in that guild.
 
 !!! tip "Recommendation"
-	If you keep the default (`319467558166069248`), I can help you without you needing to give me administrator permissions in your guild.
+	If you keep the default (`#!yaml 319467558166069248`), I can help you without you needing to give me administrator permissions in your guild.
 	You can also add your own ID:
 	
-	```bash title=".env" linenums="14"
-	SUPERS=319467558166069248,youruseridhere
+	```bash title=".env" linenums="15"
+	SUPERS=319467558166069248{++,++}{==youruseridhere==}
 	```
 
 ## Main configuration file
@@ -214,39 +226,39 @@ If it doesn't exist, run the bot and it will be generated for you.
 
 ##### `directory`
 
-<small>:material-factory: Default: `./logs`</small>
+<small>:material-factory: Default: `#!yaml ./logs`</small>
 
 The directory to store log files in, if log file are enabled.
 
 ##### `enabled`
 
-<small>:material-factory: Default: `true`</small>
+<small>:material-factory: Default: `#!yaml true`</small>
 
 If logs should be saved to files.
 This is recommended but can be disabled if for example you are using a panel which already does this.
 
 ##### `keepFor`
 
-<small>:material-factory: Default: `30`</small>
+<small>:material-factory: Default: `#!yaml 30`</small>
 
 The number of days to keep log files for before deleting them (to save disk space), if log files are enabled. 
 
 #### `level`
 
-<small>:material-factory: Default: `info`</small>
+<small>:material-factory: Default: `#!yaml info`</small>
 
 The minimum log level that should be logged.
 
 Must be one of:
 
-- `debug`
-- `verbose`
-- `info` (recommended)
-- `success`
-- `warn`
-- `notice`
-- `error`
-- `critical`
+- `#!yaml debug`
+- `#!yaml verbose`
+- `#!yaml info` (recommended)
+- `#!yaml success`
+- `#!yaml warn`
+- `#!yaml notice`
+- `#!yaml error`
+- `#!yaml critical`
 
 ### `presence`
 
@@ -258,16 +270,16 @@ An array of activities (length must be at least 1).
 
 The activity name, which may contain these placeholders:
 
-- `{avgResolutionTime}`
-- `{avgResponseTime}`
-- `{openTickets}`
-- `{totalTickets}`
+- `#!yaml {avgResolutionTime}`
+- `#!yaml {avgResponseTime}`
+- `#!yaml {openTickets}`
+- `#!yaml {totalTickets}`
 
 ##### `type`
 
 <small>
 :octicons-question-16: Optional ·
-:material-factory: Default: `0`
+:material-factory: Default: `#!yaml 0`
 </small>
 
 The activity type (playing, watching etc).
@@ -276,24 +288,24 @@ Types: <https://discord-api-types.dev/api/discord-api-types-v10/enum/ActivityTyp
 
 #### `interval`
 
-<small>:material-factory: Default: `20`</small>
+<small>:material-factory: Default: `#!yaml 20`</small>
 
 The number of seconds to show each activity before rotating.
 
 #### `status`
 
-<small>:material-factory: Default: `online`</small>
+<small>:material-factory: Default: `#!yaml online`</small>
 
 The bot's status, one of:
 
-- `online`
-- `idle`
-- `invisible`
-- `dnd`
+- `#!yaml online`
+- `#!yaml idle`
+- `#!yaml invisible`
+- `#!yaml dnd`
 
 ### `stats`
 
-<small>:material-factory: Default: `true`</small>
+<small>:material-factory: Default: `#!yaml true`</small>
 
 If stats should be posted to the Discord Tickets StatsAPI.
 
@@ -303,7 +315,7 @@ If stats should be posted to the Discord Tickets StatsAPI.
 
 #### `transcript`
 
-<small>:material-factory: Default: `transcript.md`</small>
+<small>:material-factory: Default: `#!yaml transcript.md`</small>
 
 The (partial) name of the file, relative to `user/templates`, that contains the [Mustache](https://mustache.github.io/) template for text transcripts.
 The actual file must have the `.mustache` file extension appended to the end of this name (`transcript.md` --> `transcript.md.mustache`).

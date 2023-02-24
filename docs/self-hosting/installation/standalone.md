@@ -145,7 +145,7 @@ To run the bot in the background, you can turn it into a service with  `systemd`
 
 [PM2](https://pm2.keymetrics.io/) is a process manager made for Node.js applications and is the easiest option.
 
-Start by installing it and then starting the bot:
+Install PM2 and then start the bot with:
 
 === "npm"
     ```bash linenums="0"
@@ -175,8 +175,13 @@ Refer to the [PM2 documentation](https://pm2.keymetrics.io/docs/usage/quick-star
 
 ## Publishing the commands
 
-Type `commands publish` in the console (whilst the bot is running) to publish the commands to Discord.
+Type `commands publish` into the bot's console to publish the commands to Discord.
 
 ## Reverse proxy
 
-If you have a domain name, you should [set up a reverse proxy](../reverse-proxy.md) with SSL/TLS.
+If you have a domain name, you should [set up a reverse proxy](../reverse-proxy.md) with SSL/TLS
+and set the `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
+
+## Next steps
+
+--8<-- "includes/configure.md"
