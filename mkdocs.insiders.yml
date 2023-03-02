@@ -18,12 +18,16 @@ theme:
         name: Switch to system preference
   features:
     - announce.dismiss
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
+    - content.code.copy
     # - content.code.select # insiders-only
     - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
+    - navigation.footer
     - navigation.indexes
     # - navigation.instant # doesn't work with home page? :(
     - navigation.path # insiders-only
