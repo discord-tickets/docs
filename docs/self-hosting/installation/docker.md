@@ -92,7 +92,7 @@ services:
       - 8080:8080
     volumes:
       - tickets-bot:/usr/bot/user
-	tty: true
+  tty: true
     stdin_open: true
     # Please refer to the documentation:
     # https://discordtickets.app/self-hosting/configuration/#environment-variables
@@ -107,7 +107,7 @@ services:
       HTTP_PORT: 8080
       HTTP_TRUST_PROXY: false # (9)!
       PUBLIC_BOT: false
-	  PUBLISH_COMMANDS: false
+      PUBLISH_COMMANDS: false
       OVERRIDE_ARCHIVE: null
       SETTINGS_PORT: 8169
       SETTINGS_HOST: 127.0.0.1
