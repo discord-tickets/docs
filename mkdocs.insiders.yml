@@ -19,7 +19,7 @@ theme:
   features:
     - announce.dismiss
     - content.code.annotate
-    - content.code.select # insiders-only
+    # - content.code.select # insiders-only
     - content.tabs.link
     - content.tooltips
     # - header.autohide
