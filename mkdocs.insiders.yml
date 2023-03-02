@@ -19,12 +19,14 @@ theme:
   features:
     - announce.dismiss
     - content.code.annotate
+    - content.code.select # insiders-only
     - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
     # - navigation.instant # doesn't work with home page? :(
+    - navigation.path # insiders-only
     - navigation.prune # insiders-only
     # - navigation.sections
     - navigation.tabs
@@ -59,6 +61,8 @@ extra:
 
             Thanks for your feedback! Help us improve this page by
             <a href="https://github.com/discord-tickets/docs/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">submitting an issue</a>.
+  annotate:
+    json: [.s2]
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/discord-tickets
@@ -87,6 +91,8 @@ plugins:
       skip_classes: 
         - no-glightbox
   - tags:
+      tags_allowed:
+        - archives
       tags_file: tags.md
   - meta # must be before blog
   - blog:
@@ -99,3 +105,6 @@ plugins:
       cards_color:
         fill: "#5865F2"
         text: "#FFFFFF"
+  - typeset
+  - optimize:
+      enabled: !ENV [CI, false]
