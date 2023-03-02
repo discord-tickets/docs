@@ -1,6 +1,8 @@
 ---
 template: managed.html
 description: An affordable managed bot is the easiest way to get your own ticket bot.
+tags:
+  - Archives
 ---
 
 # Managed bot
