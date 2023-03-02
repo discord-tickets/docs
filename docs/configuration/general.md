@@ -1,6 +1,6 @@
 ---
 tags:
-  - archives
+  - Archives
 ---
 
 # General settings

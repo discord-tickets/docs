@@ -96,7 +96,7 @@ plugins:
         - no-glightbox
   - tags:
       tags_allowed:
-        - archives
+        - Archives
       tags_file: tags.md
   - meta # must be before blog
   - blog:
