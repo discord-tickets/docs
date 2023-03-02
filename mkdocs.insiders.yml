@@ -106,5 +106,5 @@ plugins:
         fill: "#5865F2"
         text: "#FFFFFF"
   - typeset
-  - optimize:
-      enabled: !ENV [CI, false]
+  # - optimize:
+  #     enabled: !ENV [CI, false]
