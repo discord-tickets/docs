@@ -5,28 +5,42 @@ Securing your bot with [SSL/TLS encryption](https://www.cloudflare.com/en-gb/lea
 To do this, you need:
 
 1. An FQDN (e.g. `example.com`)
-2. To set up a web server as a reverse proxy 
+2. To set up a web server as a reverse proxy
 
 !!! tip
 	If your bot is running on a [supported port](https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/),
 	you can use Cloudflare's Proxy and free SSL/TLS instead.
 
-If you already have a domain and know how to create an HTTPS proxy, you can safely skip this page. 
+If you already have a domain and know how to create an HTTPS proxy, you can safely skip this page.
 If not, there are several options available:
 
-|                   | [Traefik](#traefik)  |   [Nginx](#nginx)    | [Caddy](#caddy) | [PebbleHost](#pebblehost) |
-| :---------------- | :------------------: | :------------------: | :-------------: | :-----------------------: |
-| Difficulty        | Moderate { .orange } | Moderate { .orange } | Easy { .green } |      Easy { .green }      |
-| Bot installations |     Docker only      |         Any          |       Any       |      PebbleHost only      |
+|                   |    [Traefik](#traefik)     |   [Nginx](#nginx)    | [Caddy](#caddy-2-recommended) | [PebbleHost](#pebblehost) |
+| :---------------- | :------------------------: | :------------------: | :---------------------------: | :-----------------------: |
+| Difficulty        | Most difficult { .orange } | Moderate { .orange } |        Easy { .green }        |      Easy { .green }      |
+| Bot installations |        Docker only         |         Any          |              Any              |      PebbleHost only      |
 
 !!! warning ""
     Make sure you set the bot's `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
 
+## Caddy 2 (recommended)
 
-## Traefik
 
-<!-- TODO: -->
-*soon™️*
+!!! info ""
+    If you already have Caddy running, update your existing configuration and use `caddy reload` instead.
+
+First, [install Caddy](https://caddyserver.com/docs/install), then open the `Caddyfile` and edit the domain.
+
+```nginx title="Caddyfile"
+{==tickets.example.com==} {
+    reverse_proxy 127.0.0.1:8169
+}
+```
+
+Now start Caddy:
+
+```bash
+sudo caddy start
+```
 
 ## Nginx
 
@@ -56,12 +70,15 @@ If not, there are several options available:
 
 <div class="annotate" markdown>
 
-```nginx
+This example will proxy traffic from `http://tickets.example.com` to your bot.
+To secure the connection, refer to the guides linked above.
+
+```nginx title="/etc/nginx/sites-available/tickets.example.com"
 server {
     listen 80;
-    listen [::]:80; # remove this line if you don't have IPv6 networking
+    listen [::]:80;(1)
 
-    server_name tickets.example.com(1);
+    server_name {==tickets.example.com==};(2)
 
     location / {
         proxy_set_header X-Real-IP $remote_addr;
@@ -72,22 +89,57 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 
         proxy_http_version 1.1;
-        proxy_pass http://127.0.0.1:8080(2);
+        proxy_pass http://127.0.0.1:8080;(3)
     }
 }
 ```
 
 </div>
 
-1. Replace this with the FQDN that you set in your bot's `HTTP_EXTERNAL` environment variable.
-2. Change the port to match your bot's `HTTP_PORT` environment variable.
+1. Remove this line if you don't have IPv6 networking.
+2. Replace this with the FQDN that you set in your bot's `HTTP_EXTERNAL` environment variable.
+3. Change the port to match your bot's `HTTP_PORT` environment variable.
    Also, change the IP address if the bot is running on a different server.
 
-## Caddy
 
-<!-- TODO: -->
-https://caddyserver.com/
 
+## Traefik
+
+### Documentation
+
+<div class="grid cards" markdown>
+
+-   :simple-traefikproxy: __Traefik quick start__
+
+    ---
+
+    A quick start guide to adding Traefik to your existing `docker-compose.yml` file.
+
+    [:octicons-arrow-right-24: Traefik Documentation](https://doc.traefik.io/traefik/getting-started/quick-start/)
+
+-   :simple-traefikproxy: __Traefik configuration__
+
+    ---
+
+    How to use Traefik with Docker Compose.
+
+    [:octicons-arrow-right-24: Traefik Documentation](https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/)
+
+</div>
+
+### Configuration
+
+This example shows the labels you may need to add to the `bot` service in your `docker-compose.yml` file.
+Refer to the documentation linked above for more information.
+
+```yaml linenums="0" title="docker-compose.yml"
+labels:
+  - "traefik.enable=true"
+  - "traefik.docker.network=traefik_network"
+  - "traefik.http.routers.tickets.entrypoints=websecure"
+  - "traefik.http.routers.tickets.rule=Host(`{==tickets.example.com==}`)"
+  - "traefik.http.services.tickets.loadbalancer.server.port=8169"
+```
 ## PebbleHost
 
 <div class="grid cards" markdown>

@@ -9,7 +9,7 @@ tags:
 !!! question "Switching from another bot?"
 	See how Discord Tickets is different from other popular bots:
 
-	[:octicons-link-external-16: View comparisons](https://blog.discordtickets.app/tag/comparison/){ target=_blank .md-button .md-button--primary }
+	[View comparisons :octicons-link-external-16:](https://blog.discordtickets.app/tag/comparison/){ target=_blank .md-button .md-button--primary }
 
 ## Concepts
 
@@ -17,7 +17,7 @@ tags:
 :   Tickets are organised into categories that you create (such as ban appeals, staff applications, billing support etc).
 
 	Since v4, ticket and Discord categories are separate.
-	Multiple ticket categories can belong to a single Discord channel category. 
+	Multiple ticket categories can belong to a single Discord channel category.
 
 [`Panels`](#concept:panels){ #concept:panels }
 :   Unlike some other bots, panels are not a central concept in Discord Tickets.
