@@ -5,8 +5,8 @@ description: How to install Discord Tickets with Docker
 # Docker
 
 !!! info ""
-	This guide is written for Linux systems. 
-	The process is similar on Windows, but the commands may differ.
+    This guide is written for Linux systems.
+    The process is similar on Windows, but the commands may differ.
 
 Before you start, you need to make sure your system meets [the requirements](../index.md#requirements).
 
@@ -35,9 +35,9 @@ mkdir tickets-bot && cd tickets-bot
     wget https://dl.discordtickets.app/bot/docker-compose.yml
     ```
 === "`curl`"
-	```bash linenums="0"
-	curl -O https://dl.discordtickets.app/bot/docker-compose.yml
-	```
+    ```bash linenums="0"
+    curl -O https://dl.discordtickets.app/bot/docker-compose.yml
+    ```
 === "Other"
     <!-- jsdelivr forces download -->
     You can also [download the file](https://dl.discordtickets.app/bot/docker-compose.yml) in your browser.
@@ -47,22 +47,25 @@ mkdir tickets-bot && cd tickets-bot
 Open `docker-compose.yml` in your preferred text editor(1) and modify the highlighted lines.
 { .annotate }
 
-1. 
-	!!! example
-		```bash linenums="0"
-		nano docker-compose.yml
-		```
+1.
+  !!! example
+    ```bash linenums="0"
+    nano docker-compose.yml
+    ```
 
 !!! bug
-	Due to a design flaw, the internal (container) and external (host) ports must be the same.
-	This may be fixed in v4.1.
+    The value of `HTTP_EXTERNAL` must be resolvable both from within the container and the host,
+    which means when `HTTP_EXTERNAL` is an internal address (e.g. `http://127.0.0.1`), the container and host ports must be the same.
+    This is because the SvelteKit application uses server-side rendering, so the bot makes HTTP requests to itself.
+
+    If you are using a reverse proxy and a domain name, this shouldn't be a problem.
 
 --8<-- "includes/env.md"
 
 <div class="annotate" markdown>
 
 
-```yaml title="docker-compose.yml" hl_lines="14-15 19 33-36 38"
+```yaml title="docker-compose.yml" hl_lines="14-15 19 35-38 40"
 version: "3.9"
 
 services:
@@ -72,14 +75,14 @@ services:
     hostname: mysql
     networks:
       - discord-tickets
-    volumes: 
+    volumes:
       - tickets-mysql:/var/lib/mysql
     environment:
       MYSQL_DATABASE: tickets
       MYSQL_PASSWORD: insecure # (1)!
       MYSQL_ROOT_PASSWORD: insecure # (2)!
       MYSQL_USER: tickets
-  
+
   bot:
     image: eartharoid/discord-tickets:4.0 # (3)!
     depends_on:
@@ -89,10 +92,10 @@ services:
     networks:
       - discord-tickets
     ports:
-      - 8080:8080
+      - 8169:8169
     volumes:
       - tickets-bot:/usr/bot/user
-  tty: true
+    tty: true
     stdin_open: true
     # Please refer to the documentation:
     # https://discordtickets.app/self-hosting/configuration/#environment-variables
@@ -102,16 +105,14 @@ services:
       DISCORD_TOKEN: # (6)!
       ENCRYPTION_KEY: # (7)!
       DB_PROVIDER: mysql
-      HTTP_EXTERNAL: http://127.0.0.1:8080 # (8)!
+      HTTP_EXTERNAL: http://127.0.0.1:8169 # (8)!
       HTTP_HOST: 0.0.0.0
-      HTTP_PORT: 8080
+      HTTP_PORT: 8169
       HTTP_TRUST_PROXY: false # (9)!
       PUBLIC_BOT: false
       PUBLISH_COMMANDS: false
       OVERRIDE_ARCHIVE: null
-      SETTINGS_PORT: 8169
-      SETTINGS_HOST: 127.0.0.1
-      SUPER: !!str 319467558166069248 # (10)!
+      SUPER: 319467558166069248 # (10)!
 
 networks:
   discord-tickets:
@@ -125,21 +126,21 @@ volumes:
 </div>
 
 1. Change the password for the database user to something secure.
-	This isn't vital if you are not exposing the database to the network,
-	but note that it can't be changed after the container is created.
+    This isn't vital if you are not exposing the database to the network,
+    but note that it can't be changed after the container is created.
 2. Change the password for the root database user to something secure.
-	This isn't vital if you are not exposing the database to the network,
-	but note that it can't be changed after the container is created.
+    This isn't vital if you are not exposing the database to the network,
+    but note that it can't be changed after the container is created.
 3. Make sure the image tag is the latest version.
-	Discord Tickets follows semantic versioning, but not strictly, so pinning to a minor version is recommended.
-	You can see all available tags on [Docker Hub](https://hub.docker.com/r/eartharoid/discord-tickets/tags).
+    Discord Tickets follows semantic versioning, but not strictly, so pinning to a minor version is recommended.
+    You can see all available tags on [Docker Hub](https://hub.docker.com/r/eartharoid/discord-tickets/tags).
 4. Change `{==insecure==}` to the value of `MYSQL_PASSWORD`.
 5. Refer to [Creating the Discord application](#creating-the-discord-application).
 6. Refer to [Creating the Discord application](#creating-the-discord-application).
 7. Copy the value from the [encryption key generator](#encryption-key) below.
 8. Change this to your server's external IP address, or a domain name that points to it.
 9. If you are using a reverse proxy, set this to `#!yaml true`.
-10. You can add more users by separating them with commas (e.g. `#!yaml 319467558166069248,123456789012345678`)
+10.  You can add more users by separating them with commas (e.g. `#!yaml 319467558166069248,123456789012345678`)
 
 #### Creating the Discord application
 
@@ -206,7 +207,7 @@ and set the `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
 ## Pure Docker
 
 !!! info ""
-	This is a very short overview; refer to the [Docker Compose](#docker-compose) guide for more information.
+    This is a very short overview; refer to the [Docker Compose](#docker-compose) guide for more information.
 
 Some required environment variables that you are unlikely to change have defaults set in the Dockerfile:
 
@@ -214,8 +215,6 @@ Some required environment variables that you are unlikely to change have default
 | --------------- | ------------------ |
 | `HTTP_HOST`     | `#!yaml 0.0.0.0`   |
 | `HTTP_PORT`     | `#!yaml 80`        |
-| `SETTINGS_HOST` | `#!yaml 127.0.0.1` |
-| `SETTINGS_PORT` | `#!yaml 8169`      |
 
 You need to set the other required environment variables.
 
@@ -231,10 +230,11 @@ docker run -itd \
   -e DISCORD_TOKEN="ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3UERxwANAZhQiA" \
   -e ENCRYPTION_KEY="445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a" \
   -e HTTP_EXTERNAL="https://tickets.example.com" \
-  -e HTTP_PORT="8080" \
+  -e HTTP_TRUST-PROXY="true" \
   -v ~/tickets-storage:/usr/bots/user \
   discord-tickets
 ```
 
 The first time you start the container, don't use the `-d` flag so you can type `commands publish` in the console to publish the commands to Discord.
 You can then restart the container in detached mode.
+Alternatively, set the `PUBLISH_COMMANDS` environment variable to `#!yaml true` to publish commands automatically.

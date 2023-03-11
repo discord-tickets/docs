@@ -12,12 +12,12 @@ For per-guild configuration, refer to the (other) [Configuration](../configurati
 
 In most cases, the environment variables can be set by editing the `.env` file (which the bot creates for you if you follow the installation instructions).
 
-The installation guides also explain where to find most of the environment variable values.  
+The installation guides also explain where to find most of the environment variable values.
 
 !!! danger
 	Keep your environment variables safe.
 	Your Discord `token` and `secret` are extremely dangerous in the wrong hands,
-	and your database is useless if you lose the encryption key. 
+	and your database is useless if you lose the encryption key.
 	These example values are fake; **do not share real values** (in version control, pastes, screenshots, etc).
 
 !!! example
@@ -29,13 +29,11 @@ The installation guides also explain where to find most of the environment varia
 	ENCRYPTION_KEY=445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a
 	HTTP_EXTERNAL=https://tickets.example.com
 	HTTP_HOST=0.0.0.0
-	HTTP_PORT=8080
+	HTTP_PORT=8169
 	HTTP_TRUST_PROXY=true
 	OVERRIDE_ARCHIVE=
 	PUBLIC_BOT=false
 	PUBLISH_COMMANDS=false
-	SETTINGS_HOST=127.0.0.1
-	SETTINGS_PORT=8169
 	SUPER=319467558166069248
 	```
 
@@ -95,7 +93,7 @@ or use this generator:
 
 ### `HTTP_EXTERNAL`
 
-<small>:material-factory: Default: `#!yaml http://127.0.0.1:8080`</small>
+<small>:material-factory: Default: `#!yaml http://127.0.0.1:8169`</small>
 
 The full external URL used to access the bot's API or settings panel.
 
@@ -113,7 +111,7 @@ The default accepts connections from anywhere (assuming your firewall allows it)
 
 ### `HTTP_PORT`
 
-<small>:material-factory: Default: `#!yaml 8080`</small>
+<small>:material-factory: Default: `#!yaml 8169`</small>
 
 !!! inline end info "Info"
 	Ports lower than 1024 may require running as root to bind to.
@@ -155,25 +153,6 @@ When set to `#!yaml true` (must be lowercase), commands  will automatically be p
 Enabling this is not recommended if you are going to restart your bot frequently,
 but it is useful for removing the need to publish the commands manually when you install or update the bot.
 
-### `SETTINGS_HOST`
-
-<small>:material-factory: Default: `#!yaml 127.0.0.1`</small>
-
-The interface that the second HTTP server (Express, for the settings panel app) will listen on.
-
-Keeping the default value is recommended to ensure all traffic is proxied through the main web server.
-
-### `SETTINGS_PORT`
-
-<small>:material-factory: Default: `#!yaml 8169`</small>
-
-!!! inline end info "Info"
-	Ports lower than 1024 may require running as root to bind to.
-
-The port that Express will bind to, which you shouldn't need to change,
-but is configurable just in case it conflicts with something else.
-Unlike the [`HTTP_PORT`](#http_port), this doesn't need to be open as it is proxied through the main web server.
-
 ### `SUPER`
 
 <small>
@@ -187,7 +166,7 @@ These users (typically the bot owners) are allowed to manage the settings of any
 !!! tip "Recommendation"
 	If you keep the default (`#!yaml 319467558166069248`), I can help you without you needing to give me administrator permissions in your guild.
 	You can also add your own ID:
-	
+
 	```bash title=".env" linenums="15"
 	SUPERS=319467558166069248{++,++}{==youruseridhere==}
 	```
@@ -241,7 +220,7 @@ This is recommended but can be disabled if for example you are using a panel whi
 
 <small>:material-factory: Default: `#!yaml 30`</small>
 
-The number of days to keep log files for before deleting them (to save disk space), if log files are enabled. 
+The number of days to keep log files for before deleting them (to save disk space), if log files are enabled.
 
 #### `level`
 
@@ -262,7 +241,7 @@ Must be one of:
 
 ### `presence`
 
-#### `activities` 
+#### `activities`
 
 An array of activities (length must be at least 1).
 
