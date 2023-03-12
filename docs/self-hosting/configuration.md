@@ -31,6 +31,7 @@ The installation guides also explain where to find most of the environment varia
 	HTTP_HOST=0.0.0.0
 	HTTP_PORT=8169
 	HTTP_TRUST_PROXY=true
+    INVALIDATE_TOKENS=
 	OVERRIDE_ARCHIVE=
 	PUBLIC_BOT=false
 	PUBLISH_COMMANDS=false
@@ -126,6 +127,13 @@ The port number that the integrated web server will bind to.
 </small>
 
 If you are running the bot behind a reverse proxy, set this to `#!yaml true` (must be lowercase) to trust the `X-Forwarded-` headers.
+
+### `INVALIDATE_TOKENS`
+
+<small>:octicons-question-16: Optional</small>
+
+A [timestamp](https://tc39.es/ecma262/#sec-date-time-string-format) (e.g. `2023-03-12T21:50:39.267Z`) which any [API service key](../api.md) (not user tokens) must be created after in order to be accepted.
+If a service key is leaked, set this to the current time to invalidate all existing keys.
 
 ### `OVERRIDE_ARCHIVE`
 

@@ -120,6 +120,7 @@ nav:
         - Category questions: configuration/categories/questions.md
       - Panels: configuration/panels.md
       - Tags: configuration/tags.md
+    - API: api.md
     - Troubleshooting: troubleshooting.md
     - Terms of service: terms.md
   - Blog: https://blog.discordtickets.app
