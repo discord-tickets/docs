@@ -1,63 +1,46 @@
-# Project information
 site_name: Discord Tickets
 site_description: An open-source ticket management bot for Discord - a free alternative to the premium and white-label plans of other popular ticketing bots.
 site_author: eartharoid
 site_url: https://discordtickets.app
+copyright: "&copy; 2022 <a href=\"https://eartharoid.me\" target=\"_blank\">Isaac Saunders</a>"
 
-# Repository
 repo_name: discord-tickets/bot
 repo_url: https://github.com/discord-tickets/bot
-edit_uri: https://github.com/discord-tickets/docs/blob/master/docs/
+edit_uri: https://github.com/discord-tickets/docs/blob/main/docs/
 
-# Copyright
-copyright: '&copy; 2021 Isaac Saunders'
-
-# Configuration
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - javascripts/tables.js
-  - javascripts/home.js
+  - javascripts/extra.js
+  - javascripts/feedback.js
 
+watch:
+  - includes
+  - overrides
 
 theme:
   name: material
   language: en
   custom_dir: overrides/
   palette:
-    scheme: slate # scheme: preference
+    - scheme: default
+      toggle:
+        icon: octicons/sun-16
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: octicons/moon-16
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
-  features:
-    - navigation.instant
-    - navigation.top
-    # - navigation.expand
-    # - navigation.sections
-    - navigation.tracking
-    - navigation.indexes
-    # - toc.integrate
-  logo: /img/logo.png
-  favicon: /img/favicon.ico
+  logo: img/logo.png
+  favicon: favicon.ico
   icon:
     repo: fontawesome/brands/github
-
-extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/discord-tickets
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/DiscordTickets
-
-plugins:
-  - search
-  - git-revision-date-localized:
-      # type: timeago
-  # - awesome-pages
-  - redirects:
-        redirect_maps:
-            'sponsor.md': 'https://github.com/discord-tickets/bot/?sponsor=1'
+    tag:
+      default: octicons/tag-16
+      archives: octicons/archive-16
 
 markdown_extensions:
   - abbr
@@ -65,7 +48,9 @@ markdown_extensions:
   - attr_list
   - codehilite:
       guess_lang: false
+  - def_list
   - footnotes
+  - md_in_html
   - meta
   - pymdownx.arithmatex
   - pymdownx.betterem:
@@ -87,46 +72,57 @@ markdown_extensions:
       # repo: bot
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - tables
   - toc:
       permalink: true
-      slugify: !!python/name:pymdownx.slugs.uslugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 nav:
   - Home: index.md
-  - Try Discord Tickets: try.md
-  - Getting started: getting-started.md
-  - Getting your bot token: getting-your-bot-token.md
-  - Invite URL generator: invite-url-generator.md
-  - Managed hosting: managed.md
-  - Installation:
-    - Standard installation: installation/standard.md
-    - Docker installation: installation/docker.md
-    - Pterodactyl installation: installation/pterodactyl.md
-  - Using MySQL: using-mysql.md
-  - Configuration:
-    - Global config: configuration/global-config.md
-    - Create a category: configuration/categories.md
-    - Create a panel: configuration/panels.md
-    - Tags: configuration/tags.md
-    - Surveys: configuration/surveys.md
-  - Commands: commands.md
-  - Plugins:
-    - plugins/index.md
-    - Official plugins:
-      - plugins/official/index.md
-      # - Archives portal: plugins/official/portal.md
-      - Text transcripts: plugins/official/text-transcripts.md
-    - Community plugins: plugins/community.md
-  - Developers:
-    - Contributing: developers/contributing.md
-    - Plugins: developers/plugins.md
+  - Documentation:
+    - Getting started: getting-started.md
+    - Features:
+       - Features: features/index.md
+       - Commands: features/commands.md
+    - Public bot: public.md
+    - Managed bot: managed.md
+    - Self-hosting:
+      - Self-hosting: self-hosting/index.md
+      - Installation:
+        - Installation: self-hosting/installation/index.md
+        - Docker: self-hosting/installation/docker.md
+        - Standalone: self-hosting/installation/standalone.md
+        - Railway: self-hosting/installation/railway.md
+        - Pterodactyl: self-hosting/installation/pterodactyl.md
+        - PebbleHost: self-hosting/installation/pebblehost.md
+      - Configuration: self-hosting/configuration.md
+      - Reverse proxy setup: self-hosting/reverse-proxy.md
+      - Updating: self-hosting/updating.md
+    - Configuration:
+      - Configuration: configuration/index.md
+      - General settings: configuration/general.md
+      - Categories:
+        - Categories: configuration/categories/index.md
+        - Category questions: configuration/categories/questions.md
+      - Panels: configuration/panels.md
+      - Tags: configuration/tags.md
+    - API: api.md
+    - Troubleshooting: troubleshooting.md
+    - Terms of service: terms.md
+  - Blog: https://blog.discordtickets.app
+  - Changelogs: changelogs/index.md
   - Privacy: privacy.md
-  - Updating: updating.md
-  - Changelog: changelog.md
-  - FAQs: faq.md

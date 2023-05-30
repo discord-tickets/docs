@@ -1,0 +1,117 @@
+INHERIT: mkdocs.yml
+
+theme:
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: octicons/sun-16
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: octicons/moon-16
+        name: Switch to system preference
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select # insiders-only
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant # doesn't work with home page? :(
+    - navigation.path # insiders-only
+    - navigation.prune # insiders-only
+    # - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+
+extra:
+  analytics:
+    provider: custom
+    domains: discordtickets.app
+    website: 29b2670b-df51-47b0-aff7-810e52d1e96a
+    script: https://umami.eartharoid.me/script.js
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+
+
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://github.com/discord-tickets/docs/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">submitting an issue</a>.
+  annotate:
+    json: [.s2]
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/discord-tickets
+    - icon: fontawesome/brands/discord
+      link: https://lnk.earth/discord
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/DiscordTickets
+  status:
+    new: Recently added
+  tags:
+    Archives: archives
+
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        "sponsor.md": "https://github.com/discord-tickets/bot/?sponsor=1#-sponsors"
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      enable_creation_date: true
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: discord-tickets/docs
+      branch: main
+  - glightbox:
+      skip_classes: 
+        - no-glightbox
+  - tags:
+      tags_allowed:
+        - Archives
+      tags_file: tags.md
+  - meta # must be before blog
+  - blog:
+      archive: false
+      blog_dir: changelogs
+      post_url_date_format: yyyy
+      post_url_format: "{slug}"
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      post_slugify_separator: "-"
+  - social:
+      cards_color:
+        fill: "#5865F2"
+        text: "#FFFFFF"
+  - typeset
+  # - optimize:
+  #     enabled: !ENV [CI, false]

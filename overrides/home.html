@@ -1,115 +1,54 @@
 {% extends "main.html" %}
-{% block tabs %}
+
+<!-- Site title -->
+{% block htmltitle %}
+<title>Discord Tickets - A free support bot with premium features</title>
+<meta name="title" content="Discord Tickets - A free support bot with premium features" />
+{% endblock %}
+
+<!-- Theme-related style sheets -->
+{% block styles %}
 {{ super() }}
-<style>
-	.md-header {
-		position: initial
-	}
 
-	.md-main__inner {
-		margin: 0
-	}
+<!-- Extra style sheet (can't be set in mkdocs.yml due to content hash) -->
+<link rel="stylesheet" href="/stylesheets/home.css" />
 
-	.md-content {
-		display: none
-	}
+<!-- Hack: detect Safari, so we can hack around problems with containment -->
+<script>
+	if (navigator.vendor === "Apple Computer, Inc.")
+		document.documentElement.classList.add("safari")
+</script>
+{% endblock %}
 
-	.homepage-content {
-		width: 90%;
-	}
+<!-- Announcement bar -->
+{% block announce %}{% endblock %}
 
-	@media screen and (min-width:60em) {
-		.md-sidebar--secondary {
-			display: none
-		}
-	}
-
-	@media screen and (min-width:76.25em) {
-		.md-sidebar--primary {
-			display: none
-		}
-		.homepage-content {
-			width: 50%;
-		}
-	}
-</style>
-<section class="mdx-container">
-	<div class="md-grid md-typeset">
-		<div class="mdx-hero">
-			<div class="mdx-hero__image">
-				<!-- <img src="assets/images/undraw.svg" alt="" width="500" height="auto" draggable="false"> -->
-			</div>
-			<div class="mdx-hero__content">
-				<h1>A free ticketing solution</h1>
-				<p>{{ config.site_description }}</p>
-				<!-- <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
-					class="md-button md-button--primary umami--click--get-started-button">
-					Get started
-				</a> -->
-				<a href="{{ 'getting-started' | url }}" title="Get started"
-					class="md-button md-button--primary umami--click--get-started-button">
-					Get started
-				</a>
-				<a href="{{ 'try' | url }}" title="Try it out" class="md-button umami--click--try-it-button">
-					Try it out
-				</a>
-			</div>
-		</div>
+<!-- Parallax container with contents -->
+{% block hero %}
+<div class="mdx-parallax" data-mdx-component="parallax">
+	{% include "partials/home/hero.html" %}
+	{% include "partials/home/expect.html" %}
+	{% include "partials/home/spotlight.html" %}
+	{% include "partials/home/trust.html" %}
+	{% include "partials/home/users.html" %}
+	{% include "partials/home/connect.html" %}
+	<div class="mdx-parallax__group" data-md-color-scheme="slate">
+		{% include "partials/footer.html" %}
 	</div>
-</section>
-<div class="md-grid md-typeset homepage-content">
-
-	<div>
-		<h2>There are currently...</h2>
-		<p id="stats">
-			<strong><span id="clients-count">(refresh the page)</span> instances</strong> with<br>
-			<strong><span id="tickets-count">(refresh the page)</span> tickets</strong> across<br>
-			<strong><span id="guilds-count">(refresh the page)</span> guilds</strong> with<br>
-			<strong><span id="members-count">(refresh the page)</span> members.</strong>
-		</p>
-	</div>
-
-	<div>
-		{{ page.content }}
-	</div>
-
-	<div>
-		<h2>Sponsored by</h2>
-		<p>
-			Discord Tickets is used by and sponsored by these awesome communities:
-
-			<p class="sponsor-list">
-				<a href="https://reskybounds.com">
-					<img src="https://img.eartharoid.me/insecure/rs:auto:256/plain/s3://eartharoid/k/22/05/reskybounds.png" />
-				</a>
-				<a href="https://darkhosting.club">
-					<img width="auto" src="https://cdn.discordapp.com/attachments/920423855636496387/943574596777549894/attachment.png" />
-				</a>
-				<a href="https://simplyvanilla.net">
-					<img width="auto" src="https://i.imghut.com/2022/04/26/sv-2022-discord-static.png" />
-				</a>
-				<a href="https://urhost.io">
-					<img width="auto" src="https://static.eartharoid.me/k/22/05/urhost.png" />
-				</a>
-				<a href="https://sunrisenode.com">
-					<img width="auto" src="https://i.imgur.com/0gHlN7L.png" />
-				</a>
-			</p>
-		</p>
-
-		<iframe src="https://github.com/sponsors/eartharoid/button" title="Sponsor eartharoid" height="35" width="116"
-			style="border: 0;"></iframe>
-	</div>
-
-	<p>
-		<small>
-			This is not an official Discord product. It is not affiliated with nor endorsed by Discord Inc.
-		</small>
-	</p>
-
 </div>
 {% endblock %}
 
-{% block footer %}
-	{% include "partials/footer.html" %}
+<!-- Navigation tabs (collapsing) -->
+{% block tabs %}{% endblock %}
+
+<!-- Page content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ 'javascripts/bundle.e815e226.min.js' | url }}"></script>
+<script src="{{ 'javascripts/home.js' | url }}"></script>
 {% endblock %}

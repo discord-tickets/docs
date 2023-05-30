@@ -1,49 +1,57 @@
+---
+icon: material/location-enter
+subtitle: Start here!
+---
+
 # Getting started
 
-!!! danger "IMPORTANT"
+!!! danger ""
+	**Before you start:** this documentation took [the contributors](https://github.com/discord-tickets/docs/graphs/contributors) many hours to write.
+	**Please read it**{ .red }, so we don't waste several more hours answering questions that can easily be avoided. :+1:
 
-	**PLEASE READ THIS!**{ .large .blink }
+## Welcome
 
-	Over 90% of the questions asked in the support server have an answer on this website. **Please read the documentation** before rushing in and guessing how to install and configure your bot.
+--8<-- "includes/features.md"
 
-If you think you are capable you can install Discord Tickets on your own VPS (or [get hosting](#hosting-providers) if you don't have one), but **if you'd rather have your bot magically work without needing to install and host it, [get a managed bot](#managed-hosting).** A [managed bot](#managed-hosting) is the easiest way to get a Discord Tickets bot.
+Welcome to the Discord Tickets documentation.
+Now that you've chosen to use the best ticket bot for Discord, you need to decide how you want to use it.
 
-[![I have a server](/img/getting-started/btn1.png)](#self-hosting)
-[![I need a new host](/img/getting-started/btn2.png)](#hosting-providers)
-[![Managed hosting](/img/getting-started/btn3.png)](#managed-hosting)
+Please compare the three options, then click on a button at the bottom of the table to jump to the relevant section of the documentation.
+If you need help choosing, [ask for help](#useful-links).
 
-## Self hosting
+---
 
-Self hosting is recommended if you have experience with system administration. The standard and docker installation methods require a VPS or dedicated server.
+<div id="gs-table" class="larger-icons" markdown>
 
-- [Standard installation](/installation/standard)
-- [Docker installation](/installation/docker)
-- [Pterodactyl installation](/installation/pterodactyl)
+|                                |                   Add the public bot { .text-lg }                   |                   Get a managed bot { .text-lg }                    |                             Self-host { .text-lg }                             |
+| :----------------------------- | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: | :----------------------------------------------------------------------------: |
+| Difficulty                     |                        Very easy { .green }                         |                           Easy { .green }                           |                     Experience recommended[^1] { .orange }                     |
+| Ready in                       |                     :octicons-clock-24: Instant                     |                     :octicons-clock-24: 24h[^2]                     |                          :octicons-clock-24: 15m[^3]                           |
+| Cost                           |                              **Free**                               |                  As low as **£2/month** (£20/year)                  |                                   Varies[^4]                                   |
+| Experience required            |                              **None**                               |                              **None**                               |                   Sysadmin or hosting experience recommended                   |
+| All features                   |                         :white_check_mark:                          |                         :white_check_mark:                          |                               :white_check_mark:                               |
+| Custom bot (username and icon) |                      :x:<br>(shared bot user)                       |                         :white_check_mark:                          |                               :white_check_mark:                               |
+| No installation[^5]            |                         :white_check_mark:                          |                         :white_check_mark:                          |                     :x:<br>(requires manual installation)                      |
+| Domain with SSL                |                             Shared[^6]                              |                Free subdomain[^7], or bring your own                |                               Bring your own[^8]                               |
+| Always has the latest features |                         :white_check_mark:                          |  :white_check_mark:<br>(you may be contacted to schedule updates)   |                        :x:<br>(requires manual updates)                        |
+| Support me & bot development   |                                :+1:                                 |                          :heart:{ .pulse }                          |                        :+1:<br>(better if you sponsor)                         |
+| **Let's start!**               | [Add the public bot](./public.md){ .md-button .md-button--primary } | [Get a managed bot](./managed.md){ .md-button .md-button--primary } | [Host your own bot](./self-hosting/index.md){ .md-button .md-button--primary } |
 
-### Hosting providers
+</div>
 
-#### PebbleHost
+## Useful links
 
-Discord Tickets is partnered with [PebbleHost](https://pebble.host/discordtickets)[^1] to provide cheap bot hosting (including the database).
+Please search this site *(there's a search bar at the top!)* before asking for support on Discord or GitHub. :slight_smile:
 
-PebbleHost's preinstall feature does the first few installation steps for you. **This is the easiest way to install Discord Tickets if you want more control than a managed bot.** Click the logo below[^1] to get started.
+- [Discord community](https://lnk.earth/discord) 
+- [GitHub Discussions](https://github.com/discord-tickets/bot/discussions)
+- [Suggestions / feature requests](https://lnk.earth/dsctickets-feedback)
 
-[![PebbleHost](https://img.eartharoid.me/insecure/rs:auto:180/plain/s3://eartharoid/sharex/21/10/pebblehost.webp)](https://pebble.host/discordtickets)
-
-#### VPS hosting
-
-If you prefer a VPS, try one of these recommended hosts:
-
-- [**Hetzner**](https://hetzner.cloud/?ref=6LDitpgQpB3V)[^1] - An affordable German VPS provider (link gives €20 account credit)
-
-## Managed hosting
-
-If you just want a ticket bot without the complications of hosting and updating it, you can get [a managed bot](/managed) - meaning all of the hard work is done for you. Buy hosting directly from the creator of Discord Tickets to get your bot running with minimal effort.
-
-<!-- do not delete -->
---8<-- "includes/hosting-options.md"
-<!-- /do not delete -->
-
-[Get a managed bot](/managed){ .md-button .md-button--primary }
-
-[^1]: This is an affiliate link. You can support Discord Tickets by purchasing from the linked website.
+[^1]: Self-hosting difficulty depends on the hosting method chosen and most importantly, your experience
+[^2]: It can take anywhere from 15 minutes to over 1 week for your bot to be ready, depending on availability, but it is typically ready within 12 hours
+[^3]: Installation depends on your specific environment and may take longer if you encounter problems
+[^4]: Pricing depends on the chosen hosting provider
+[^5]: Installation-free methods still require bot configuration within your guild (unless you purchase the configuration service)
+[^6]: Settings and archives are available at <https://portal.discordtickets.app>
+[^7]: You can get a subdomain like `example.discordtickets.app` for free
+[^8]: Optional, but strongly recommended

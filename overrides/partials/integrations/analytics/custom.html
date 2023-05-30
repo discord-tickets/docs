@@ -1,0 +1,17 @@
+{% if config.extra.analytics is defined %}
+<script
+	async
+	defer
+	src="{{ config.extra.analytics.script }}"
+	data-website-id="{{ config.extra.analytics.website }}"
+	data-domains="{{ config.extra.analytics.domains }}"
+	data-cache="true">
+</script>
+<script>
+	console.log('{{ config.extra.analytics.domains }} analytics is enabled')
+</script>
+{% else %}
+<script>
+	console.log('analytics is disabled')
+</script>
+{% endif %}

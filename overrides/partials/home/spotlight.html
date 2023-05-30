@@ -1,0 +1,174 @@
+<!--
+  Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Parallax group: more than just a static site -->
+<section class="mdx-parallax__group" data-md-color-scheme="default">
+	<div class="md-content md-grid" data-md-component="content">
+		<div class="md-content__inner">
+
+			<!-- Section header -->
+			<header class="md-typeset" hidden>
+				<h1 id="features">
+					Features
+					<a href="#features" class="headerlink" title="Permanent link">
+						¶
+					</a>
+				</h1>
+			</header>
+
+			<!-- Section content -->
+			<div class="mdx-spotlight">
+
+				<figure class="mdx-spotlight__feature" hidden>
+					<a href="features#archives" title="Archives" tabIndex="-1">
+						<img src="https://via.placeholder.com/1200x900.png?text=Coming+soon" alt="Built-in search"
+							loading="lazy" width="500" height="327" />
+					</a>
+					<figcaption class="md-typeset">
+						<h2>Beautiful archives</h2>
+						<p>
+							Discord Tickets <strong>encrypts and stores messages</strong> sent within tickets,
+							so you, your staff, and your users can easily see what was said months ago
+							by downloading the whole conversation.
+						</p>
+						<p>
+							If archives are particularly important for your server, you can <strong>easily</strong>
+							install the <a href="features#portal">portal web app</a> to make it even easier to browse
+							past tickets.
+						</p>
+						<p>
+							<a href="features#archives" aria-label="Built-in search">
+								<span class="twemoji">
+									{% include ".icons/octicons/arrow-right-24.svg" %}
+								</span>
+								Learn more
+							</a>
+						</p>
+					</figcaption>
+				</figure>
+
+
+				<figure class="mdx-spotlight__feature" hidden>
+					<a href="features#settings" title="Simple settings" tabIndex="-1">
+						<img src="img/home/settings.webp" alt="Simple settings" loading="lazy" width="500"
+							height="327" />
+					</a>
+					<figcaption class="md-typeset">
+						<h2>Simple settings</h2>
+						<p>
+							There are no admin commands cluttering up your Discord server.
+							All server configuration, such as changing embed colours, creating categories and panels
+							etc,
+							can be done quickly through a <strong>simple UI</strong>
+							that is bundled with the bot, so it doesn't complicate installation.
+						</p>
+						<p>
+							Global settings, such as the bot's presence/activity, can also be easily changed
+							in the main <a href="self-hosting/configuration">configuration file</a>.
+						<p>
+							<a href="features#settings" aria-label="Simple settings">
+								<span class="twemoji">
+									{% include ".icons/octicons/arrow-right-24.svg" %}
+								</span>
+								Learn more
+							</a>
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure class="mdx-spotlight__feature" hidden>
+					<a href="features/commands/" title="Modern features" tabIndex="-1">
+						<img src="https://via.placeholder.com/1200x900.png" alt="Modern features" loading="lazy"
+							width="500" height="327" />
+					</a>
+					<figcaption class="md-typeset">
+						<h2>Modern features</h2>
+						<p>
+							Discord has improved over the years, adding new ways for bots and users to interact.
+							Tickets are important - you should be using a bot that has grown with Discord and adopted
+							the new features to <strong>improve the user experience</strong>.
+						</p>
+						<p>
+							Discord Tickets uses <strong>slash</strong> and <strong>context menu</strong> commands,
+							<strong>buttons</strong>, <strong>menus</strong>,
+							and modal <strong>forms</strong>.
+						</p>
+						<a href="features/commands/" aria-label="Modern features">
+							<span class="twemoji">
+								{% include ".icons/octicons/arrow-right-24.svg" %}
+							</span>
+							Learn more
+						</a>
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure class="mdx-spotlight__feature" hidden>
+					<a href="features#tags" tabIndex="-1" title="Helps you help">
+						<img src="img/home/tags.webp" alt="Helps you help" loading="lazy"
+							width="500" height="327" />
+					</a>
+					<figcaption class="md-typeset">
+						<h2>
+							Helps you help
+						</h2>
+						<p>
+							Create an <strong>unlimited</strong> number of <a href="configuration/tags">tags</a>
+							to be used a self-serve knowledgebase, or for staff sending repeated messages. 
+						</p>
+						<p>
+							You can even configure regular expressions for each tag so the bot can
+							<strong>automatically reply</strong> to frequently-asked questions,
+							relieving your staff from constantly repeating themselves.
+						</p>
+						<a href="features#tags" aria-label="Helps you help">
+							<span class="twemoji">
+								{% include ".icons/octicons/arrow-right-24.svg" %}
+							</span>
+							Learn more
+						</a>
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="md-typeset">
+				<br>
+				<hr>
+				<br>
+			</div>
+
+			<div class="md-typeset" style="max-width: 600px; text-align: center; margin:auto;">
+				<p>
+					<strong>There's more!</strong>
+				</p>
+				<p>
+					Discord Tickets has lots of <strong>useful features</strong>,
+					whilst steering clear of copying bloat or poor features from other bots.
+					Many of the features are <strong>optional</strong>,
+					so can be dialled down or completely disabled if you don't want them.
+				</p>
+				<a href="/features" class="md-button">View all features</a>
+			</div>
+		</div>
+	</div>
+</section>
