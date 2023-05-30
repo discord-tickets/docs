@@ -47,8 +47,7 @@ mkdir tickets-bot && cd tickets-bot
 Open `docker-compose.yml` in your preferred text editor(1) and modify the highlighted lines.
 { .annotate }
 
-1.
-  !!! example
+1. <!---->
     ```bash linenums="0"
     nano docker-compose.yml
     ```

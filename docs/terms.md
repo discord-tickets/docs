@@ -70,17 +70,11 @@ By using the websites, you agree to not abuse features and bugs or APIs, and not
 #### 3.1.2. StatsAPI
 
 By sending data to the StatsAPI, you agree to not knowingly send incorrect data or make excess HTTP requests in an attempt to disrupt the service, invalidate the aggregated statistics,
-inflict additional cloud usage costs or send requests with any other malicious intent. 
+inflict additional cloud usage costs or send requests with any other malicious intent.
 
 #### 3.1.3. Feedback
 
 You agree to not submit spam or repetitive ideas or comments.
-
-#### 3.1.4. Store
-
-You agree to not submit spam support requests/tickets, or fraudulent, misleading, or false feedback/ratings/reviews.
-
-See [4. Payments](#4-payments).
 
 ### 3.2. Hosted bots
 
@@ -98,7 +92,7 @@ You may not use the service in a way, intentionally or otherwise, that:
 6. includes accessing data that you are not permitted to
 7. violates (or use the service in a Discord guild that violates)
    	the [Discord Terms of Service](https://discord.com/terms) or [Discord Community Guidelines](https://discord.com/guidelines) -
-	notably:   
+	notably:
 
 	> - Do not organize, promote, or participate in hate speech or hateful conduct
 	> - Do not use Discord for the organization, promotion, or support of violent extremism
@@ -109,7 +103,7 @@ You may not use the service in a way, intentionally or otherwise, that:
 	> - Do not distribute or provide access to content involving the hacking, cracking, or distribution of stolen goods, pirated content, or accounts.
 		This includes sharing or selling game cheats or hacks.
 	> - Do not organize, promote, or engage in any illegal or dangerous behaviour
-	
+
 8. is otherwise unlawful in either your jurisdiction or the United Kingdom
 9. would be considered unfair or abusive by a reasonable person
 10. a reasonable person would deem unreasonable

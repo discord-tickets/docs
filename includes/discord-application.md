@@ -12,7 +12,7 @@
 
 	![Screenshot](/img/discord-application-1.png)
 3. Add a logo, description, and links to your terms of service and privacy policy, then click `Save Changes`.
-	
+
 	![Screenshot](/img/discord-application-2.png)
 4. Go to the `OAuth2` page and click `Reset Secret`, then `Yes, do it!`.
 	**Copy the new secret and set it as your `DISCORD_SECRET` environment variable.**
@@ -38,8 +38,8 @@
 7. Configure the bot
 
 	1. Optionally, disable the "public bot" option to prevent other people from adding your bot to their servers.
-	2. **Enable the `server members` and `message content` intents.**
- 
+	2. **Enable the `presence`, `server members` and `message content` intents.**
+
 	![Screenshot](/img/discord-application-6.png)
 
 Don't add the bot to your Discord server yet; you'll do that later.
