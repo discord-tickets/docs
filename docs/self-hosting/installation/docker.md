@@ -107,9 +107,9 @@ services:
       HTTP_EXTERNAL: http://127.0.0.1:8169 # (8)!
       HTTP_HOST: 0.0.0.0
       HTTP_PORT: 8169
-      HTTP_TRUST_PROXY: false # (9)!
-      PUBLIC_BOT: false
-      PUBLISH_COMMANDS: false
+      HTTP_TRUST_PROXY: "false" # (9)!
+      PUBLIC_BOT: "false"
+      PUBLISH_COMMANDS: "false"
       OVERRIDE_ARCHIVE: null
       SUPER: 319467558166069248 # (10)!
 
