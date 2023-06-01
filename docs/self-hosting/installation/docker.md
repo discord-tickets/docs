@@ -230,7 +230,7 @@ docker run -itd \
   -e ENCRYPTION_KEY="445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a" \
   -e HTTP_EXTERNAL="https://tickets.example.com" \
   -e HTTP_TRUST-PROXY="true" \
-  -v ~/tickets-storage:/usr/bots/user \
+  -v ~/tickets-storage:/usr/bot/user \
   discord-tickets
 ```
 
