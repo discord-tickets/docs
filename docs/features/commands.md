@@ -127,3 +127,18 @@ Remove a member from either a specific ticket or the ticket channel the command 
 	``` title="Example 2"
 	/remove member: @eartharoid ticket: 91
 	```
+
+### `/claim`
+
+Allows a staff member to take ownership of the ticket in order to process it 
+
+
+### `/close`
+
+Send a request to close the opened ticket. This can be done either by this command, or by the close button on the first ticket's message, if buttons are enabled. Only the staff can validate the ticket closure
+
+#### Options
+
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|      :material-comment-text:{ .tip title="Autocompleted" } `reason`    |               The reason why the ticket should be closed               |      N/A      |
