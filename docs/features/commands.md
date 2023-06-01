@@ -142,3 +142,16 @@ Send a request to close the opened ticket. This can be done either by this comma
 |                                  Name                                  |                              Description                               |    Example    |
 | :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
 |      :material-comment-text:{ .tip title="Autocompleted" } `reason`    |               The reason why the ticket should be closed               |      N/A      |
+
+### `/force-close`
+
+Can be only used by the staff to force close a ticket, without prompting the user.
+
+#### Options
+
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|      :material-comment-text:{ .tip title="Autocompleted" } `category`  | Close all tickets in hte specified category (can be used with 'time')  |      N/A      |
+|      :material-comment-text:{ .tip title="Autocompleted" } `reason`    |              The reason why the ticket(s) should be closed             |      N/A      |
+|      :material-comment-text:{ .tip title="Autocompleted" } `ticket`    |                           The ticket to close                          |      N/A      |
+|      :material-comment-text:{ .tip title="Autocompleted" } `time`      |Close all tickets that have been inactive for the specified time (can be used with 'category')|      N/A      |
