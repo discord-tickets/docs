@@ -132,6 +132,9 @@ Remove a member from either a specific ticket or the ticket channel the command 
 
 Allows a staff member to take ownership of the ticket in order to process it 
 
+### `/release`
+
+Allows a staff member to release ownership of the ticket
 
 ### `/close`
 
@@ -155,3 +158,62 @@ Can be only used by the staff to force close a ticket, without prompting the use
 |      :material-comment-text:{ .tip title="Autocompleted" } `reason`    |              The reason why the ticket(s) should be closed             |      N/A      |
 |      :material-comment-text:{ .tip title="Autocompleted" } `ticket`    |                           The ticket to close                          |      N/A      |
 |      :material-comment-text:{ .tip title="Autocompleted" } `time`      |Close all tickets that have been inactive for the specified time (can be used with 'category')|      N/A      |
+
+### `/help`
+
+Show the list of the commands available
+
+### `/move`
+
+Move the ticket to another category
+
+#### Options
+
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|          :material-asterisk:{ .pink title="Required" } `category`      |                The category to move the ticket on                      |      N/A      |
+
+### `/new`
+
+Create a ticket
+
+#### Options
+
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|   :material-comment-text:{ .tip title="Autocompleted" } `references`   |            References an existant or old ticket in the new one         |      N/A      |
+
+### `/tag`
+
+Add a tag to the ticket
+
+#### Options
+
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|             :material-asterisk:{ .pink title="Required" } `tag`        |                     The tag to add to the ticket                       |      N/A      |
+|         :material-comment-text:{ .tip title="Autocompleted" } `for`    |                     The user to target the tag to                      |      N/A      |
+
+### `/tickets`
+
+List your own or someome else's tickts
+
+#### Options
+
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|     :material-comment-text:{ .tip title="Autocompleted" } `member`     |                     The member to list the tickets of                  |      N/A      | 
+
+### `/topic`
+
+Change the topic of a ticket.
+
+### `/transcript`
+
+Get the transcript of a ticket
+
+#### Options
+
+|                                  Name                                  |                              Description                               |    Example    |
+| :--------------------------------------------------------------------: | :--------------------------------------------------------------------: | :-----------: |
+|         :material-asterisk:{ .pink title="Required" } `ticket`         |           The number of the ticket to get the transcript of            |      N/A      |
