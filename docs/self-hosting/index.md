@@ -22,8 +22,8 @@ Using `git` is strongly recommended.
 
 | Provider                  | Database          | Supported versions                  |
 | ------------------------- | ----------------- | ----------------------------------- |
-| `mysql` **(recommended)** | MySQL             | `5.6`, `5.7`, `8`                   |
-| `mysql`                   | MariaDB           | `10`                                |
+| `mysql` **(recommended)** | MySQL             | `5.7` (`5.7.8` or higher), `8`      |
+| `mysql`                   | MariaDB           | `10` (`10.5.7` or higher)           |
 | `postgresql`              | PostgreSQL        | `9.4`, `10`, `11`, `12`, `13`, `14` |
 | `sqlite`                  | SQLite (built-in) | `*`                                 |
 
