@@ -20,7 +20,3 @@ document.addEventListener("DOMContentLoaded", function () {
 		regenerateKey();
 	});
 });
-
-
-
-

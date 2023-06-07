@@ -2,7 +2,7 @@ site_name: Discord Tickets
 site_description: The most popular open-source ticket management bot for Discord.
 site_author: eartharoid
 site_url: https://discordtickets.app
-copyright: "&copy; 2022 <a href=\"https://eartharoid.me\" target=\"_blank\">Isaac Saunders</a>"
+copyright: "&copy; 2023 <a href=\"https://eartharoid.me\" target=\"_blank\">Isaac Saunders</a>"
 
 repo_name: discord-tickets/bot
 repo_url: https://github.com/discord-tickets/bot
