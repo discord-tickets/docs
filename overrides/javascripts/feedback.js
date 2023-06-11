@@ -2,8 +2,8 @@ const umamiSite = "{{ config.extra.analytics.website }}";
 
 function feedback() {
 	const form = document.forms.feedback;
-	if (!form) console.warn('no feedback form');
-	
+	if (!form) return console.warn('no feedback form');
+
 	/* Show feedback */
 	form.hidden = false;
 	// form.outerHTML = form.outerHTML;
