@@ -28,7 +28,7 @@ If not, there are several options available:
 !!! info ""
     If you already have Caddy running, update your existing configuration and use `caddy reload` instead.
 
-First, [install Caddy](https://caddyserver.com/docs/install), then open the `Caddyfile` and edit the domain.
+First, [install Caddy](https://caddyserver.com/docs/install), then create a `Caddyfile`:
 
 ```nginx title="Caddyfile"
 {==tickets.example.com==} {

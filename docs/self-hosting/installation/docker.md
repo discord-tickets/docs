@@ -222,7 +222,7 @@ You need to set the other required environment variables.
 ```bash title="Example"
 docker run -itd \
   --name tickets \
-  -p 8080:8080 \
+  -p 8169:80 \
   -e DB_CONNECTION_URL="mysql://bots:VerySecurePassword123@localhost/tickets0" \
   -e DB_PROVIDER="mysql" \
   -e DISCORD_SECRET="rUpDU2T8K4ZXie8kdpzYsMTLbUhvmBRd" \
