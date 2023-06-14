@@ -53,9 +53,9 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
     		fill="url(#StripeClimate-gradient-c)" />
     </svg>
      1% of revenue goes to [Stripe Climate](https://stripe.com/climate) to remove CO~2~ from the atmosphere <!--CO₂-->
-- Nightly database backups, kept for 30 days
+- [Nightly database backups](https://status.eartharoid.me/), encrypted and kept for 30 days
 
-[Create a ticket](https://lnk.earth/discord) if you have any questions about security and data privacy.
+[Create a ticket](https://lnk.earth/discord) if you have questions about security, privacy, compliance, etc.
 
 ## FAQs
 
