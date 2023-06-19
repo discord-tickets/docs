@@ -93,7 +93,7 @@ services:
     ports:
       - 8169:8169
     volumes:
-      - tickets-bot:/usr/bot/user
+      - tickets-bot:/home/container/user
     tty: true
     stdin_open: true
     # Please refer to the documentation:
@@ -173,7 +173,7 @@ docker container ls
 
 ```bash
 CONTAINER ID   IMAGE                            COMMAND                  CREATED          STATUS          PORTS                            NAMES
-{==318bb11719d9==}   eartharoid/discord-tickets:4.0   "/usr/bot/scripts/st…"   41 seconds ago   Up 37 seconds   80/tcp, 0.0.0.0:8080->8080/tcp   bot-bot-1
+{==318bb11719d9==}   eartharoid/discord-tickets:4.0   "/home/container/scripts/st…"   41 seconds ago   Up 37 seconds   80/tcp, 0.0.0.0:8080->8080/tcp   bot-bot-1
 18a3ae0eb999   mysql:8                          "docker-entrypoint.s…"   41 seconds ago   Up 38 seconds   3306/tcp, 33060/tcp              bot-mysql-1
 ```
 
@@ -230,8 +230,8 @@ docker run -itd \
   -e ENCRYPTION_KEY="445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a" \
   -e HTTP_EXTERNAL="https://tickets.example.com" \
   -e HTTP_TRUST-PROXY="true" \
-  -v ~/tickets-storage:/usr/bot/user \
-  discord-tickets
+  -v ~/tickets-storage:/home/container/user \
+  eartharoid/discord-tickets:4.0
 ```
 
 The first time you start the container, don't use the `-d` flag so you can type `commands publish` in the console to publish the commands to Discord.
