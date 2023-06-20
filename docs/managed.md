@@ -7,7 +7,7 @@ tags:
 
 # Managed bot
 
-An affordable managed bot is the easiest way to get your own ticket bot.
+An affordable managed bot is the easiest way to get your own ticket bot because the technical side is done for you.
 Choose a plan to get started.
 [Terms of service](./terms.md) and [privacy policy](privacy.md#service-privacy-policy) apply.
 
