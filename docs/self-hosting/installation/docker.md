@@ -230,10 +230,9 @@ docker run -itd \
   -e ENCRYPTION_KEY="445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a" \
   -e HTTP_EXTERNAL="https://tickets.example.com" \
   -e HTTP_TRUST-PROXY="true" \
-  -v ~/tickets-storage:/home/container/user \
   eartharoid/discord-tickets:4.0
 ```
 
 The first time you start the container, don't use the `-d` flag so you can type `commands publish` in the console to publish the commands to Discord.
 You can then restart the container in detached mode.
-Alternatively, set the `PUBLISH_COMMANDS` environment variable to `#!yaml true` to publish commands automatically.
+Alternatively, set the `PUBLISH_COMMANDS` environment variable to `#!yaml true` to publish commands automatically at startup.

@@ -5,20 +5,14 @@ description: How to install Discord Tickets on Railway
 # Railway
 
 !!! warning
-	Due to sharing an IP address with other Railway users (who are likely also hosting a Discord bot),
-	you are more likely to encounter rate limits. It should be fine for testing or small servers,
-	but you should consider other hosting options if you expect high usage.
-
-	Railway is also very limiting in access, which may make it difficult to troubleshoot issues or update the bot.
+	Due to sharing an IP address with other Railway users (who may also be hosting a Discord bot),
+	you are more likely to encounter rate limits. It should be fine,
+	but you should consider other hosting options if you have a large guild and tickets are critical.
 
 ## Pricing
 
-Verified accounts(1) on Railway get $5 (or 500 hours) of usage per month for free.
-Depending on usage, you may be able to run the bot for free if you don't have anything else running on your Railway account
-but may cost up to $6 per month (\$1 after free usage).
-{ .annotate }
-
-1. If you don't have an existing, active GitHub account, you may need to add a payment method to verify your account.
+[Railway no longer offers a free tier](https://blog.railway.app/p/pricing-and-plans-migration-guide-2023) after the $5 trial.
+New users will have to pay $5/month.
 
 ## Deploying
 
@@ -55,7 +49,7 @@ Copy the value below and paste it into the `ENCRYPTION_KEY` field on Railway.
 Click on the `bot`(1) service, then `Settings`.
 { .annotate }
 
-1. It may have a different name if you changed the name of your cloned repository. 
+1. It may have a different name if you changed the name of your cloned repository.
 
 Here you can copy the default URL or change the subdomain to something less generic.
 If you have one, you can also add a custom domain, which will look much better.

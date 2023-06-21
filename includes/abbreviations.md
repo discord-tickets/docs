@@ -1,4 +1,4 @@
-*[server]: Software that serves requests, or an always-online computer that runs the software. May also be used as a synonym for "guild", especially in non-technical content, but will usually be prefixed by "Discord" if it is. 
+*[server]: Software or a computer that serves requests. May also be used as a synonym for "guild", especially in non-technical content.
 *[guild]: A Discord server
 *[guilds]: Discord servers
 *[VPS]: Virtual Private Server, basically a VM

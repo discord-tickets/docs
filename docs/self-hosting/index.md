@@ -9,12 +9,10 @@
 Regardless of the installation method you choose, the bot requires:
 
 - **Node.js v18** or higher (with NPM, PNPM, or Yarn)
-- **1 free port**
-- at least **120MB memory** available
-    - 150MB recommended for large guilds
-- at least **1GB disk** space available (shared between files and database)
-    - at least 100MB of database space is recommended for archiving
-- a [supported database](#supported-databases) (MySQL recommended)
+- **a free port**
+- at least **120MB RAM** (150MB for large guilds)
+- at least **1GB disk** space (at least 100MB for the database if archiving)
+- a [supported database](#supported-databases) (MySQL 8 recommended)
 
 Using `git` is strongly recommended.
 
@@ -27,9 +25,20 @@ Using `git` is strongly recommended.
 | `postgresql`              | PostgreSQL        | `9.4`, `10`, `11`, `12`, `13`, `14` |
 | `sqlite`                  | SQLite (built-in) | `*`                                 |
 
-!!! warning ""
-	**SQLite should be avoided, especially if you are going to use the archiving feature.**
-	It is significantly slower than a separate database server.
+
+!!! warning "SQLite should be avoided if you expect to use the archiving feature, especially in large guilds."
+    SQLite is an embedded (rather than server-based) database and has some advantages:
+
+    - :white_check_mark: Incredibly easy to use, nothing extra to install and configure
+    - :white_check_mark: [Very fast](https://github.com/discord-tickets/bot/blob/8971c0ad13c287eb21c7a63341dd5c48c1b6ed06/src/client.js#L58-L68) for read-intensive workloads
+    - :white_check_mark: No overhead (wasted resources going to the database server)
+
+    **But archiving** requires a lot of writing which **may present some problems**, especially in large/active guilds:
+
+    - :x: May be slower when messages are being written to the database
+    - :x: The database file will only grow in size, even when data is deleted.
+    This can be fixed by occasionally manually [vacuuming](https://www.sqlite.org/lang_vacuum.html) the database.
+    *Auto vacuuming is not enabled as it would increase fragmentation and degrade performance.*
 
 ## Installation
 

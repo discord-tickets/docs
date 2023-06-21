@@ -150,7 +150,7 @@ labels:
 
     How to set up a reverse proxy on PebbleHost.
 
-    [:octicons-arrow-right-24: PebbleHost Knowledgebase](ttps://help.pebblehost.com/en/minecraft/how-to-setup-a-reverse-proxy)
+    [:octicons-arrow-right-24: PebbleHost Knowledgebase](https://help.pebblehost.com/en/minecraft/how-to-setup-a-reverse-proxy)
 
 
 </div>
