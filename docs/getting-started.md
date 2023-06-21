@@ -28,7 +28,7 @@ If you need help choosing, [ask for help](#useful-links).
 | Difficulty                     |                        Very easy { .green }                         |                           Easy { .green }                           |            Sysadmin/hosting experience recommended[^1] { .orange }             |
 | Ready in                       |                     :octicons-clock-24: Instant                     |                     :octicons-clock-24: 24h[^2]                     |                          :octicons-clock-24: 15m[^3]                           |
 | Cost                           |                              **Free**                               |                  As low as **£2/month** (£20/year)                  |                                   Varies[^4]                                   |
-| Archive data retention         |                               90 days                               |                           **Forever[^9]**                           |                                **Forever[^9]**                                 |
+| Archive data retention         |                            30 days[^10]                             |                           **Forever[^9]**                           |                                **Forever[^9]**                                 |
 | All features                   |                         :white_check_mark:                          |                         :white_check_mark:                          |                               :white_check_mark:                               |
 | Custom bot (username and icon) |                      :x:<br>(shared bot user)                       |                         :white_check_mark:                          |                               :white_check_mark:                               |
 | Domain with SSL                |                             Shared[^6]                              |                Free subdomain[^7], or bring your own                |                               Bring your own[^8]                               |
@@ -56,3 +56,4 @@ Please search this site *(there's a search bar at the top!)* before asking for s
 [^7]: You can get a subdomain like `example.discordtickets.app` for free
 [^8]: Optional, but strongly recommended
 [^9]: As long as you can legally justify
+[^10]: Messages are deleted after 30 days, both to comply with Discord's requirements for verified bots and to keep storage costs low
