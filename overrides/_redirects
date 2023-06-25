@@ -12,4 +12,5 @@
 /changelogs/v4-0-4 https://github.com/discord-tickets/bot/releases/tag/v4.0.4 301!
 /changelogs/v4-0-5 https://github.com/discord-tickets/bot/releases/tag/v4.0.5 301!
 # wildcard must be last
-/changelogs/* https://github.com/discord-tickets/bot/releases?q=:splat&expanded=true 301!
+#/changelogs/* https://github.com/discord-tickets/bot/releases?q=:splat&expanded=true 301!
+/changelogs/* https://github.com/discord-tickets/bot/releases/tag/:splat 301!
