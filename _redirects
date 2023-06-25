@@ -1,2 +1,15 @@
-/changelogs https://github.com/discord-tickets/bot/releases 302!
-/changelogs/* https://github.com/discord-tickets/bot/releases 302!
+/changelogs https://github.com/discord-tickets/bot/releases 301!
+/changelogs/v400 https://github.com/discord-tickets/bot/releases/tag/v4.0.0 301!
+/changelogs/v401 https://github.com/discord-tickets/bot/releases/tag/v4.0.1 301!
+/changelogs/v402 https://github.com/discord-tickets/bot/releases/tag/v4.0.2 301!
+/changelogs/v403 https://github.com/discord-tickets/bot/releases/tag/v4.0.3 301!
+/changelogs/v404 https://github.com/discord-tickets/bot/releases/tag/v4.0.4 301!
+/changelogs/v405 https://github.com/discord-tickets/bot/releases/tag/v4.0.5 301!
+/changelogs/v4-0-0 https://github.com/discord-tickets/bot/releases/tag/v4.0.0 301!
+/changelogs/v4-0-1 https://github.com/discord-tickets/bot/releases/tag/v4.0.1 301!
+/changelogs/v4-0-2 https://github.com/discord-tickets/bot/releases/tag/v4.0.2 301!
+/changelogs/v4-0-3 https://github.com/discord-tickets/bot/releases/tag/v4.0.3 301!
+/changelogs/v4-0-4 https://github.com/discord-tickets/bot/releases/tag/v4.0.4 301!
+/changelogs/v4-0-5 https://github.com/discord-tickets/bot/releases/tag/v4.0.5 301!
+# wildcard must be last
+/changelogs/* https://github.com/discord-tickets/bot/releases?q=:splat&expanded=true 301!
