@@ -60,7 +60,7 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-
 
 
             Thanks for your feedback! Help us improve this page by
@@ -92,22 +92,22 @@ plugins:
       repository: discord-tickets/docs
       branch: main
   - glightbox:
-      skip_classes: 
+      skip_classes:
         - no-glightbox
   - tags:
       tags_allowed:
         - Archives
       tags_file: tags.md
   - meta # must be before blog
-  - blog:
-      archive: false
-      blog_dir: changelogs
-      post_url_date_format: yyyy
-      post_url_format: "{slug}"
-      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-      post_slugify_separator: "-"
+  # - blog:
+  #     archive: false
+  #     blog_dir: changelogs
+  #     post_url_date_format: yyyy
+  #     post_url_format: "{slug}"
+  #     post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+  #       kwds:
+  #         case: lower
+  #     post_slugify_separator: "-"
   - social:
       cards_color:
         fill: "#5865F2"
