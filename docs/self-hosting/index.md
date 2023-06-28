@@ -8,13 +8,13 @@
 
 Regardless of the installation method you choose, the bot requires:
 
-- **Node.js v18** or higher (with NPM, PNPM, or Yarn)
+- **Node.js v18** or higher (with npm, pnpm, or yarn)
 - **a free port**
-- at least **120MB RAM** (150MB for large guilds)
+- at least **150MB RAM**
 - at least **1GB disk** space (at least 100MB for the database if archiving)
 - a [supported database](#supported-databases) (MySQL 8 recommended)
 
-Using `git` is strongly recommended.
+Using `git` is recommended.
 
 ### Supported databases
 

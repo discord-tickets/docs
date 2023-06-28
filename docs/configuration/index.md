@@ -15,12 +15,13 @@ template: managed.html
 The first step is to log in to the settings panel, which is part of the Portal web application.
 
 ??? abstract "Public bot"
-    The public portal is available at [portal.discordtickets.app](https://portal.discordtickets.app).
+    The public portal is available at [portal.discordtickets.app](https://portal.discordtickets.app/settings).
 
     [Open the settings panel :octicons-link-external-16:](https://portal.discordtickets.app/settings){ target=_blank .md-button .md-button--primary }
 
 ??? abstract "Managed bot"
     Go to your subdomain or custom domain followed by `/settings` (e.g. `https://tickets.example.com/settings`).
+    If have forgotten your subdomain, run the `/help` command to get a link.
 
 ??? abstract "Self-hosted bot"
     The settings panel is located at `/settings` on the origin you set as the `HTTP_EXTERNAL` environment variable.

@@ -111,6 +111,7 @@ nav:
         - PebbleHost: self-hosting/installation/pebblehost.md
       - Configuration: self-hosting/configuration.md
       - Reverse proxy setup: self-hosting/reverse-proxy.md
+      - Stdin commands: self-hosting/stdin-commands.md
       - Updating: self-hosting/updating.md
     - Configuration:
       - Configuration: configuration/index.md
