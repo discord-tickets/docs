@@ -16,7 +16,7 @@ New users will have to pay $5/month.
 
 ## Deploying
 
-Click the button below to deploy the bot on Railway.
+Click the button below to deploy the bot on Railway. Come back to this page before continuing.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/eB6TkX?referralCode=Z3aYd2){ target="_blank" }
 
