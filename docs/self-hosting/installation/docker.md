@@ -113,7 +113,7 @@ services:
       PUBLISH_COMMANDS: "false"
       OVERRIDE_ARCHIVE: null
       SUPER: 319467558166069248 # (10)!
-      TZ: America/Los_Angeles
+      TZ: Etc/UTC # (11)!
 
 networks:
   discord-tickets:
@@ -141,7 +141,8 @@ volumes:
 7. Copy the value from the [encryption key generator](#encryption-key) below.
 8. Change this to your server's external IP address, or a domain name that points to it.
 9. If you are using a reverse proxy, set this to `#!yaml true`.
-10.  You can add more users by separating them with commas (e.g. `#!yaml 319467558166069248,123456789012345678`)
+10. You can add more users by separating them with commas (e.g. `#!yaml 319467558166069248,123456789012345678`)
+11. Optionally, change the container's timezone so the log timestamps are correct for you  
 
 #### Creating the Discord application
 
