@@ -31,6 +31,14 @@ After logging in, you should see a list of guilds that you have permission to ma
 Select the guild you want to add the bot to, then refresh the page after authorising the bot.
 You can then navigate to the guild's settings page.
 
+## Using the settings panel
+
+Each section of the settings panel has a dedicated page in this documentation and it is recommended that you read through each page
+<span class="tip">(:material-fire:{ title="Tip" } you can press ++n++ to move to the next page)</span>.
+
+
+## Common configurations
+
 ## Command permissions
 
 Before you start configuring the bot, you may want to clean up the application command selector for your members.

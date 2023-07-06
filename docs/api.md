@@ -1,7 +1,7 @@
 # API
 
 !!! warning ""
-    Due to how [token invalidation](./self-hosting/configuration.md#INVALIDATE_TOKENS) works, **service keys are not available on public instances**.
+    Due to how [token invalidation](./self-hosting/configuration.md#invalidate_tokens) works, **service keys are not available on public instances**.
 
 The API is currently undocumented, but you can find all of the available routes (and reasonably easy-to-understand code) in [`src/routes/api`](https://github.com/discord-tickets/bot/tree/main/src/routes/api).
 
