@@ -94,6 +94,7 @@ services:
       - 8169:8169
     volumes:
       - tickets-bot:/home/container/user
+      - /etc/localtime:/etc/localtime:ro
     tty: true
     stdin_open: true
     # Please refer to the documentation:
@@ -112,6 +113,7 @@ services:
       PUBLISH_COMMANDS: "false"
       OVERRIDE_ARCHIVE: null
       SUPER: 319467558166069248 # (10)!
+      TZ: America/Los_Angeles
 
 networks:
   discord-tickets:
