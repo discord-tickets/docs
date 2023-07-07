@@ -33,11 +33,11 @@ You can then navigate to the guild's settings page.
 
 ## Using the settings panel
 
-Each section of the settings panel has a dedicated page in this documentation and it is recommended that you read through each page
-<span class="tip">(:material-fire:{ title="Tip" } you can press ++n++ to move to the next page)</span>.
+Each section of the settings panel has a dedicated page in this documentation and it is recommended that you read through each of them
+<span class="tip">(:material-fire:{ title="Tip" } you can press ++n++ or ++period++ to move to the next page)</span>.
 
 
-## Common configurations
+<!-- ## Common configurations -->
 
 ## Command permissions
 
