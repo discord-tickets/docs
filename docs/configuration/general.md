@@ -21,7 +21,8 @@ Tickets are pending closure when:
 
 When paired with the [*Stale after*](#stale-after) option, tickets will be automatically closed when `lastMessageAt + stalerAfter + autoCloseAfter > now`.
 
-Must be a [ms](https://github.com/vercel/ms#readme)-parsable format (`18h`, `2 days`, `1w`, etc).
+Must be an [ms](https://github.com/vercel/ms#readme)-parsable format (`18h`, `2 days`, `1w`, etc).
+The value should be greater than 5 minutes, but 12 hours is the minimum recommended value.
 
 ### Auto tag channels
 
@@ -103,7 +104,7 @@ This sends a message warning participants to resume the conversation.
 
 This option can be paired with the [*Auto close after*](#auto-close-after) option to automatically close tickets after a period of inactivity.
 
-Must be a [ms](https://github.com/vercel/ms#readme)-parsable format (`18h`, `2 days`, `1w`, etc).
+Must be an [ms](https://github.com/vercel/ms#readme)-parsable format (`15m`, `1h`, `1 day`, etc).
 
 ### Success colour
 

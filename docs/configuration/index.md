@@ -36,6 +36,10 @@ You can then navigate to the guild's settings page.
 Each section of the settings panel has a dedicated page in this documentation and it is recommended that you read through each of them
 <span class="tip">(:material-fire:{ title="Tip" } you can press ++n++ or ++period++ to move to the next page)</span>.
 
+!!! bug ""
+    The settings panel was made to be "just about functional", and exceeds this in many ways, but it is not perfect.
+    Please be careful about what you enter as validation is patchy. It will become more robust and polished in future updates.
+
 
 <!-- ## Common configurations -->
 
