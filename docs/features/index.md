@@ -73,7 +73,6 @@ flowchart TB
     D ==>|Yes|E{Category has questions?}
     D-->|No|F(["❌ End with error"])
     E-->|Yes|G[/"❓ Questions modal"/]
-    E-->|No|J
     E-->|No|H{Category requires topic?}
     H-->|Yes|I[/"❓ Topic modal\n(skipped if started with DM)"/]
     H-->|No|J
