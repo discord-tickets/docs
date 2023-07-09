@@ -170,6 +170,8 @@ Note that topic and [questions](./questions.md) are mutually exclusive and this 
 :octicons-alert-16: Required
 </small>
 
+The selected roles will be added to ticket channels when they are created.
+
 --8<-- "includes/multi-select.md"
 
 ### Total limit

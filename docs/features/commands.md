@@ -74,17 +74,17 @@ Add a member to either a specific ticket or the ticket channel the command is us
 ### :material-ticket:{ .blue title="Tickets-only" } `/claim`
 
 Allows a staff member to take ownership of the ticket. All other staff members will be removed from the channel.
-You can also [enable the claim button](../configuration/general.md#claim-button) on the ticket's opening message.
+You can also [enable the claim button](../configuration/general.md#claim) on the ticket's opening message.
 
 ### :material-ticket:{ .blue title="Tickets-only" } `/close`
 
 Send a request to close the ticket.
-You can also [enable the close button](../configuration/general.md#claim-button) on the ticket's opening message.
+You can also [enable the close button](../configuration/general.md#claim) on the ticket's opening message.
 
 When used by staff, the ticket creator must accept the request for the ticket to be closed.
 When used by the ticket creator, a staff member must accept the request for the ticket to be closed.
 
-Close requests can expire if [auto-closing](../configuration/general.md#auto-close) is enabled.
+Close requests can expire if [auto-closing](../configuration/general.md#auto-close-after) is enabled.
 
 #### Options
 
