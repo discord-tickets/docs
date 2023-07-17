@@ -22,19 +22,24 @@ Note that although the bot may use under 100-150MB of RAM (depending on the serv
 
 Start by creating a new Node.js v18 server.
 
-1. Set the git repository to `https://github.com/discord-tickets/bot`
-2. Set the branch to the latest tag, e.g. `v4.0.0`.
-   You can find the latest tag at the top right corner of this page or [here](https://github.com/discord-tickets/bot/releases/latest).
-3. Enable auto-updating so the startup script will download the code for you
-4. Change the file to `src/index.js`
+!!! Installation Methods
+     === "The Git Method (recommended)"
+		1. Set the git repository to `https://github.com/discord-tickets/bot`
+        2. Set the branch to the latest tag, e.g. `v4.0.0`. You can find the latest tag at the top right corner of this page or [here](https://github.com/discord-tickets/bot/releases/latest).
+        3. Enable auto-updating so the startup script will download the code for you
+        4. Change the file to `src/index.js`
+        ![Screenshot](/img/pterodactyl-1.png)
 
-![Screenshot](/img/pterodactyl-1.png)
+	=== "Using the source code (use if Git doesn't work)"
+		1. Download the latest source code from [here](https://github.com/discord-tickets/bot/releases/latest)
+        2. Go to your Pterodactyl servers file manager and upload the file
+        3. Click the three dots to the side of the file and extract it
+        4. Go to the "Startup" section and change the "Main JS File" (may also be called "JS File" or something similar) to `src/index.js`
 
 After starting the server for the first time, should see something like this.
 Don't worry about the environment variable error yet.
 
 ![Screenshot](/img/pterodactyl-2.png)
-
 
 ## Environment variables
 
