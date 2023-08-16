@@ -17,16 +17,35 @@ Choose a plan to get started.
 Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discount.
 </small>
 
-<div class="pricing-table-container">
-<stripe-pricing-table pricing-table-id="prctbl_1MDE08Ebl2jK6wYdiPaLl7I3" publishable-key="pk_live_51MD8wcEbl2jK6wYdEgyQzlmV73jAIMRB41gZoesOe5B2zCEZHgGoZvG9YIxfX7TxPePre6szwFfIWJOLF4uWmILU00NoUviGyK" />
-</div>
+=== "GBP"
+
+    <div class="pricing-table-container">
+    <stripe-pricing-table pricing-table-id="prctbl_1MDE08Ebl2jK6wYdiPaLl7I3" publishable-key="pk_live_51MD8wcEbl2jK6wYdEgyQzlmV73jAIMRB41gZoesOe5B2zCEZHgGoZvG9YIxfX7TxPePre6szwFfIWJOLF4uWmILU00NoUviGyK" />
+    </div>
+
+=== "EUR"
+
+    <div class="pricing-table-container">
+    <stripe-pricing-table pricing-table-id="prctbl_1NfY9yEbl2jK6wYdvynhuO5V" publishable-key="pk_live_51MD8wcEbl2jK6wYdEgyQzlmV73jAIMRB41gZoesOe5B2zCEZHgGoZvG9YIxfX7TxPePre6szwFfIWJOLF4uWmILU00NoUviGyK" />
+    </div>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+
+=== "USD"
+
+    <div class="pricing-table-container">
+    <stripe-pricing-table pricing-table-id="prctbl_1NfY6xEbl2jK6wYdMvnOz0Mb" publishable-key="pk_live_51MD8wcEbl2jK6wYdEgyQzlmV73jAIMRB41gZoesOe5B2zCEZHgGoZvG9YIxfX7TxPePre6szwFfIWJOLF4uWmILU00NoUviGyK" />
+    </div>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
 ## What you're paying for
 
-- A secure, containerised/sandboxed, auto-updating bot instance hosted in the EU
+!!! abstract ""
+    Hosting, and an admin to do everything for you, all for a comparable or even lower price than self-hosting.
+
+- A secure, containerised, auto-updating[^1] bot instance hosted in the EU
 - Efficient hosting
-    - Powered by [Ampere® Altra®](https://amperecomputing.com/briefs/ampere-altra-family-product-brief), less energy is used for operation and cooling[^1]
-    - Higher CPU utilisation due to many bots running on the same server[^2]
+    - Powered by [Ampere® Altra®](https://amperecomputing.com/briefs/ampere-altra-family-product-brief), less energy is used for operation and cooling[^2]
+    - Higher CPU utilisation due to many bots running on the same server[^3]
     - <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
     	style="width:auto; height:1em; vertical-align:text-bottom;">
     	<linearGradient id="StripeClimate-gradient-a" gradientUnits="userSpaceOnUse" x1="16"
@@ -54,6 +73,7 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
     </svg>
      1% of revenue goes to [Stripe Climate](https://stripe.com/climate) to remove CO~2~ from the atmosphere <!--CO₂-->
 - [Nightly database backups](https://status.eartharoid.me/), encrypted and kept for 30 days
+- :heart: **You're directly supporting the bot's developer**
 
 [Create a ticket](https://lnk.earth/discord) if you have questions about security, privacy, compliance, etc.
 
@@ -88,6 +108,40 @@ This is because **the majority of storage costs are from archiving** (storing tr
 Yes, you can specify custom activities when you create a ticket.
 Check [the documentation](./self-hosting/configuration.md#presence) for available placeholders.
 
+
+### Can I edit the code?
+
+No, you don't have access to the files or console. Everything is completely managed for you.
+To keep administration easy, and for security, every bot instance runs identical code.
+
+If you want more flexibility, consider [self-hosting](../self-hosting/) with a [recommended hosting provider](../self-hosting/installation/#hosting-providers).
+
+!!! tip
+    The exception to this is that you can provide a custom locale file to further customise the bot's messages.
+
+### What payment methods are supported?
+
+All payments are securely processed by [Stripe](https://stripe.com/).
+Depending on your location, you can pay with:
+
+- [x] Card (Visa, Mastercard, American Express, etc)
+- [x] Apple Pay
+- [x] Google Pay
+- [x] PayPal [(see below)](#can-i-pay-with-paypal)
+- [x] Bancontact ([EUR](#eur) only)
+- [x] iDEAL ([EUR](#eur) only)
+- [x] Sofort ([EUR](#eur) only)
+
+
+For one-time payments (not subscriptions), you can also pay with:
+
+- [x] Klarna
+- [x] P24 ([EUR](#eur) only)
+- [x] EPS ([EUR](#eur) only)
+- [x] giropay ([EUR](#eur) only)
+
+Please select the appropriate currency for your location above the pricing table to show supported payment methods.
+
 ### Can I pay with PayPal?
 
 **Yes, but card payments are preferred** because the fees are lower.
@@ -95,13 +149,9 @@ If PayPal is supported in your country, you'll see a PayPal button on the checko
 
 ### Can I pay with crypto?
 
-If you are unable to pay by card or PayPal and need to pay with crypto, you must pre-pay for a year and manually renew your plan.
-Create a ticket to get your bot as there is no automation for non-Stripe payments.
+Please [create a ticket](https://lnk.earth/discord) if you are unable to pay using any of the methods listed above.
 
-- [Buy Basic (£22)](https://commerce.coinbase.com/checkout/0cc724d7-5de9-4048-bcff-a9365eda74dc)
-- [Buy Premium (£33)](https://commerce.coinbase.com/checkout/c209103d-8f8a-4dd2-b95d-759584c643a0)
-
-### How can I cancel my subscription?
+### How can I cancel or update my subscription?
 
 You can manage your subscriptions on the [Stripe billing dashboard](https://billing.stripe.com/p/login/4gw7uK9kg2PL3xScMM),
 or by creating a ticket on Discord.
@@ -118,5 +168,6 @@ Your bot will usually be ready within 24 hours.
 !!! question ""
     **Still have questions? Create a ticket [on Discord](https://lnk.earth/discord) for help.**
 
-[^1]: Compared to x86-based servers, ARM servers are more energy efficient
-[^2]: More of the available resources are used compared to an average individual installation
+[^1]: Patches are applied automatically within an hour of release; feature updates are scheduled and performed manually.
+[^2]: Compared to x86-based servers, ARM servers are more energy efficient
+[^3]: More of the available resources are used compared to an average individual installation
