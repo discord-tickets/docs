@@ -135,45 +135,45 @@ Change highlighted values to correspond to your traefik configuration, refering 
 This example shows the configuration you may need to add to the `bot` service & router in [:octicons-arrow-right-24: exemple docker-compose.yml](https://github.com/discord-tickets/bot/blob/main/docker-compose.yml) file.
 Refer to the documentation linked above for more information.
 
-```yaml linenums="0" title="docker-compose.yml"
+<div class="annotate" markdown>
+
+```yaml title="docker-compose.yml" hl_lines="12 14-18 22"
 version: "3.9"
 
 services:
   mysql:
-    (...)
-
+    #(...)
   bot:
-    (...)
+    #(...)
     networks:
       - discord-tickets
-      - {==traefik_network==}
-    ports:
-      (...)
-    volumes:
-      (...)
-    tty: true
-    stdin_open: true
-    # Please refer to the documentation:
-    # https://discordtickets.app/self-hosting/configuration/#environment-variables
-    environment:
-    (...)
-      HTTP_TRUST_PROXY: "true" # set to true if you're using a reverse proxy
+      - {==traefik_network==} # (1)!
+    #(...)
+      HTTP_TRUST_PROXY: "true" # (2)!
     labels:
-      - "traefik.enable=true" # Enables Traefik for this container
-      - "traefik.docker.network={==traefik_network==}" # Optionnal but reccomanded, tells traefik the docker network to use
-      - "traefik.http.routers.tickets.entrypoints{==websecure==}" # Tells Traefik the entrypoint to use, make it correspond to the one you've configured on traefik.yml configuration
-      - "traefik.http.routers.tickets.rule=Host(`{==tickets.example.com==}`)" # Replace tickets.example.com with your FQDN
-      - "traefik.http.services.tickets.loadbalancer.server.port=8169" # Tells traefik to fetch discord tickets on 8169 port
+      - "traefik.enable=true" # (3)!
+      - "traefik.docker.network={==traefik_network==}" # (4)!
+      - "traefik.http.routers.tickets.entrypoints{==websecure==}" # (5)!
+      - "traefik.http.routers.tickets.rule=Host(`{==tickets.example.com==}`)" # (6)!
+      - "traefik.http.services.tickets.loadbalancer.server.port=8169" # (7)!
 
 networks:
   discord-tickets:
-  {==traefik_network==}:
+  {==traefik_network==}: # (1)!
     external: true
+#(...)
 
-volumes:
-  tickets-mysql:
-  tickets-bot:
 ```
+
+</div>
+
+1. Replace the traefik_network by the network used by traefik to reverse_proxy & loadbalancing your services
+2. Set to true if you're using a reverse proxy
+3. Enables Traefik for this container
+4. Optionnal but reccomanded, tells traefik the docker network to use
+5. Tells Traefik the entrypoint to use, make it correspond to the one you've set on Traefik's configuration
+6. Replace tickets.example.com with your FQDN
+7. Tells traefik to fetch discord tickets on 8169 port
 
 ## PebbleHost
 
