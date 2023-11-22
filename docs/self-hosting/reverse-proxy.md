@@ -132,7 +132,6 @@ server {
 This configuration assure you're traefik configuration is correctly done and that you know it.
 Change highlighted values to correspond to your traefik configuration, refering to the traefik's documentation
 
-Here are all the informations you should have to the [:octicons-arrow-right-24: exemple docker-compose.yml](https://github.com/discord-tickets/bot/blob/main/docker-compose.yml) file :
 This example shows the configuration you may need to add to the `bot` service & router in [:octicons-arrow-right-24: exemple docker-compose.yml](https://github.com/discord-tickets/bot/blob/main/docker-compose.yml) file.
 Refer to the documentation linked above for more information.
 
