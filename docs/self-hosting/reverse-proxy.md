@@ -129,17 +129,54 @@ server {
 
 ### Configuration
 
-This example shows the labels you may need to add to the `bot` service in your `docker-compose.yml` file.
+This example shows the additions you may need to make to your `docker-compose.yml` file to configure Traefik.
+After installing and configuring Traefik (referring to the documentation linked above), change the highlighted values to match your configuration.
+
+This example shows the configuration you may need to add to the `bot` service & router in [:octicons-arrow-right-24: exemple docker-compose.yml](https://github.com/discord-tickets/bot/blob/main/docker-compose.yml) file.
 Refer to the documentation linked above for more information.
 
-```yaml linenums="0" title="docker-compose.yml"
-labels:
-  - "traefik.enable=true"
-  - "traefik.docker.network=traefik_network"
-  - "traefik.http.routers.tickets.entrypoints=websecure"
-  - "traefik.http.routers.tickets.rule=Host(`{==tickets.example.com==}`)"
-  - "traefik.http.services.tickets.loadbalancer.server.port=8169"
+<div class="annotate" markdown>
+
+```yaml title="docker-compose.yml" hl_lines="12 14-18 22"
+version: "3.9"
+
+services:
+  mysql:
+    #(...)
+  bot:
+    #(...)
+    networks:
+      - discord-tickets
+      - {==traefik_network==} # (1)!
+    #(...)
+  env:
+    #(...)
+      HTTP_TRUST_PROXY: "true" # (2)!
+    labels:
+      - "traefik.enable=true" # (3)!
+      - "traefik.docker.network={==traefik_network==}" # (4)!
+      - "traefik.http.routers.tickets.entrypoints{==websecure==}" # (5)!
+      - "traefik.http.routers.tickets.rule=Host(`{==tickets.example.com==}`)" # (6)!
+      - "traefik.http.services.tickets.loadbalancer.server.port=8169" # (7)!
+
+networks:
+  discord-tickets:
+  {==traefik_network==}: # (1)!
+    external: true
+#(...)
+
 ```
+
+</div>
+
+1. Replace the traefik_network by the network used by traefik to reverse_proxy & loadbalancing your services
+2. Set to true if you're using a reverse proxy
+3. Enables Traefik for this container
+4. Optional but recommended, tells Traefik which Docker network to use
+5. Tells Traefik the entrypoint to use, make it correspond to the one you've set on Traefik's configuration
+6. Replace tickets.example.com with your FQDN
+7. Tells traefik to fetch discord tickets on 8169 port
+
 ## PebbleHost
 
 <div class="grid cards" markdown>
