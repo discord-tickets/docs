@@ -172,7 +172,7 @@ networks:
 1. Replace the traefik_network by the network used by traefik to reverse_proxy & loadbalancing your services
 2. Set to true if you're using a reverse proxy
 3. Enables Traefik for this container
-4. Optionnal but reccomanded, tells traefik the docker network to use
+4. Optional but recommended, tells Traefik which Docker network to use
 5. Tells Traefik the entrypoint to use, make it correspond to the one you've set on Traefik's configuration
 6. Replace tickets.example.com with your FQDN
 7. Tells traefik to fetch discord tickets on 8169 port
