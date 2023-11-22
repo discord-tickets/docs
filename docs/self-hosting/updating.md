@@ -24,6 +24,14 @@ BACKUP, git fetch, checkout, npm install (migrate), check changelog instructions
 
 ## Docker
 
+If you are running the container using docker-compose file, run the following commands : 
+`docker pull eartharoid/discord-tickets:4.0`
+Once pull is done, simply run : 
+`docker-compose up -d --force-recreate`
+to recreate the docker container with the latest image.
+
+Alternatively, you can use Watchtower to run automatic upgrades, but keep in mind that using the `latest` tag can break your bot if a major update (Example : v5.0) is released.
+
 ## Standalone
 
 ## Railway
