@@ -30,7 +30,7 @@ Once pull is done, simply run :
 `docker-compose up -d --force-recreate`
 to recreate the docker container with the latest image.
 
-Alternatively, you can use Watchtower to run automatic upgrades, but keep in mind that using the `latest` tag can break your bot if a major update (Example : v5.0) is released.
+Alternatively, you can use [Watchtower](https://containrrr.dev/watchtower/) to do this automatically when an update is released, **Do not use the `latest` tag when automating updates** as major updates will break the bot.
 
 ## Standalone
 
