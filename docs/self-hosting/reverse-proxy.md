@@ -149,6 +149,8 @@ services:
       - discord-tickets
       - {==traefik_network==} # (1)!
     #(...)
+  env:
+    #(...)
       HTTP_TRUST_PROXY: "true" # (2)!
     labels:
       - "traefik.enable=true" # (3)!
