@@ -1,15 +1,7 @@
 # Installation guides
 
 
-!!! pebble ""
-	<div class="grid ccc" style="text-align:center;font-size:larger;" markdown>
-		<p markdown>[![PebbleHost](../../img/pebblehost.webp){ .no-glightbox }](https://pebble.host/discordtickets)</p>
-		<p markdown>
-		Discord Tickets is partnered with [PebbleHost](https://pebble.host/discordtickets) to provide affordable hosting.
-		<!-- Click on the logo to use the affiliate link to support me at no extra cost to you. -->
-        Click on the logo to **get hosting including a database and reverse proxy for $3/month**.
-		</p>
-	</div>
+[![BisectHosting](https://www.bisecthosting.com/partners/custom-banners/41ca8074-184e-4ad1-a44d-77750ee8bfb9.webp){ .no-glightbox }](https://bisecthosting.com/discordtickets)
 
 Discord Tickets can be hosted either on a dedicated/virtualised machine or shared service.
 
@@ -20,7 +12,7 @@ Discord Tickets can be hosted either on a dedicated/virtualised machine or share
 
 ## Hosting providers
 
-If you don't already have a hosting provider, please consider using one of these affiliate links to buy hosting.
+If you don't already have a hosting provider, please consider using one of these affiliate links (by clicking on the logo) to buy hosting.
 Buying with an affiliate link supports me at no extra cost to you.
 
 
@@ -29,7 +21,9 @@ Buying with an affiliate link supports me at no extra cost to you.
 <div markdown>
 
 ### Shared
-[![PebbleHost](../../img/pebblehost.webp){ .no-glightbox }](https://pebble.host/discordtickets)
+$1.49/mo and get 25% off the first month with code `discordtickets`:
+
+[![BisectHosting](../../img/bisecthosting.webp){ .no-glightbox }](https://bisecthosting.com/discordtickets)
 
 </div>
 
