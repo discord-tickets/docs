@@ -6,15 +6,19 @@
 
 ## Requirements
 
+You can view the supported installation methods on the next page <span class="tip">(:material-fire:{ title="Tip" } you can press ++n++ or ++gt++)</span>.
 Regardless of the installation method you choose, the bot requires:
 
 - **Node.js v18** or higher (with npm, pnpm, or yarn)
-- **a free port**
+- a forwarded (not firewalled) port
 - at least **150MB RAM**
 - at least **1GB disk** space (at least 100MB for the database if archiving)
 - a [supported database](#supported-databases) (MySQL 8 recommended)
 
-Using `git` is recommended.
+!!! info ""
+    Although the bot itself uses around 120MB RAM, npm can use at least triple that during installation.
+    If you're not using the Docker image (which comes with dependencies pre-installed), you may experience
+    installation problems when less than 250MB RAM is allocated.
 
 ### Supported databases
 
@@ -40,9 +44,34 @@ Using `git` is recommended.
     This can be fixed by occasionally manually [vacuuming](https://www.sqlite.org/lang_vacuum.html) the database.
     *Auto vacuuming is not enabled as it would increase fragmentation and degrade performance.*
 
-## Installation
 
-If you don't currently have a system that meets these requirements, there are some hosting providers on the next page
-<span class="tip">(:material-fire:{ title="Tip" } you can press ++n++)</span>.
+## Hosting providers
 
-[Install](./installation/index.md){ .md-button .md-button--primary }
+[![BisectHosting](https://www.bisecthosting.com/partners/custom-banners/41ca8074-184e-4ad1-a44d-77750ee8bfb9.webp){ .no-glightbox }](https://bisecthosting.com/discordtickets)
+
+If you don't currently have a system that meets these requirements,
+please consider using one of these recommended hosts with my affiliate link by clicking on the logo.
+Buying with an affiliate link supports me at no extra cost to you.
+
+<div class="grid" markdown>
+
+<div markdown>
+
+### Shared
+$1.49/mo and get 25% off the first month with code `discordtickets`:
+
+[![BisectHosting](/img/bisecthosting.webp){ .no-glightbox }](https://bisecthosting.com/discordtickets)
+
+</div>
+
+
+<div markdown>
+
+### Dedicated/virtual machines
+Get €20 account credit:
+
+[![Hetzner](/img/hetzner.png){ .no-glightbox }](https://lnk.earth/hetzner)
+
+</div>
+
+</div>

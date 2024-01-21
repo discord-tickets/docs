@@ -114,7 +114,7 @@ Check [the documentation](./self-hosting/configuration.md#presence) for availabl
 No, you don't have access to the files or console. Everything is completely managed for you.
 To keep administration easy, and for security, every bot instance runs identical code.
 
-If you want more flexibility, consider [self-hosting](../self-hosting/) with a [recommended hosting provider](../self-hosting/installation/#hosting-providers).
+If you want more flexibility, consider [self-hosting](../self-hosting/) with a [recommended hosting provider](../self-hosting/#hosting-providers).
 
 !!! tip
     The exception to this is that you can provide a custom locale file to further customise the bot's messages.

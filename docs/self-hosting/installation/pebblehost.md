@@ -10,7 +10,7 @@ description: How to install Discord Tickets on PebbleHost
 	but you should consider other hosting options if you have a large guild and tickets are critical.
 
     Also, note that although it may be possible, running Discord Tickets alongside other bots
-    in the same process is not recommended or supported. Consider getting a [VPS](./index.md#hosting-providers)
+    in the same process is not recommended or supported. Consider getting a [VPS](../index.md#hosting-providers)
     if you want to run multiple bots.
 
 
