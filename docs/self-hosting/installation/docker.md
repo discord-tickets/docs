@@ -56,6 +56,7 @@ Open `docker-compose.yml` in your preferred text editor(1) and modify the highli
     The value of `HTTP_EXTERNAL` must be resolvable both from within the container and the host,
     which means when `HTTP_EXTERNAL` is an internal address (e.g. `http://127.0.0.1`), the container and host ports must be the same.
     This is because the SvelteKit application uses server-side rendering, so the bot makes HTTP requests to itself.
+    Alternatively, you can set the `HTTP_INTERNAL` value with a different port.
 
     If you are using a reverse proxy and a domain name, this shouldn't be a problem.
 
@@ -142,7 +143,7 @@ volumes:
 8. Change this to your server's external IP address, or a domain name that points to it.
 9. If you are using a reverse proxy, set this to `#!yaml true`.
 10. You can add more users by separating them with commas (e.g. `#!yaml 319467558166069248,123456789012345678`)
-11. Optionally, change the container's timezone so the log timestamps are correct for you  
+11. Optionally, change the container's timezone so the log timestamps are correct for you
 
 #### Creating the Discord application
 

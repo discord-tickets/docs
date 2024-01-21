@@ -29,6 +29,7 @@ The installation guides also explain where to find most of the environment varia
 	ENCRYPTION_KEY=445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a
 	HTTP_EXTERNAL=https://tickets.example.com
 	HTTP_HOST=0.0.0.0
+	HTTP_INTERNAL=
 	HTTP_PORT=8169
 	HTTP_TRUST_PROXY=true
     INVALIDATE_TOKENS=
@@ -110,6 +111,17 @@ The full external URL used to access the bot's API or settings panel.
 The interface that the integrated web server will listen on.
 The default accepts connections from anywhere (assuming your firewall allows it).
 
+### `HTTP_INTERNAL`
+
+If unset, defaults to the [`HTTP_EXTERNAL`](#http_external) value.
+This is the address that will be used when the bot (more specifically the integrated SvelteKit app) makes API requests to itself.
+Usually, this should be the same as the external address, but in some cases, the external address can't be reached internally.
+
+??? example
+	```bash title=".env" linenums="9"
+	HTTP_INTERNAL=https://tickets.example.com
+	```
+
 ### `HTTP_PORT`
 
 <small>:material-factory: Default: `#!yaml 8169`</small>
@@ -132,7 +144,7 @@ If you are running the bot behind a reverse proxy, set this to `#!yaml true` (mu
 
 <small>:octicons-question-16: Optional</small>
 
-A [timestamp](https://tc39.es/ecma262/#sec-date-time-string-format) (e.g. `2023-03-12T21:50:39.267Z`) which any [API service key](../api.md) (not user tokens) must be created after in order to be accepted.
+A [timestamp](https://tc39.es/ecma262/#sec-date-time-string-format) (e.g. `2023-03-12T21:50:39.267Z`) which any [API service key](../api.md) (not user tokens) must be created after to be accepted.
 If a service key is leaked, set this to the current time to invalidate all existing keys.
 
 ### `OVERRIDE_ARCHIVE`
@@ -176,7 +188,7 @@ These users (typically the bot owners) are allowed to manage the settings of any
 	You can also add your own ID:
 
 	```bash title=".env" linenums="15"
-	SUPERS=319467558166069248{++,++}{==youruseridhere==}
+	SUPER=319467558166069248{++,++}{==youruseridhere==}
 	```
 
 ## Main configuration file
