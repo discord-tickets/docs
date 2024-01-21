@@ -65,7 +65,7 @@ Open `docker-compose.yml` in your preferred text editor(1) and modify the highli
 <div class="annotate" markdown>
 
 
-```yaml title="docker-compose.yml" hl_lines="14-15 19 35-38 40"
+```yaml title="docker-compose.yml" hl_lines="14-15 19 36-39 41"
 version: "3.9"
 
 services:
