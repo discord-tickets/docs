@@ -5,9 +5,9 @@ and now it's time to set it up in your Discord server.
 	**Join the community [on Discord](https://lnk.earth/discord)
 	and get notified when updates *(with new features and fixes)* are released.**
 
-Refer to the [configuration guide](../../configuration/index.md) for a step-by-step guide on how to add and configure the bot in your server.
+Refer to the [configuration guide](/configuration/) for a step-by-step guide on how to add and configure the bot in your server.
 
-[Configuration](../../configuration/index.md){ .md-button .md-button--primary }
+[Configuration](/configuration/){ .md-button .md-button--primary }
 
 
 !!! question "Having trouble?"

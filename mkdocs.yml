@@ -111,7 +111,10 @@ nav:
         - Docker: self-hosting/installation/docker.md
         - Standalone: self-hosting/installation/standalone.md
         - BisectHosting: self-hosting/installation/bisecthosting.md
-        - Pterodactyl: self-hosting/installation/pterodactyl.md
+        - Pterodactyl:
+          - Pterodactyl: self-hosting/installation/pterodactyl/index.md
+          - Official egg: self-hosting/installation/pterodactyl/official.md
+          - Generic egg: self-hosting/installation/pterodactyl/generic.md
         - PebbleHost: self-hosting/installation/pebblehost.md
         - Railway: self-hosting/installation/railway.md
       - Configuration: self-hosting/configuration.md

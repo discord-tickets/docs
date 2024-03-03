@@ -65,7 +65,7 @@ Open `docker-compose.yml` in your preferred text editor(1) and modify the highli
 <div class="annotate" markdown>
 
 
-```yaml title="docker-compose.yml" hl_lines="14-15 19 36-39 41"
+```yaml title="docker-compose.yml" hl_lines="14-15 19 37-40 42"
 version: "3.9"
 
 services:
@@ -95,6 +95,7 @@ services:
       - 8169:8169
     volumes:
       - tickets-bot:/home/container/user
+      - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     tty: true
     stdin_open: true
@@ -114,8 +115,8 @@ services:
       PUBLISH_COMMANDS: "false"
       OVERRIDE_ARCHIVE: null
       SUPER: 319467558166069248 # (10)!
-      TZ: Etc/UTC # (11)!
-
+      # TZ: Etc/UTC
+      # (11)!
 networks:
   discord-tickets:
 
@@ -143,7 +144,7 @@ volumes:
 8. Change this to your server's external IP address, or a domain name that points to it.
 9. If you are using a reverse proxy, set this to `#!yaml true`.
 10. You can add more users by separating them with commas (e.g. `#!yaml 319467558166069248,123456789012345678`)
-11. Optionally, change the container's timezone so the log timestamps are correct for you
+11. If the container's timezone doesn't match the host (e.g. because it is a Windows host), you can uncomment and change the TZ variable.
 
 #### Creating the Discord application
 

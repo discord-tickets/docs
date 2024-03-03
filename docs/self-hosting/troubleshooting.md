@@ -4,6 +4,20 @@ description: Troubleshooting tips and solutions to common problems
 
 # Troubleshooting
 
+## `@prisma/client did not initialize yet`
+
+After setting the `DB_PROVIDER` and `DB_CONNECTION_URL` environment variables, `prisma migrate deploy` needs to be run.
+
+This can be done manually but it is recommended to leave it to the `npm run postinstall` script.
+You can run this directly, but it will also be run automatically when you run `npm install`.
+
+
+!!! question "Still need help?"
+    If this page didn't resolve your issue,
+    you can ask for help [on Discord](https://lnk.earth/discord)
+    or [on GitHub](https://github.com/discord-tickets/bot/discussions).
+
+
 ## Current working directory
 
 Since [`v4.0.14`](https://github.com/discord-tickets/bot/releases/tag/v4.0.14), Discord Tickets supports starting the bot from any directory.
@@ -64,15 +78,9 @@ If the address is correct,
 If it still doesn't work, try setting the [`HTTP_INTERNAL`](./configuration.md#http_internal) value to a different address
 (e.g. `http://127.0.0.1:8169`).
 
-## `@prisma/client did not initialize yet`
+## Invalid user or role
 
-After setting the `DB_PROVIDER` and `DB_CONNECTION_URL` environment variables, `prisma migrate deploy` needs to be run.
-
-This can be done manually but it is recommended to leave it to the `npm run postinstall` script.
-You can run this directly, but it will also be run automatically when you run `npm install`.
-
-
-!!! question "Still need help?"
-    If this page didn't resolve your issue,
-    you can ask for help [on Discord](https://lnk.earth/discord)
-    or [on GitHub](https://github.com/discord-tickets/bot/discussions).
+An invalid role error that occurs during ticket creation, claiming/releasing, or transfer, usually means one of your staff roles has been deleted.
+This can be resolved by navigating to the settings page of each of your categories and simply clicking Save.
+This will remove any roles from the category that no longer exist.
+If the category's only staff role was deleted, you will need to assign at least one new role before you can save the settings.

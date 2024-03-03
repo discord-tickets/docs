@@ -1,8 +1,8 @@
 ---
-description: How to install Discord Tickets with Pterodactyl
+description: How to install Discord Tickets with Pterodactyl using a generic Node.js egg
 ---
 
-# Pterodactyl
+# Pterodactyl (generic egg)
 
 !!! warning
 	**If you are going to host Discord Tickets with a third-party hosting provider** rather than on your own server:
@@ -42,7 +42,7 @@ Go to the Files tab and open the `.env` file (start the server if it doesn't exi
 
 ### Creating the Discord application
 
---8<-- "includes/discord-application.md"
+--8<-- "includes/discord-application"
 
 ### Database
 
@@ -93,7 +93,7 @@ Then type `commands publish` into the bot's console to publish the commands to D
 
 ## Reverse proxy
 
-If you have a domain name, you should [set up a reverse proxy](../reverse-proxy.md) with SSL/TLS
+If you have a domain name, you should [set up a reverse proxy](../../reverse-proxy.md) with SSL/TLS
 and set the `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
 
 ## Next steps
