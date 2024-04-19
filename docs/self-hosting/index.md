@@ -47,7 +47,7 @@ Regardless of the installation method you choose, the bot requires:
 
 ## Hosting providers
 
-[![BisectHosting](https://www.bisecthosting.com/partners/custom-banners/41ca8074-184e-4ad1-a44d-77750ee8bfb9.webp){ .no-glightbox }](https://bisecthosting.com/discordtickets?r=docs-self-hsoting)
+[![BisectHosting](https://www.bisecthosting.com/partners/custom-banners/41ca8074-184e-4ad1-a44d-77750ee8bfb9.webp){ .no-glightbox }](https://bisecthosting.com/discordtickets?r=docs-self-hosting)
 
 If you don't currently have a system that meets these requirements,
 please consider using one of these recommended hosts with my affiliate link by clicking on the logo.
