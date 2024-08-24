@@ -3,4 +3,4 @@ description: How to install Discord Tickets with Pterodactyl using the official 
 ---
 
 # Pterodactyl (official egg)
-You can use the official Pterodactyl egg by clicking [this](https://github.com/JoseMoranUrena523/discord-tickets-pterodactyl-egg).
+You can use the official Pterodactyl egg by using [this link](https://dl.discordtickets.app/bot/pterodactyl.json).
