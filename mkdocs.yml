@@ -133,5 +133,5 @@ nav:
     - API: api.md
     - Terms of service: terms.md
   - Blog: https://blog.discordtickets.app
-  - Changelogs: changelogs/index.md
+  - Changelogs: /changelogs
   - Privacy: privacy.md
