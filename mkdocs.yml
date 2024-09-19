@@ -24,10 +24,12 @@ theme:
   custom_dir: overrides/
   palette:
     - scheme: default
+      primary: custom
       toggle:
         icon: octicons/sun-16
         name: Switch to dark mode
     - scheme: slate
+      primary: custom
       toggle:
         icon: octicons/moon-16
         name: Switch to light mode

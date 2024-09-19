@@ -11,13 +11,6 @@ After setting the `DB_PROVIDER` and `DB_CONNECTION_URL` environment variables, `
 This can be done manually but it is recommended to leave it to the `npm run postinstall` script.
 You can run this directly, but it will also be run automatically when you run `npm install`.
 
-
-!!! question "Still need help?"
-    If this page didn't resolve your issue,
-    you can ask for help [on Discord](https://lnk.earth/discord)
-    or [on GitHub](https://github.com/discord-tickets/bot/discussions).
-
-
 ## Current working directory
 
 Since [`v4.0.14`](https://github.com/discord-tickets/bot/releases/tag/v4.0.14), Discord Tickets supports starting the bot from any directory.
@@ -84,3 +77,9 @@ An invalid role error that occurs during ticket creation, claiming/releasing, or
 This can be resolved by navigating to the settings page of each of your categories and simply clicking Save.
 This will remove any roles from the category that no longer exist.
 If the category's only staff role was deleted, you will need to assign at least one new role before you can save the settings.
+
+
+!!! question "Still need help?"
+    If this page didn't resolve your issue,
+    you can ask for help [on Discord](https://lnk.earth/discord)
+    or [on GitHub](https://github.com/discord-tickets/bot/discussions).
