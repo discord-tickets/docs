@@ -2,6 +2,7 @@
 	/*
 	https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/_colors.scss
 	*/
+	--md-typeset-a-color: #5865F2 !important;
 	--md-primary-fg-color: #5865F2;
 	--md-primary-fg-color--light: #7289DA;
 	--md-primary-fg-color--dark: #424CB8;

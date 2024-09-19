@@ -39,13 +39,14 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
 
 ## What you're paying for
 
-!!! abstract ""
-    Hosting, and an admin to do everything for you, all for a comparable or even lower price than self-hosting.
+Get a custom bot without hosting it yourself.
 
-- A secure, containerised, auto-updating[^1] bot instance hosted in the EU
-- Efficient hosting
-    - Powered by [Ampere® Altra®](https://amperecomputing.com/briefs/ampere-altra-family-product-brief), less energy is used for operation and cooling[^2]
-    - Higher CPU utilisation due to many bots running on the same server[^3]
+- Auto-updating bot instance without the installation and maintenance hassle
+- [Nightly database backups](https://status.eartharoid.me/), encrypted and kept for 30 days
+- :heart: **You're directly supporting the bot's developer**
+- Better for the planet
+    - Powered by energy-efficient Ampere® Altra® processors
+    - 100% powered by wind and hydro energy
     - <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
     	style="width:auto; height:1em; vertical-align:text-bottom;">
     	<linearGradient id="StripeClimate-gradient-a" gradientUnits="userSpaceOnUse" x1="16"
@@ -72,8 +73,6 @@ Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discou
     		fill="url(#StripeClimate-gradient-c)" />
     </svg>
      1% of revenue goes to [Stripe Climate](https://stripe.com/climate) to remove CO~2~ from the atmosphere <!--CO₂-->
-- [Nightly database backups](https://status.eartharoid.me/), encrypted and kept for 30 days
-- :heart: **You're directly supporting the bot's developer**
 
 [Create a ticket](https://lnk.earth/discord) if you have questions about security, privacy, compliance, etc.
 
@@ -167,7 +166,3 @@ Your bot will usually be ready within 24 hours.
 
 !!! question ""
     **Still have questions? Create a ticket [on Discord](https://lnk.earth/discord) for help.**
-
-[^1]: Patches are applied automatically within an hour of release; feature updates are scheduled and performed manually.
-[^2]: Compared to x86-based servers, ARM servers are more energy efficient
-[^3]: More of the available resources are used compared to an average individual installation

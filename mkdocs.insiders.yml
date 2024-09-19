@@ -30,6 +30,9 @@ theme:
     - navigation.footer
     - navigation.indexes
     # - navigation.instant # doesn't work with home page? :(
+    # - navigation.instant.prefetch # insiders-only
+    # - navigation.instant.progress
+    - navigation.instant.preview # insiders-only
     - navigation.path # insiders-only
     - navigation.prune # insiders-only
     # - navigation.sections
@@ -47,8 +50,8 @@ extra:
   analytics:
     provider: custom
     domains: discordtickets.app
-    website: 29b2670b-df51-47b0-aff7-810e52d1e96a
-    script: https://umami.eartharoid.me/script.js
+    website: 477eda1e-48af-428f-9ffa-0c682a39bac7
+    script: https://static.eartharoid.me/ustats.js
     feedback:
       title: Was this page helpful?
       ratings:
