@@ -134,8 +134,7 @@ Depending on your location, you can pay with:
 - [x] Revolut Pay ([GBP](#gbp)/[EUR (beta)](#eur) only)
 - [x] Bacs Direct Debit ([GBP](#gbp) only)
 
-Availability of payment methods may vary by country in addition to currency.
-
+The options available on the checkout page depend on your location, device/browser, and the selected currency.
 
 For one-time payments (not subscriptions), you can also pay with:
 
