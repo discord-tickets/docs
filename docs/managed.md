@@ -14,7 +14,7 @@ Choose a plan to get started.
 ## Plans
 
 <small markdown>
-Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discount.
+Too expensive? [Create a ticket](https://lnk.earth/discord) and ask for a discount (within reason).
 </small>
 
 === "GBP"
@@ -74,7 +74,7 @@ Get a custom bot without hosting it yourself.
     </svg>
      1% of revenue goes to [Stripe Climate](https://stripe.com/climate) to remove CO~2~ from the atmosphere <!--CO₂-->
 
-[Create a ticket](https://lnk.earth/discord) if you have questions about security, privacy, compliance, etc.
+[Create a ticket](https://lnk.earth/discord) if you have questions about security, privacy, compliance, etc. We're happy to help!
 
 ## FAQs
 
@@ -129,8 +129,12 @@ Depending on your location, you can pay with:
 - [x] PayPal [(see below)](#can-i-pay-with-paypal)
 - [x] Bancontact ([EUR](#eur) only)
 - [x] iDEAL ([EUR](#eur) only)
+- [x] SEPA Direct Debit ([EUR](#eur) only)
 - [x] Sofort ([EUR](#eur) only)
+- [x] Revolut Pay ([GBP](#gbp)/[EUR (beta)](#eur) only)
+- [x] Bacs Direct Debit ([GBP](#gbp) only)
 
+The options available on the checkout page depend on your location, device/browser, and the selected currency.
 
 For one-time payments (not subscriptions), you can also pay with:
 
