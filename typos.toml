@@ -7,8 +7,8 @@ extend-ignore-re = [
 
     # Most usage of these words is in code where the american spelling is used or required
     "Authorization",
-    "initalize",
-    "mustache",
+    "initialize",
+    "Mustache",
     "color"
     
 ]
