@@ -231,7 +231,7 @@ docker run -itd \
   -e DB_CONNECTION_URL="mysql://bots:VerySecurePassword123@localhost/tickets0" \
   -e DB_PROVIDER="mysql" \
   -e DISCORD_SECRET="rUpDU2T8K4ZXie8kdpzYsMTLbUhvmBRd" \
-  -e DISCORD_TOKEN="ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3UERxwANAZhQiA" \
+  -e DISCORD_TOKEN="ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3URxwANAZhQiA" \
   -e ENCRYPTION_KEY="445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a" \
   -e HTTP_EXTERNAL="https://tickets.example.com" \
   -e HTTP_TRUST-PROXY="true" \

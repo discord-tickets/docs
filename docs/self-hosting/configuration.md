@@ -25,7 +25,7 @@ The installation guides also explain where to find most of the environment varia
 	DB_CONNECTION_URL="mysql://bots:VerySecurePassword123@localhost/tickets0"
 	DB_PROVIDER=mysql
 	DISCORD_SECRET=rUpDU2T8K4ZXie8kdpzYsMTLbUhvmBRd
-	DISCORD_TOKEN=ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3UERxwANAZhQiA
+	DISCORD_TOKEN=ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3URxwANAZhQiA
 	ENCRYPTION_KEY=445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a
 	HTTP_EXTERNAL=https://tickets.example.com
 	HTTP_HOST=0.0.0.0

@@ -57,10 +57,10 @@ This flowchart shows the different pathways that can be taken to create a ticket
 flowchart TB
     A1(["➡️ /new command"]) ----> B
     A2(["➡️ Panel button/menu"]) ----> D
-    A3(["➡️ Messsage:Create command"]) ---> B
+    A3(["➡️ Message:Create command"]) ---> B
     %% fa:fa-arrow-right-long
     A4(["➡️ User:Create command (staff)"]) -...->|"Staff interaction"| B
-    A5(["➡️ DM (message is topic)"]) --> AA{Mulitple servers?}
+    A5(["➡️ DM (message is topic)"]) --> AA{Multiple servers?}
     AA -->|Yes| AA1[/"❓ Select server with menu"/] ---> B
     AA -->|No| B
     B{Multiple categories?}

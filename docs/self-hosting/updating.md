@@ -67,7 +67,7 @@ This guide assumes you're using a Bot hosting plan from PebbleHost and not a ded
 
 ![4](https://github.com/discord-tickets/docs/assets/86845749/264cc0fa-a488-4b58-a664-26647921898e)
 
-5) Select the databse you're using from the list
+5) Select the database you're using from the list
 
 ![5](https://github.com/discord-tickets/docs/assets/86845749/88315de1-e3cc-43d7-95dc-54df945852b2)
 

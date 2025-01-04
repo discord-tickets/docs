@@ -1,0 +1,34 @@
+# Used by the typos action
+
+[default]
+locale = "en-gb"
+check-filename = true
+extend-ignore-re = [
+
+    # Most usage of these words is in code where the american spelling is used or required
+    "Authorization",
+    "initialize",
+    "mustache",
+    "Mustache",
+    "color"
+    
+]
+
+[files]
+extend-exclude = [
+
+    # Code is primarily written in American English
+    "*.txt", 
+    "*.toml", 
+    "*.yaml", 
+    "*.yml", 
+    "*.js", 
+    "*.html", 
+    "*.css", 
+    "overrides/",
+
+    # Written entirely in American English
+    "LICENSE",
+    "docs/terms.md"
+    
+]
