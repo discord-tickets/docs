@@ -1,0 +1,12 @@
+# Used by the typos action
+
+[files]
+extend-exclude = [
+    "overrides" # not words
+]
+
+[default]
+locale = "en-gb"
+
+[files]
+extend-exclude = ["*.txt", "*.toml", "*.yaml", "*.yml", "*.js", "*.html", '*.css"]
