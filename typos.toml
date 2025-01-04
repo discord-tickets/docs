@@ -4,4 +4,4 @@
 locale = "en-gb"
 
 [files]
-extend-exclude = ["*.txt", "*.toml", "*.yaml", "*.yml", "*.js", "*.html", '*.css", "overrides"]
+extend-exclude = ["*.txt", "*.toml", "*.yaml", "*.yml", "*.js", "*.html", "*.css", "overrides/"]
