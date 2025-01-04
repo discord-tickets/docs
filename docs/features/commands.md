@@ -102,7 +102,7 @@ The `time` option can be any number of minutes, hours, days, or weeks - e.g. `5d
 
 |                               Name                               |                                          Description                                           | Example |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :-----: |
-| :material-comment-text:{ .tip title="Autocompleted" } `category` |             Close all tickets in hte specified category (can be used with 'time')              |   N/A   |
+| :material-comment-text:{ .tip title="Autocompleted" } `category` |             Close all tickets in the specified category (can be used with 'time')              |   N/A   |
 |                             `reason`                             |                         The reason why the ticket(s) should be closed                          |   N/A   |
 |  :material-comment-text:{ .tip title="Autocompleted" } `ticket`  |                                      The ticket to close                                       |   N/A   |
 |                              `time`                              | Close all tickets that have been inactive for the specified time (can be used with 'category') |  `1w`   |
