@@ -1,4 +1,4 @@
-name: "Spell Check"
+name: "Spelling Check"
 
 on:
   - push
@@ -13,5 +13,5 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Spell check
+      - name: Check for misspelt words
         uses: crate-ci/typos@v1.24.6
