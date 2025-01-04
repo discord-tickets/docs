@@ -8,7 +8,8 @@ extend-ignore-re = [
     # Most usage of these words is in code where the american spelling is used or required
     "Authorization",
     "initalize",
-    "mustache"
+    "mustache",
+    "color"
     
 ]
 
@@ -26,6 +27,7 @@ extend-exclude = [
     "overrides/",
 
     # Written entirely in American English
-    "LICENSE"
+    "LICENSE",
+    "docs/terms.md"
     
 ]
