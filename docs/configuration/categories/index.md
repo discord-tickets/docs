@@ -32,6 +32,7 @@ The name of the ticket channel.
 
 - `{num}`/`{number}`
 - `{name}`/`{username}`
+- `{nick}`/`{nickname}`
 
 
 ### Claiming
