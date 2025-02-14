@@ -123,7 +123,7 @@ nav:
       - Reverse proxy setup: self-hosting/reverse-proxy.md
       - Stdin commands: self-hosting/stdin-commands.md
       - Troubleshooting: self-hosting/troubleshooting.md
-      - Data migration: self-hosting/data-migration.md
+      - Scripts: self-hosting/scripts.md
       - Updating: self-hosting/updating.md
     - Configuration:
       - Configuration: configuration/index.md
