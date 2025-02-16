@@ -9,7 +9,7 @@ description: Troubleshooting tips and solutions to common problems
 After setting the `DB_PROVIDER` and `DB_CONNECTION_URL` environment variables, `prisma migrate deploy` needs to be run.
 
 This can be done manually but it is recommended to leave it to the `npm run postinstall` script.
-You can run this directly, but it will also be run automatically when you run `npm install`.
+You can run this directly, but it will also be run automatically when you re-run `npm install`.
 
 ## Current working directory
 
@@ -58,6 +58,12 @@ If you misuse this feature, you may encounter some of the following problems:
 
 To resolve these problems, `cd` into the directory where your files are stored before starting the bot.
 
+## Public bot
+
+If your bot is public, anyone is able to add the bot to their Discord server and use your resources.
+You can set the bot to private (so only you can add it to servers) on the *Bot* page in the
+[Developer Portal](https://discord.com/developers/applications).
+
 ## `fetch failed`
 
 If you're seeing this when attempting to load the Portal webpage, it usually means that the [`HTTP_EXTERNAL`](./configuration.md#http_external)
@@ -78,6 +84,14 @@ This can be resolved by navigating to the settings page of each of your categori
 This will remove any roles from the category that no longer exist.
 If the category's only staff role was deleted, you will need to assign at least one new role before you can save the settings.
 
+## Missing permissions
+
+This error most often occurs when the bot attempts to create or edit a channel.
+To resolve it, make sure the bot's role has `Manage Channels` and `Manage Roles` permission,
+both in the server settings and in the category's overrides.
+In the server settings, the bot's role should be at the top of the role list, above all of your staff roles.
+
+<!-- TODO: -->
 
 !!! question "Still need help?"
     If this page didn't resolve your issue,

@@ -12,8 +12,7 @@
 </small>
 
 The selected categories will be the options available to users through the buttons or select menu.
-
---8<-- "includes/multi-select.md"
+This field is a combobox; you can type to filter the options, and the order you select is respected.
 
 ### Channel
 

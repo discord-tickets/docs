@@ -130,6 +130,7 @@ Use this to provide and ask for information, such as stating what is expected of
 
 #### Available placeholders
 
+- `{num}`/`{number}`
 - `{name}`/`{username}` (the creator)
 - `{avgResponseTime}` (for this category only)
 - `{avgResolutionTime}` (for this category only)

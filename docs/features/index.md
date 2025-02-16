@@ -40,6 +40,9 @@ Switching from another bot? See how Discord Tickets is different from other popu
 [`Staff`](#concept:staff){ #concept:staff }
 :	A staff member is any member who has at least 1 role that is assigned to any ticket category within the guild.
 
+## Your data
+
+Settings and data can be exported and imported through the Portal webapp.
 
 ## Ticket creation
 

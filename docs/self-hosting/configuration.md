@@ -271,6 +271,7 @@ The activity name, which may contain these placeholders:
 
 - `#!yaml {avgResolutionTime}`
 - `#!yaml {avgResponseTime}`
+- `#!yaml {guilds}`
 - `#!yaml {openTickets}`
 - `#!yaml {totalTickets}`
 
