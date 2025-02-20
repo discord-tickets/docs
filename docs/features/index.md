@@ -12,7 +12,7 @@ tags:
 
 	[View comparisons :octicons-link-external-16:](https://blog.discordtickets.app/tag/comparison/){ target=_blank .md-button .md-button--primary
  -->
-
+<!--
 <div class="admonition question">
 <p class="admonition-title text-lg">
 Switching from another bot? See how Discord Tickets is different from other popular bots:
@@ -21,7 +21,7 @@ Switching from another bot? See how Discord Tickets is different from other popu
 </a>
 </p>
 </div>
-
+ -->
 ## Concepts
 
 [`Tickets`](#concept:tickets){ #concept:tickets }
