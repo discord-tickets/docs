@@ -16,7 +16,7 @@ tags:
 When provided, tickets pending closure will be automatically closed after the specified time.
 Tickets are pending closure when:
 
-- A close request is sent (with [`/close`](../features/commands.md#close) or the close button), it is not rejected (ignored or not seen), and fewer than 5 messages are sent afterwards.
+- A close request is sent (with [`/close`](../commands.md#close) or the close button), it is not rejected (ignored or not seen), and fewer than 5 messages are sent afterwards.
 - A ticket is marked as stale after being inactive for longer than the [*Stale after*](#stale-after) time.
 
 When paired with the [*Stale after*](#stale-after) option, tickets will be automatically closed when `lastMessageAt + stalerAfter + autoCloseAfter > now`.

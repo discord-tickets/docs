@@ -101,9 +101,8 @@ nav:
   - Home: index.md
   - Documentation:
     - Getting started: getting-started.md
-    - Features:
-       - Features: features/index.md
-       - Commands: features/commands.md
+    - Features: features/index.md
+    - Commands: commands.md
     # - Public bot: public.md
     - Managed bot: managed.md
     - Self-hosting:
