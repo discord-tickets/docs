@@ -9,7 +9,7 @@
 
 ## Shared/containerised services
 
-| :fontawesome-solid-server:<br>BisectHosting { .bisect .text-lg } | :fontawesome-solid-crow:<br>Pterodactyl { .pterodactyl .text-lg } | :fontawesome-solid-cube:<br>PebbleHost { .pebblehost .text-lg } | :fontawesome-solid-train:<br>Railway { .railway .text-lg } |
+| :simple-bisecthosting:<br>BisectHosting { .bisect .text-lg } | :simple-pterodactyl:<br>Pterodactyl { .pterodactyl .text-lg } | :fontawesome-solid-cube:<br>PebbleHost { .pebblehost .text-lg } | :simple-railway:<br>Railway { .railway .text-lg } |
 | :--------------------------------------------------------------: | :---------------------------------------------------------------: | :-------------------------------------------------------------: | :--------------------------------------------------------: |
 |          :green_book:<br>Node.js experience recommended          |          :green_book:<br>Node.js experience recommended           |         :green_book:<br>Node.js experience recommended          |       :orange_book:<br>Docker experience recommended       |
 |    [Start](bisecthosting.md){.md-button .md-button--primary}     |   [Start](pterodactyl/index.md){.md-button .md-button--primary}   |    [Start](pebblehost.md){ .md-button .md-button--primary }     |    [Start](railway.md){.md-button .md-button--primary}     |
