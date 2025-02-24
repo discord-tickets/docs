@@ -10,7 +10,10 @@ extend-ignore-re = [
     "initialize",
     "mustache",
     "Mustache",
-    "color"
+    "color",
+    
+    # Only ignore when used in a tag to catch misspellings in text
+    "<center>"
     
 ]
 
