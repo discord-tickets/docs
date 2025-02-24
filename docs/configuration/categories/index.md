@@ -30,9 +30,9 @@ The name of the ticket channel.
 
 #### Available placeholders
 
-- `{num}`/`{number}`
-- `{name}`/`{username}`
-- `{nick}`/`{nickname}`
+- `{num}`/`{number}` - What number the ticket is in the server (Note that this is across all categories)
+- `{name}`/`{username}` - The username of the person who opened the ticket
+- `{nick}`/`{nickname}` - The server nickname of the person who opened the ticket
 
 
 ### Claiming
@@ -130,11 +130,13 @@ Use this to provide and ask for information, such as stating what is expected of
 
 #### Available placeholders
 
-- `{num}`/`{number}`
-- `{name}`/`{username}` (the creator)
-- `{avgResponseTime}` (for this category only)
-- `{avgResolutionTime}` (for this category only)
+- `{num}`/`{number}` - What number the ticket is in the server (Note that this is across all categories)
+- `{name}`/`{username}` - The username of the person who opened the ticket
+- `{avgResponseTime}` - The time between the ticket being opened and receiving its first response from a staff user (only in the current category)
+- `{avgResolutionTime}` - The time between the ticket being opened and being closed (only in the current category)
 
+--8<-- "includes/opening-message-placeholders.md"
+  
 ### Ping roles
 
 The selected roles will be pinged (in the opening message) when a ticket is created.
