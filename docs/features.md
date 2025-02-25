@@ -12,7 +12,7 @@ tags:
 
 	[View comparisons :octicons-link-external-16:](https://blog.discordtickets.app/tag/comparison/){ target=_blank .md-button .md-button--primary
  -->
-
+<!--
 <div class="admonition question">
 <p class="admonition-title text-lg">
 Switching from another bot? See how Discord Tickets is different from other popular bots:
@@ -21,7 +21,7 @@ Switching from another bot? See how Discord Tickets is different from other popu
 </a>
 </p>
 </div>
-
+ -->
 ## Concepts
 
 [`Tickets`](#concept:tickets){ #concept:tickets }
@@ -72,16 +72,18 @@ flowchart TB
     B -.->|No| C
     B1 --> D
     C[/"🕑 Target user clicks button"/] -->|Creator interaction| D
-    B -->|No| D{"Satisfies required roles,\nlimits, etc?"}
+    B -->|No| D{"Satisfies required roles,<br/>limits, etc?"}
     D ==>|Yes|E{Category has questions?}
     D-->|No|F(["❌ End with error"])
     E-->|Yes|G[/"❓ Questions modal"/]
     E-->|No|H{Category requires topic?}
-    H-->|Yes|I[/"❓ Topic modal\n(skipped if started with DM)"/]
+    H-->|Yes|I[/"❓ Topic modal<br/>(skipped if started with DM)"/]
     H-->|No|J
     G & I--> J(["✅ Create ticket"])
 ```
-
+<br />
+<center> This page is still being worked on!
+<!--
 ## Archives
 
 ## Questions
@@ -93,3 +95,4 @@ flowchart TB
 ## Context
 
 ## Settings
+-->

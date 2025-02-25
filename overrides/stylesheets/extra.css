@@ -266,3 +266,21 @@ footer .mdx-connect .mdx-connect__link span {
 .md-footer-meta__inner a:active {
 	color: white !important;
 }
+
+.md-footer-meta__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.md-footer-content {
+    flex: 1;
+    text-align: left;
+}
+
+.md-copyright {
+    flex: 1;
+    text-align: right;
+}

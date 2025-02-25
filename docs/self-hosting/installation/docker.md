@@ -161,7 +161,7 @@ Copy the value below and set it as the `ENCRYPTION_KEY` environment variable.
 Start the containers:
 
 ```bash linenums="0"
-docker-compose up -d
+docker compose up -d
 ```
 
 
