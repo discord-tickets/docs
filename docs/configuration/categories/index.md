@@ -30,10 +30,11 @@ The name of the ticket channel.
 
 #### Available placeholders
 
-- `{num}`/`{number}` - What number the ticket is in the server (Note that this is across all categories)
-- `{name}`/`{username}` - The username of the person who opened the ticket
-- `{nick}`/`{nickname}` - The server nickname of the person who opened the ticket
-
+| Placeholder              | Description                                                     |
+| ------------------------ | --------------------------------------------------------------- |
+| `{num}`<br>`{number}`    | The ticket's number, unique across all categories in the server |
+| `{name}`<br>`{username}` | The ticket creator's username                                   |
+| `{nick}`<br>`{nickname}` | The ticket creator's server server nickname, or their username  |
 
 ### Claiming
 
@@ -130,13 +131,16 @@ Use this to provide and ask for information, such as stating what is expected of
 
 #### Available placeholders
 
-- `{num}`/`{number}` - What number the ticket is in the server (Note that this is across all categories)
-- `{name}`/`{username}` - The username of the person who opened the ticket
-- `{avgResponseTime}` - The time between the ticket being opened and receiving its first response from a staff user (only in the current category)
-- `{avgResolutionTime}` - The time between the ticket being opened and being closed (only in the current category)
+| Placeholder              | Description                                                                                                                 |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| `{num}`<br>`{number}`    | The ticket's number, unique across all categories in the server                                                             |
+| `{name}`<br>`{username}` | The ticket creator's username                                                                                               |
+| `{avgResponseTime}`      | The time between tickets being opened and receiving their first response from a staff member (only in the current category) |
+| `{avgResolutionTime}`    | The time between tickets being opened and being closed (only in the current category)                                       |
 
---8<-- "includes/opening-message-placeholders.md"
-  
+!!! tip
+    Nickname placeholders are not available here as you can mention the user in the opening message, which will show their nickname within Discord.
+
 ### Ping roles
 
 The selected roles will be pinged (in the opening message) when a ticket is created.
