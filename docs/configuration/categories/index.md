@@ -168,7 +168,7 @@ Members will not be able to create tickets in this category unless they have the
 </small>
 
 When enabled, members will be prompted to enter a topic through a modal form when creating a ticket.
-This can be edited later using the [`/topic`](../../features/commands.md#topic) command or the *Edit* button on the opening message.
+This can be edited later using the [`/topic`](../../commands.md#topic) command or the *Edit* button on the opening message.
 
 Note that topic and [questions](./questions.md) are mutually exclusive and this option is ignored if questions are present.
 

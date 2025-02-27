@@ -25,6 +25,7 @@ theme:
     # - content.code.select # insiders-only
     - content.tabs.link
     - content.tooltips
+    - content.footnote.tooltips
     # - header.autohide
     # - navigation.expand
     - navigation.footer
