@@ -164,6 +164,26 @@ Start the containers:
 docker compose up -d
 ```
 
+!!! danger
+    In case of errors such as `EACCES: permission denied..` after running the docker container, comment out the first volume in `docker-compose.yml`.
+
+    Before:
+    ```yaml title="docker-compose.yml"
+        volumes:
+          - tickets-bot:/home/container/user
+    ```
+
+    After:
+    ```yaml title="docker-compose.yml"
+        volumes:
+    #      - tickets-bot:/home/container/user
+    ```
+
+    Then restart the container:
+    ```
+    docker compose down && docker compose up -d
+    ```
+    This prevents permission conflicts but as a downside disables persistence for /home/container/user.
 
 ### Publishing the commands
 
