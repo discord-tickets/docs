@@ -69,13 +69,11 @@
 
 	<!-- Further information -->
 	<div class="md-footer-meta md-typeset">
+		{% if page.previous_page %}
+		{% include "partials/footer-content.html" %}
+		{% endif %}
 		<div class="md-footer-meta__inner md-grid">
-			{% if page.previous_page %}
-			<div class="md-footer-content">
-				{% include "partials/footer-content.html" %}
-			</div>
-			{% endif %}
-			<div class="md-copyright" style="margin-bottom: 0px;">
+			<div class="md-copyright">
 				<p>
 					<a href="/terms">Terms of service</a>
 					&mdash;
