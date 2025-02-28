@@ -54,6 +54,13 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - meta
+  - material.extensions.preview:
+      configurations:
+        - sources:
+            include:
+              - 'docs/**/*.md'
+            exclude:
+              - 'docs/getting-started.md'
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all

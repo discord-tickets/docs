@@ -33,7 +33,7 @@ theme:
     # - navigation.instant # doesn't work with home page? :(
     # - navigation.instant.prefetch # insiders-only
     # - navigation.instant.progress
-    - navigation.instant.preview # insiders-only
+    # - navigation.instant.preview # insiders-only
     - navigation.path # insiders-only
     - navigation.prune # insiders-only
     # - navigation.sections
