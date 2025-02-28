@@ -113,7 +113,7 @@ The default accepts connections from anywhere (assuming your firewall allows it)
 
 ### `HTTP_INTERNAL`
 
-If unset, defaults to the [`HTTP_EXTERNAL`](#http_external) value.
+If unset, defaults to the [`HTTP_EXTERNAL`](#http_external){ data-preview } value.
 This is the address that will be used when the bot (more specifically the integrated SvelteKit app) makes API requests to itself.
 Usually, this should be the same as the external address, but in some cases, the external address can't be reached internally.
 

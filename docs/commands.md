@@ -44,7 +44,7 @@ Send a prompt (in the channel the command is used in) for the target user to cre
 If you have multiple [categories](./index.md#concept:categories) configured,
 the staff member will be asked to select the category that the ticket will be created in.
 
-This can be used as an alternative to repeatedly asking members to "please create a ticket with [`/new`](#new)".
+This can be used as an alternative to repeatedly asking members to "please create a ticket with [`/new`](#new){ data-preview }".
 
 
 ## Chat (slash) commands
@@ -152,7 +152,7 @@ Add an emoji before the channel name to declare the ticket's priority.
 
 |                           Name                           |       Description       |          Example           |
 | :------------------------------------------------------: | :---------------------: | :------------------------: |
-| :material-asterisk:{ .pink title="Required" } `priority` | The new ticket priority | [See choices](#priority_1) |
+| :material-asterisk:{ .pink title="Required" } `priority` | The new ticket priority | [See choices](#priority_1){ data-preview } |
 
 ##### Choices
 

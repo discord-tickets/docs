@@ -11,7 +11,7 @@ description: How to install Discord Tickets with Docker
 Before you start, you need to make sure your system meets [the requirements](../index.md#requirements).
 
 Unless you know what you're doing and already have a database and reverse proxy set up,
-using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file is recommended over [pure Docker](#pure-docker).
+using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file is recommended over [pure Docker](#pure-docker){ data-preview }.
 
 ## Docker Compose
 
@@ -231,7 +231,7 @@ and set the `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
 ## Pure Docker
 
 !!! info ""
-    This is a very short overview; refer to the [Docker Compose](#docker-compose) guide for more information.
+    This is a very short overview; refer to the [Docker Compose](#docker-compose){ data-preview } guide for more information.
 
 Some required environment variables that you are unlikely to change have defaults set in the Dockerfile:
 

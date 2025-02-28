@@ -19,7 +19,7 @@ Tickets are pending closure when:
 - A close request is sent (with [`/close`](../commands.md#close) or the close button), it is not rejected (ignored or not seen), and fewer than 5 messages are sent afterwards.
 - A ticket is marked as stale after being inactive for longer than the [*Stale after*](#stale-after) time.
 
-When paired with the [*Stale after*](#stale-after) option, tickets will be automatically closed when `lastMessageAt + stalerAfter + autoCloseAfter > now`.
+When paired with the [*Stale after*](#stale-after){ data-preview } option, tickets will be automatically closed when `lastMessageAt + stalerAfter + autoCloseAfter > now`.
 
 Must be an [ms](https://github.com/vercel/ms#readme)-parsable format (`18h`, `2 days`, `1w`, etc).
 The value should be greater than 5 minutes, but 12 hours is the minimum recommended value.
@@ -102,7 +102,7 @@ The [colour](https://old.discordjs.dev/#/docs/discord.js/main/typedef/ColorResol
 When provided, tickets that are inactive for this amount of time will be marked as stale.
 This sends a message warning participants to resume the conversation.
 
-This option can be paired with the [*Auto close after*](#auto-close-after) option to automatically close tickets after a period of inactivity.
+This option can be paired with the [*Auto close after*](#auto-close-after){ data-preview } option to automatically close tickets after a period of inactivity.
 
 Must be an [ms](https://github.com/vercel/ms#readme)-parsable format (`15m`, `1h`, `1 day`, etc).
 
