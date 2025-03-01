@@ -33,7 +33,7 @@
 6. Navigate to the `Bot` page
 
 	1. Click `View Token`, then **copy the token and set it as your `DISCORD_TOKEN` environment variable.**
-	2. Optionally, disable the "Public Bot" option to prevent other people from adding your bot to their servers. Before you can disable it go to to the `Installation` page and set `Install Link` to `None`. Save changes after which you disable the "Public Bot" in `Bot` page.
+	2. We highly recommend disabling the "Public Bot" option to prevent other people from adding your bot to their servers. Before you can do so, you will need to go to to the `Installation` page and set `Install Link` to `None`. After saving changes, return to the `Bot` page and disable the "Public Bot" option.
 
 	![Screenshot](/img/discord-application-5.png)
 
