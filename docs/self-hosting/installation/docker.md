@@ -11,7 +11,7 @@ description: How to install Discord Tickets with Docker
 Before you start, you need to make sure your system meets [the requirements](../index.md#requirements).
 
 Unless you know what you're doing and already have a database and reverse proxy set up,
-using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file is recommended over [pure Docker](#pure-docker).
+using the provided [`docker-compose.yml`](https://dl.discordtickets.app/bot/docker-compose.yml) file is recommended over [pure Docker](#pure-docker){ data-preview }.
 
 ## Docker Compose
 
@@ -161,9 +161,29 @@ Copy the value below and set it as the `ENCRYPTION_KEY` environment variable.
 Start the containers:
 
 ```bash linenums="0"
-docker-compose up -d
+docker compose up -d
 ```
 
+!!! danger
+    In case of errors such as `EACCES: permission denied..` after running the docker container, comment out the first volume in `docker-compose.yml`.
+
+    Before:
+    ```yaml title="docker-compose.yml"
+        volumes:
+          - tickets-bot:/home/container/user
+    ```
+
+    After:
+    ```yaml title="docker-compose.yml"
+        volumes:
+    #      - tickets-bot:/home/container/user
+    ```
+
+    Then restart the container:
+    ```
+    docker compose down && docker compose up -d
+    ```
+    This prevents permission conflicts but as a downside disables persistence for /home/container/user.
 
 ### Publishing the commands
 
@@ -211,7 +231,7 @@ and set the `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
 ## Pure Docker
 
 !!! info ""
-    This is a very short overview; refer to the [Docker Compose](#docker-compose) guide for more information.
+    This is a very short overview; refer to the [Docker Compose](#docker-compose){ data-preview } guide for more information.
 
 Some required environment variables that you are unlikely to change have defaults set in the Dockerfile:
 

@@ -126,7 +126,7 @@ Depending on your location, you can pay with:
 - [x] Card (Visa, Mastercard, American Express, etc)
 - [x] Apple Pay
 - [x] Google Pay
-- [x] PayPal [(see below)](#can-i-pay-with-paypal)
+- [x] PayPal [(see below)](#can-i-pay-with-paypal){ data-preview }
 - [x] Bancontact ([EUR](#eur) only)
 - [x] iDEAL ([EUR](#eur) only)
 - [x] SEPA Direct Debit ([EUR](#eur) only)

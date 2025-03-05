@@ -25,7 +25,7 @@ Encryption-at-rest protects your users' data (primarily messages which may conta
 Unencrypted copies of user avatars and message attachments may also be stored on the disk (in the `user` directory).
 
 Note that by default, the Discord Tickets Bot connects to the StatsAPI service, so [unless you disable it](./self-hosting/configuration.md#stats),
-you are automatically a service user and the [privacy policy](#service-privacy-policy) below applies.
+you are automatically a service user and the [privacy policy](#service-privacy-policy){ data-preview } below applies.
 
 ### Compliance
 
@@ -38,7 +38,7 @@ Your privacy policy should mention the collection, processing, and storage of th
 
 ## Service privacy policy
 
-**The [above privacy notice](#open-source-software-privacy-notice) also applies to the public/managed hosted bot services.**
+**The [above privacy notice](#open-source-software-privacy-notice){ data-preview } also applies to the public/managed hosted bot services.**
 
 ### Data collection and processing
 

@@ -47,8 +47,8 @@ Each section of the settings panel has a dedicated page in this documentation an
 
 Before you start configuring the bot, you may want to clean up the application command selector for your members.
 
-The bot will usually manage the overwrites on [staff-only commands](../features/commands.md) for you (so these commands are hidden from members),
-but [ticket-only commands](../features/commands.md) are not modified by the bot.
+The bot will usually manage the overwrites on [staff-only commands](../commands.md) for you (so these commands are hidden from members),
+but [ticket-only commands](../commands.md) are not modified by the bot.
 
 This means that
 

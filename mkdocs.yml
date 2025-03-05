@@ -54,6 +54,13 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - meta
+  - material.extensions.preview:
+      configurations:
+        - sources:
+            include:
+              - 'docs/**/*.md'
+            exclude:
+              - 'docs/getting-started.md'
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -101,9 +108,8 @@ nav:
   - Home: index.md
   - Documentation:
     - Getting started: getting-started.md
-    - Features:
-       - Features: features/index.md
-       - Commands: features/commands.md
+    - Features: features.md
+    - Commands: commands.md
     # - Public bot: public.md
     - Managed bot: managed.md
     - Self-hosting:

@@ -8,7 +8,7 @@
 :octicons-alert-16: Required
 </small>
 
-The name of the tag, visible to users with the [`/tag`](../features/commands.md#tag) command.
+The name of the tag, visible to users with the [`/tag`](../commands.md#tag) command.
 You can add Unicode glyphs, but not emoji names or custom emoji.
 
 ### Auto tag regular expression

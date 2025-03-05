@@ -14,7 +14,7 @@ To do this, you need:
 If you already have a domain and know how to create an HTTPS proxy, you can safely skip this page.
 If not, there are several options available:
 
-|                   |    [Traefik](#traefik)     |   [Nginx](#nginx)    | [Caddy](#caddy-2-recommended) | [PebbleHost](#pebblehost) |
+|                   |    [Traefik](#traefik){ data-preview }     |   [Nginx](#nginx){ data-preview }    | [Caddy](#caddy-2-recommended){ data-preview } | [PebbleHost](#pebblehost){ data-preview } |
 | :---------------- | :------------------------: | :------------------: | :---------------------------: | :-----------------------: |
 | Difficulty        | Most difficult { .orange } | Moderate { .orange } |        Easy { .green }        |      Easy { .green }      |
 | Bot installations |        Docker only         |         Any          |              Any              |      PebbleHost only      |

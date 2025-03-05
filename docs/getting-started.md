@@ -17,7 +17,7 @@ Welcome to the Discord Tickets documentation.
 Now that you've chosen to use the best ticket bot for Discord, you need to decide how you want to use it.
 
 Please compare the three options, then click on a button at the bottom of the table to jump to the relevant section of the documentation.
-If you need help choosing, [ask for help](#useful-links).
+If you need help choosing, [ask for help](#useful-links){ data-preview }.
 
 ---
 

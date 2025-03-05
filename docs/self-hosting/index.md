@@ -13,7 +13,7 @@ Regardless of the installation method you choose, the bot requires:
 - a forwarded (not firewalled) port
 - at least **150MB RAM**
 - at least **1GB disk** space (at least 100MB for the database if archiving)
-- a [supported database](#supported-databases) (MySQL 8 recommended)
+- a [supported database](#supported-databases){ data-preview } (MySQL 8 recommended)
 
 !!! info ""
     Although the bot itself uses around 120MB RAM, npm can use at least triple that during installation.
