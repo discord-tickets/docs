@@ -45,8 +45,6 @@ Get a custom bot without hosting it yourself.
 - [Nightly database backups](https://status.eartharoid.me/), encrypted and kept for 30 days
 - :heart: **You're directly supporting the bot's developer**
 - Better for the planet
-    - Powered by energy-efficient Ampere® Altra® processors
-    - 100% powered by wind and hydro energy
     - <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
     	style="width:auto; height:1em; vertical-align:text-bottom;">
     	<linearGradient id="StripeClimate-gradient-a" gradientUnits="userSpaceOnUse" x1="16"
