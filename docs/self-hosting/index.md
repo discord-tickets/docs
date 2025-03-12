@@ -9,7 +9,7 @@
 You can view the supported installation methods on the next page <span class="tip">(:material-fire:{ title="Tip" } you can press ++n++ or ++gt++)</span>.
 Regardless of the installation method you choose, the bot requires:
 
-- **Node.js v18** or higher (with npm, pnpm, or yarn)
+- **Node.js v20** or higher (with npm, pnpm, or yarn)
 - a forwarded (not firewalled) port
 - at least **150MB RAM**
 - at least **1GB disk** space (at least 100MB for the database if archiving)
