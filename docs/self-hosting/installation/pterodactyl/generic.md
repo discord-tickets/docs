@@ -20,10 +20,10 @@ Note that although the bot may use under 100-150MB of RAM (depending on the serv
 
 ## Installation
 
-Start by creating a new Node.js v18 server.
+Start by creating a new Node.js v20+ server.
 
 1. Set the git repository to `https://github.com/discord-tickets/bot`
-2. Set the branch to the latest tag, e.g. `v4.0.0`.
+2. Set the branch to the latest tag, e.g. `v4.0.35`.
    You can find the latest tag at the top right corner of this page or [here](https://github.com/discord-tickets/bot/releases/latest).
 3. Enable auto-updating so the startup script will download the code for you
 4. Change the file to `src/index.js`
