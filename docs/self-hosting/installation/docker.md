@@ -114,6 +114,7 @@ services:
       PUBLIC_BOT: "false"
       PUBLISH_COMMANDS: "false"
       OVERRIDE_ARCHIVE: null
+      OVERRIDE_ENCRYPTION: null
       SUPER: 319467558166069248 # (10)!
       # TZ: Etc/UTC
       # (11)!

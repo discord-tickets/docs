@@ -34,6 +34,7 @@ The installation guides also explain where to find most of the environment varia
 	HTTP_TRUST_PROXY=true
     INVALIDATE_TOKENS=
 	OVERRIDE_ARCHIVE=
+	OVERRIDE_ENCRYPTION=
 	PUBLIC_BOT=false
 	PUBLISH_COMMANDS=false
 	SUPER=319467558166069248
@@ -152,6 +153,19 @@ If a service key is leaked, set this to the current time to invalidate all exist
 <small>:octicons-question-16: Optional</small>
 
 When set to `#!yaml false` (must be lowercase), guilds' `archive` setting will be ignored, disabling the archive feature for all guilds.
+
+### `OVERRIDE_ENCRYPTION`
+
+<small>:octicons-question-16: Optional</small>
+
+When set to `#!yaml true` (must be lowercase), encryption/decryption calls will return the input data as-is, disabling data encryption for the instance.
+
+!!! danger
+	**Important!**
+	Changing this option after initial setup requires a full database reset or migration.
+	The migration process needs to **encrypt or decrypt all relevant data fields accordingly** to avoid errors.
+	* If you enable it after it was previously disabled or unset, the bot won't be able to decrypt some existing encrypted data properly.
+	* If you disable it after it was previously enabled, the bot will error when trying to decrypt existing unencrypted data.
 
 ### `PUBLIC_BOT`
 
