@@ -79,8 +79,9 @@ When set to `#!yaml true` (must be lowercase), encryption/decryption calls will 
 	**Important!**
 	Changing this option after initial setup requires a full database reset or migration.
 	The migration process needs to **encrypt or decrypt all relevant data fields accordingly** to avoid errors.
-	* If you enable it after it was previously disabled or unset, the bot won't be able to decrypt some existing encrypted data properly.
-	* If you disable it after it was previously enabled, the bot will error when trying to decrypt existing unencrypted data.
+
+    - If you enable it after it was previously disabled or unset, the bot won't be able to decrypt some existing encrypted data properly.
+    - If you disable it after it was previously enabled, the bot will error when trying to decrypt existing unencrypted data.
 
 ### `DISCORD_SECRET`
 
