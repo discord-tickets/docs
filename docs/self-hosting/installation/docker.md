@@ -103,6 +103,7 @@ services:
     # https://discordtickets.app/self-hosting/configuration/#environment-variables
     environment:
       DB_CONNECTION_URL: mysql://tickets:insecure@mysql/tickets # (4)!
+      DISABLE_ENCRYPTION: null
       DISCORD_SECRET: # (5)!
       DISCORD_TOKEN: # (6)!
       ENCRYPTION_KEY: # (7)!
@@ -114,7 +115,6 @@ services:
       PUBLIC_BOT: "false"
       PUBLISH_COMMANDS: "false"
       OVERRIDE_ARCHIVE: null
-      OVERRIDE_ENCRYPTION: null
       SUPER: 319467558166069248 # (10)!
       # TZ: Etc/UTC
       # (11)!

@@ -24,6 +24,7 @@ The installation guides also explain where to find most of the environment varia
 	```bash title=".env"
 	DB_CONNECTION_URL="mysql://bots:VerySecurePassword123@localhost/tickets0"
 	DB_PROVIDER=mysql
+	DISABLE_ENCRYPTION=
 	DISCORD_SECRET=rUpDU2T8K4ZXie8kdpzYsMTLbUhvmBRd
 	DISCORD_TOKEN=ODcwOTg1TY0NjI0NODI2Mzc0.DNg0e0.UYVof7V1v0kRA0HHtGwXKA3URxwANAZhQiA
 	ENCRYPTION_KEY=445940dbed49eff55df56dd646fa1cb4b686df4cb9ac004a
@@ -34,7 +35,6 @@ The installation guides also explain where to find most of the environment varia
 	HTTP_TRUST_PROXY=true
     INVALIDATE_TOKENS=
 	OVERRIDE_ARCHIVE=
-	OVERRIDE_ENCRYPTION=
 	PUBLIC_BOT=false
 	PUBLISH_COMMANDS=false
 	SUPER=319467558166069248
@@ -68,6 +68,19 @@ The type of database the bot will use; one of:
 - `#!yaml mysql` (recommended, use this for MariaDB too)
 - `#!yaml postgresql`
 - `#!yaml sqlite`
+
+### `DISABLE_ENCRYPTION`
+
+<small>:octicons-question-16: Optional</small>
+
+When set to `#!yaml true` (must be lowercase), encryption/decryption calls will return the input data as-is, disabling data encryption for the instance.
+
+!!! danger
+	**Important!**
+	Changing this option after initial setup requires a full database reset or migration.
+	The migration process needs to **encrypt or decrypt all relevant data fields accordingly** to avoid errors.
+	* If you enable it after it was previously disabled or unset, the bot won't be able to decrypt some existing encrypted data properly.
+	* If you disable it after it was previously enabled, the bot will error when trying to decrypt existing unencrypted data.
 
 ### `DISCORD_SECRET`
 
@@ -153,19 +166,6 @@ If a service key is leaked, set this to the current time to invalidate all exist
 <small>:octicons-question-16: Optional</small>
 
 When set to `#!yaml false` (must be lowercase), guilds' `archive` setting will be ignored, disabling the archive feature for all guilds.
-
-### `OVERRIDE_ENCRYPTION`
-
-<small>:octicons-question-16: Optional</small>
-
-When set to `#!yaml true` (must be lowercase), encryption/decryption calls will return the input data as-is, disabling data encryption for the instance.
-
-!!! danger
-	**Important!**
-	Changing this option after initial setup requires a full database reset or migration.
-	The migration process needs to **encrypt or decrypt all relevant data fields accordingly** to avoid errors.
-	* If you enable it after it was previously disabled or unset, the bot won't be able to decrypt some existing encrypted data properly.
-	* If you disable it after it was previously enabled, the bot will error when trying to decrypt existing unencrypted data.
 
 ### `PUBLIC_BOT`
 
