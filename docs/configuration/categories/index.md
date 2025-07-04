@@ -135,6 +135,7 @@ Use this to provide and ask for information, such as stating what is expected of
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | `{num}`<br>`{number}`    | The ticket's number, unique across all categories in the server                                                             |
 | `{name}`<br>`{username}` | The ticket creator's username                                                                                               |
+| `{avgRating}`            | The average rating given by users for tickets in this category                                                              |
 | `{avgResponseTime}`      | The time between tickets being opened and receiving their first response from a staff member (only in the current category) |
 | `{avgResolutionTime}`    | The time between tickets being opened and being closed (only in the current category)                                       |
 
