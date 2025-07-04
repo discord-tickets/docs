@@ -227,6 +227,8 @@ If it doesn't exist, run the bot and it will be generated for you.
           type: 3
         - name: "{avgResponseTime} response time"
           type: 3
+	    - name: "{avgRating} ⭐ rating"
+          type: 3
       interval: 20
       status: online
     stats: true
@@ -284,6 +286,7 @@ An array of activities (length must be at least 1).
 
 The activity name, which may contain these placeholders:
 
+- `#!yaml {avgRating}`
 - `#!yaml {avgResolutionTime}`
 - `#!yaml {avgResponseTime}`
 - `#!yaml {guilds}`
