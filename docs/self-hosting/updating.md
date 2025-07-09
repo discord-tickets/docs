@@ -24,11 +24,11 @@ BACKUP, git fetch, checkout, npm install (migrate), check changelog instructions
 
 ## Docker
 
-If you are running the container using docker-compose file, run the following commands : 
+If you are running the container using docker-compose file, run the following commands :
 ```bash
 docker pull eartharoid/discord-tickets:4.0
 ```
-Once pull is done, simply run : 
+Once pull is done, simply run :
 
 ```bash
 docker-compose up -d --force-recreate
@@ -38,6 +38,14 @@ to recreate the docker container with the latest image.
 Alternatively, you can use [Watchtower](https://containrrr.dev/watchtower/) to do this automatically when an update is released, **Do not use the `latest` tag when automating updates** as major updates will break the bot.
 
 ## Standalone
+
+## HypeSrv
+
+Your HypeSrv installation of DiscordTickets (if done via the `Content Manager`) will automatically check for and perform updated on every (re-)start of your server.
+
+HypeSrv doesn't currently offer a first-party solution for backing up a database server.
+Instead, please connect to the database with an SQL Client like HeidiSQL and export your database via such a tool.
+
 
 ## Railway
 
