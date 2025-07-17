@@ -36,7 +36,7 @@ mkdir tickets-bot && cd tickets-bot
     ```
 === "`curl`"
     ```bash linenums="0"
-    curl -O https://dl.discordtickets.app/bot/docker-compose.yml
+    curl -O -L https://dl.discordtickets.app/bot/docker-compose.yml
     ```
 === "Other"
     <!-- jsdelivr forces download -->
@@ -236,10 +236,10 @@ and set the `HTTP_TRUST_PROXY` environment variable to `#!yaml true`.
 
 Some required environment variables that you are unlikely to change have defaults set in the Dockerfile:
 
-| Name            | Value              |
-| --------------- | ------------------ |
-| `HTTP_HOST`     | `#!yaml 0.0.0.0`   |
-| `HTTP_PORT`     | `#!yaml 80`        |
+| Name        | Value            |
+| ----------- | ---------------- |
+| `HTTP_HOST` | `#!yaml 0.0.0.0` |
+| `HTTP_PORT` | `#!yaml 80`      |
 
 You need to set the other required environment variables.
 
