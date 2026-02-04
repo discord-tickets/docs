@@ -19,7 +19,9 @@ This is not an efficient backup method; it is intended for converting between da
     ```bash linenums="0"
     pnpm db.dump
     ```
-!!! example "Docker" When self-hosting the bot using Docker, you can use `docker exec` to attach to the container. `docker exec -it [CONTAINER NAME] sh` will create an interactive shell, from which you can `cd` into `/app` and run the `db.dump` command.
+!!! example "Docker"
+    When self-hosting the bot using Docker, you can use `docker exec` to attach to the container. `docker exec -it [CONTAINER NAME] sh` will create an interactive shell, from which you can `cd` into `/app` and run the `db.dump` command.
+
 ### `db.prune`
 
 Deletes all data from guilds in the database where the bot was first added
