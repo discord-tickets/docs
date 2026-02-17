@@ -69,6 +69,22 @@ This will be shown on panel select menus.
 Ticket channels will be created under this Discord category.
 The default option when creating a new ticket category is to create a new Discord category with the ticket category's name.
 
+### Button style
+
+<small>
+:material-factory: Default: `#!yaml Secondary`
+</small>
+
+Discord button style. This is visible to users on buttons in panels:
+
+![Screenshot](/img/category-button-styles.png)
+
+Possible choices:
+- Primary (blue)
+- Secondary (grey)
+- Danger (red)
+- Success (green)
+
 ### Emoji
 
 <small>
